@@ -1,3 +1,45 @@
 = Refresh
 
 Not a clue yet.
+
+0. base
+  a. normalize
+  b. typographgy
+
+1. elements // Singular Components
+  a. button
+  b. form
+  c. tooltip
+  d. badge
+  e. breadcrumb
+  f. list
+
+2. components // Complex Componets
+  a. buttons
+  b. forms
+  c. tooltips
+  d. headings
+  e. banners
+  f. alerts
+  g. badges
+  h. breadcrumbs
+  i. lists
+
+3. atoms // Utils
+  a. clearfix
+  b. close
+  c. color
+  d. background
+  e. display
+  f. flex
+  g. float
+  h. overflow
+  i. position
+  j. shadows
+  k. sizing
+  l. spacing
+  m. text
+  n. visibility
+  o. border
+
+4. marketing // Extra things for atoms, elements, components
