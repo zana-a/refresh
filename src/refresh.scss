@@ -1,3 +1,12 @@
 /*!
  *
  */
+
+html {
+  background: blue;
+  border: orange;
+
+  &.c {
+    border: red;
+  }
+}
