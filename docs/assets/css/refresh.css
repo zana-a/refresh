@@ -2,10 +2,5 @@
  *
  */
 html {
-  background: blue;
-  border: orange;
-}
-
-html.c {
-  border: red;
+  background: red;
 }
