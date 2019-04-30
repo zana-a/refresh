@@ -7,7 +7,7 @@
     "removeDest": "rm -Rf dest",
     "dev:build": "node-sass src -o dest --indent-width=2 --output-style=expanded",
     "dev:watchSrc": "node-sass src -o dest --indent-width=2 postcss --use autoprefixer dist/css/master.css -d dist/css/master.css--output-style=expanded --watch",
-    "dev": "npm run removeDest && npm run dev:build && postcss --use autoprefixer dist/css/master.css -d dist/css/master.cssnpm run dev:watchSrc"
+    "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc"
   },
   "keywords": [],
   "author": "",
