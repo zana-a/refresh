@@ -1,0 +1,27 @@
+@mixin button-base($color-sign, $color-effect, $color-type) {
+  display: inline-block;
+  line-height: 1.5;
+  font-size: 16px;
+  font-size: 1rem;
+  border: 2px solid $color-type;
+  border-radius: 2px;
+  color: $color-type;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-decoration: none !important;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: 0;
+
+  &:hover {
+    background-color: $color-type;
+    color: $color-sign;
+  }
+
+  &:active {
+    background-color: $color-effect;
+    border-color: $color-effect;
+    color: $color-sign;
+  }
+}

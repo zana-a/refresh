@@ -1,29 +1,56 @@
+@import './lib/base';
+@import './lib/default-type';
+@import './lib/solid-type';
+
 button,
 .button {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5;
-  background-color: transparent;
-  border-radius: 2px;
-  border: 2px solid $black;
-  color: $black;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  padding: 8px 16px;
-  text-decoration: none !important;
-  outline: 0;
+  @include button-base($white, $gray-8, $gray-9);
 
-  &:hover {
-    background-color: $black;
-    color: $white;
+  &.red {
+    @include button-default($white, $red-9, $red-8);
   }
 
-  &:active {
-    background-color: $gray-9;
-    border-color: $gray-9;
-    color: $white;
-    box-shadow: 0;
+  &.pink {
+    @include button-default($white, $pink-9, $pink-8);
+  }
+
+  &.grape {
+    @include button-default($white, $grape-9, $grape-8);
+  }
+
+  &.violet {
+    @include button-default($white, $violet-9, $violet-8);
+  }
+
+  &.indigo {
+    @include button-default($white, $indigo-9, $indigo-8);
+  }
+
+  &.blue {
+    @include button-default($white, $blue-9, $blue-8);
+  }
+
+  &.cyan {
+    @include button-default($white, $cyan-9, $cyan-8);
+  }
+
+  &.teal {
+    @include button-default($white, $teal-9, $teal-8);
+  }
+
+  &.green {
+    @include button-default($white, $green-9, $green-8);
+  }
+
+  &.lime {
+    @include button-default($white, $lime-9, $lime-8);
+  }
+
+  &.yellow {
+    @include button-default($white, $yellow-9, $yellow-8);
+  }
+
+  &.orange {
+    @include button-default($white, $orange-9, $orange-8);
   }
 }

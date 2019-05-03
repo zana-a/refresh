@@ -1,0 +1,16 @@
+@mixin button-default($color-sign, $color-effect, $color-type) {
+  border-color: $color-type !important;
+  color: $color-type !important;
+  background-color: transparent !important;
+
+  &:hover {
+    background-color: $color-type !important;
+    color: $color-sign !important;
+  }
+
+  &:active {
+    background-color: $color-effect !important;
+    border-color: $color-effect !important;
+    color: $color-sign !important;
+  }
+}
