@@ -538,45 +538,53 @@ button:active,
   color: #ffffff;
 }
 
-button.solid,
-.button.solid {
+button.default.solid,
+.button.default.solid {
   border-color: #343a40 !important;
   color: #ffffff !important;
   background-color: #343a40 !important;
 }
 
-button.solid:hover,
-.button.solid:hover {
+button.default.solid:hover,
+.button.default.solid:hover {
   background-color: #212529 !important;
   border-color: #212529 !important;
   color: #ffffff !important;
 }
 
-button.solid:active,
-.button.solid:active {
+button.default.solid:active,
+.button.default.solid:active {
   background-color: #16181b !important;
   border-color: #16181b !important;
   color: #ffffff !important;
 }
 
-button.red,
-.button.red {
-  border-color: #f03e3e !important;
-  color: #f03e3e !important;
+button.default.link,
+.button.default.link {
+  color: #343a40 !important;
   background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #343a40 !important;
+  border-left: 0 !important;
 }
 
-button.red:hover,
-.button.red:hover {
-  background-color: #f03e3e !important;
-  color: #ffffff !important;
+button.default.link:hover,
+.button.default.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #212529 !important;
+  transition: ease-out 100ms !important;
 }
 
-button.red:active,
-.button.red:active {
-  background-color: #c92a2a !important;
-  border-color: #c92a2a !important;
-  color: #ffffff !important;
+button.default.link:active,
+.button.default.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #343a40 !important;
 }
 
 button.red.solid,
@@ -598,6 +606,34 @@ button.red.solid:active,
   background-color: #b42626 !important;
   border-color: #b42626 !important;
   color: #ffffff !important;
+}
+
+button.red.link,
+.button.red.link {
+  color: #f03e3e !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #f03e3e !important;
+  border-left: 0 !important;
+}
+
+button.red.link:hover,
+.button.red.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #c92a2a !important;
+  transition: ease-out 100ms !important;
+}
+
+button.red.link:active,
+.button.red.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #f03e3e !important;
 }
 
 button.pink,
@@ -641,6 +677,34 @@ button.pink.solid:active,
   color: #ffffff !important;
 }
 
+button.pink.link,
+.button.pink.link {
+  color: #d6336c !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #d6336c !important;
+  border-left: 0 !important;
+}
+
+button.pink.link:hover,
+.button.pink.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #a61e4d !important;
+  transition: ease-out 100ms !important;
+}
+
+button.pink.link:active,
+.button.pink.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #d6336c !important;
+}
+
 button.grape,
 .button.grape {
   border-color: #ae3ec9 !important;
@@ -680,6 +744,34 @@ button.grape.solid:active,
   background-color: #752888 !important;
   border-color: #752888 !important;
   color: #ffffff !important;
+}
+
+button.grape.link,
+.button.grape.link {
+  color: #ae3ec9 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #ae3ec9 !important;
+  border-left: 0 !important;
+}
+
+button.grape.link:hover,
+.button.grape.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #862e9c !important;
+  transition: ease-out 100ms !important;
+}
+
+button.grape.link:active,
+.button.grape.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #ae3ec9 !important;
 }
 
 button.violet,
@@ -723,6 +815,34 @@ button.violet.solid:active,
   color: #ffffff !important;
 }
 
+button.violet.link,
+.button.violet.link {
+  color: #7048e8 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #7048e8 !important;
+  border-left: 0 !important;
+}
+
+button.violet.link:hover,
+.button.violet.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #5f3dc4 !important;
+  transition: ease-out 100ms !important;
+}
+
+button.violet.link:active,
+.button.violet.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #7048e8 !important;
+}
+
 button.indigo,
 .button.indigo {
   border-color: #4263eb !important;
@@ -762,6 +882,34 @@ button.indigo.solid:active,
   background-color: #3147b3 !important;
   border-color: #3147b3 !important;
   color: #ffffff !important;
+}
+
+button.indigo.link,
+.button.indigo.link {
+  color: #4263eb !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #4263eb !important;
+  border-left: 0 !important;
+}
+
+button.indigo.link:hover,
+.button.indigo.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #364fc7 !important;
+  transition: ease-out 100ms !important;
+}
+
+button.indigo.link:active,
+.button.indigo.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #4263eb !important;
 }
 
 button.blue,
@@ -805,6 +953,34 @@ button.blue.solid:active,
   color: #ffffff !important;
 }
 
+button.blue.link,
+.button.blue.link {
+  color: #1c7ed6 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #1c7ed6 !important;
+  border-left: 0 !important;
+}
+
+button.blue.link:hover,
+.button.blue.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #1864ab !important;
+  transition: ease-out 100ms !important;
+}
+
+button.blue.link:active,
+.button.blue.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #1c7ed6 !important;
+}
+
 button.cyan,
 .button.cyan {
   border-color: #1098ad !important;
@@ -844,6 +1020,34 @@ button.cyan.solid:active,
   background-color: #095e6d !important;
   border-color: #095e6d !important;
   color: #ffffff !important;
+}
+
+button.cyan.link,
+.button.cyan.link {
+  color: #1098ad !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #1098ad !important;
+  border-left: 0 !important;
+}
+
+button.cyan.link:hover,
+.button.cyan.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #0b7285 !important;
+  transition: ease-out 100ms !important;
+}
+
+button.cyan.link:active,
+.button.cyan.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #1098ad !important;
 }
 
 button.teal,
@@ -887,6 +1091,34 @@ button.teal.solid:active,
   color: #ffffff !important;
 }
 
+button.teal.link,
+.button.teal.link {
+  color: #0ca678 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #0ca678 !important;
+  border-left: 0 !important;
+}
+
+button.teal.link:hover,
+.button.teal.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #087f5b !important;
+  transition: ease-out 100ms !important;
+}
+
+button.teal.link:active,
+.button.teal.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #0ca678 !important;
+}
+
 button.green,
 .button.green {
   border-color: #37b24d !important;
@@ -926,6 +1158,34 @@ button.green.solid:active,
   background-color: #257735 !important;
   border-color: #257735 !important;
   color: #ffffff !important;
+}
+
+button.green.link,
+.button.green.link {
+  color: #37b24d !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #37b24d !important;
+  border-left: 0 !important;
+}
+
+button.green.link:hover,
+.button.green.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #2b8a3e !important;
+  transition: ease-out 100ms !important;
+}
+
+button.green.link:active,
+.button.green.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #37b24d !important;
 }
 
 button.lime,
@@ -969,6 +1229,34 @@ button.lime.solid:active,
   color: #ffffff !important;
 }
 
+button.lime.link,
+.button.lime.link {
+  color: #74b816 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #74b816 !important;
+  border-left: 0 !important;
+}
+
+button.lime.link:hover,
+.button.lime.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #5c940d !important;
+  transition: ease-out 100ms !important;
+}
+
+button.lime.link:active,
+.button.lime.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #74b816 !important;
+}
+
 button.yellow,
 .button.yellow {
   border-color: #f59f00 !important;
@@ -1010,6 +1298,34 @@ button.yellow.solid:active,
   color: #ffffff !important;
 }
 
+button.yellow.link,
+.button.yellow.link {
+  color: #f59f00 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #f59f00 !important;
+  border-left: 0 !important;
+}
+
+button.yellow.link:hover,
+.button.yellow.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #e67700 !important;
+  transition: ease-out 100ms !important;
+}
+
+button.yellow.link:active,
+.button.yellow.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #f59f00 !important;
+}
+
 button.orange,
 .button.orange {
   border-color: #f76707 !important;
@@ -1049,4 +1365,32 @@ button.orange.solid:active,
   background-color: #c1400d !important;
   border-color: #c1400d !important;
   color: #ffffff !important;
+}
+
+button.orange.link,
+.button.orange.link {
+  color: #f76707 !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  line-height: 1 !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: solid #f76707 !important;
+  border-left: 0 !important;
+}
+
+button.orange.link:hover,
+.button.orange.link:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #d9480f !important;
+  transition: ease-out 100ms !important;
+}
+
+button.orange.link:active,
+.button.orange.link:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #f76707 !important;
 }
