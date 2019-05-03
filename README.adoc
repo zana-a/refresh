@@ -2,6 +2,8 @@
 
 Not a clue yet.
 
+**remove h1-h6 & p from normalize to text-body**
+
 0. base
   a. normalize
   b. typographgy
