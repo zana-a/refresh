@@ -1,16 +1,17 @@
 @mixin button-solid-type($color-sign, $color-effect, $color-type) {
   border-color: $color-type !important;
-  color: $color-type !important;
+  color: $color-sign !important;
   background-color: $color-type !important;
 
   &:hover {
-    background-color: $color-type !important;
+    background-color: $color-effect !important;
+    border-color: $color-effect !important;
     color: $color-sign !important;
   }
 
   &:active {
-    background-color: $color-effect !important;
-    border-color: $color-effect !important;
+    background-color: darken($color-effect, 5%) !important;
+    border-color: darken($color-effect, 5%) !important;
     color: $color-sign !important;
   }
 }
