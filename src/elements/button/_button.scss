@@ -1,0 +1,29 @@
+button,
+.button {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid $black;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-decoration: none !important;
+  outline: 0;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $gray-9;
+    border-color: $gray-9;
+    color: $white;
+    box-shadow: 0;
+  }
+}

@@ -507,6 +507,34 @@ hr {
   border: 0.5px solid #ced4da;
 }
 
-button {
-  background: #1864ab;
+button,
+.button {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid #101010;
+  color: #101010;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 8px 16px;
+  text-decoration: none !important;
+  outline: 0;
+}
+
+button:hover,
+.button:hover {
+  background-color: #101010;
+  color: #ffffff;
+}
+
+button:active,
+.button:active {
+  background-color: #212529;
+  border-color: #212529;
+  color: #ffffff;
+  box-shadow: 0;
 }
