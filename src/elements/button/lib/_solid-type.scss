@@ -1,4 +1,6 @@
 @mixin button-solid-type($color-sign, $color-effect, $color-type) {
+  @include button-base($color-sign, $color-effect, $color-type);
+
   border-color: $color-type !important;
   color: $color-sign !important;
   background-color: $color-type !important;

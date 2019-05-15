@@ -1,18 +1,21 @@
 @mixin button-base($color-sign, $color-effect, $color-type) {
   display: inline-block;
-  line-height: 1.5;
-  font-size: 16px;
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
   font-size: 1rem;
   border: 2px solid $color-type;
   border-radius: 2px;
   color: $color-type;
-  font-weight: 700;
-  padding: 8px 16px;
+  font-weight: 600;
   text-decoration: none !important;
   background-color: transparent;
   box-sizing: border-box;
   cursor: pointer;
   outline: 0;
+  padding: 6px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
 
   &:hover {
     background-color: $color-type;
