@@ -1,3 +1,12 @@
+/*
+ * Basic Buttons. 
+ * Has 3 different falvours. 
+ * Needs improving but this works fine for now.
+ *  1. Too much repetion of code.
+ *  2. Does not have any automation. Too repetative 
+ *     to make new buttons
+ */
+
 @import './lib/base';
 @import './lib/outline-type';
 @import './lib/solid-type';
@@ -5,7 +14,7 @@
 
 .btn {
   // Default fall-back.
-  @include button-solid-type($gray-9, $gray-2, $white);
+  @include button-solid-type($white, $gray-9, $gray-8);
 
   &.btn-black {
     &.btn-outline {

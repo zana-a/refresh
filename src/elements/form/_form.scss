@@ -1,0 +1,37 @@
+/*
+ * Basic Forms
+ * Support for forms such as text inputs.
+ * 
+ * Note:
+ * 1. Does not contain support for form type button. 
+ *    Classes such as ``.btn`` can help change the look. 
+ */
+
+.input {
+  display: inline-block;
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
+  border: 2px solid $gray-4;
+  border-radius: 2px;
+  color: $gray-6;
+  font-weight: 400;
+  text-decoration: none !important;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: text;
+  outline: 0;
+  padding: 6px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: $gray-6 !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($gray-6, 0.2);
+    border-color: $gray-8 !important;
+    color: $gray-8;
+  }
+}

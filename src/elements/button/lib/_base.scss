@@ -26,4 +26,8 @@
     border-color: $color-effect;
     color: $color-sign;
   }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($color-effect, 0.2);
+  }
 }

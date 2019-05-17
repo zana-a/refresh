@@ -10,6 +10,7 @@ Not a clue yet.
 
 1. elements // Singular Components
   a. button
+    a. possibly add ``#343a40`` as marketing
   b. form
   c. tooltip
   d. badge

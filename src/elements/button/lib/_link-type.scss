@@ -25,4 +25,8 @@
     border-color: transparent !important;
     color: $color-type !important;
   }
+
+  &:focus {
+    box-shadow: none !important;
+  }
 }
