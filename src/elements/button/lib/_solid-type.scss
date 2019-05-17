@@ -16,4 +16,8 @@
     border-color: darken($color-effect, 5%) !important;
     color: $color-sign !important;
   }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($color-effect, 0.2);
+  }
 }
