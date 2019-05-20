@@ -11,13 +11,15 @@ For gradients: https://webgradients.com/
   b. typographgy
 
 1. elements // Singular Components
-  a. button
-    a. possibly add ``#343a40`` as marketing
-  b. form
+  a. ~button~
+    a. needs more work
+  b. ~form~
+    a. needs more work
   c. tooltip
   d. badge
   e. breadcrumb
   f. list
+  g. box
 
 2. components // Complex Componets
   a. buttons
