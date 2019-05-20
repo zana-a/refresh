@@ -1,0 +1,15 @@
+---
+layout: default
+permalink: "/blog/"
+---
+
+<h1>Blog</h1>
+
+{% for post in site.posts %}
+  <div>
+    <a href="{{ post.url }}" class="btn btn-link btn-black">
+      <h2>{{ post.title }}</h2>
+    </a>
+    <p>{{ post.date | date_to_string }}</p>
+  </div>
+{% endfor %}
