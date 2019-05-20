@@ -1,5 +1,7 @@
 @mixin button-base($color-sign, $color-effect, $color-type) {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   line-height: 20px;
   font-size: 14px;
@@ -29,5 +31,11 @@
 
   &:focus {
     box-shadow: 0 0 0 3px rgba($color-effect, 0.2);
+  }
+
+  // icon control { supporting feather icons }
+  svg {
+    width: 20px;
+    height: 20px;
   }
 }
