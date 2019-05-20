@@ -1,0 +1,23 @@
+.box {
+  // Temp
+  // border: 1px solid $gray-4;
+
+  padding: 8px;
+  border-radius: 3px;
+  transition: ease-in 1ms all;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none !important;
+  color: inherit;
+
+  &:hover {
+    box-shadow: 0 0 0 3px rgba($gray-5, 0.2);
+  }
+
+  &.box-link {
+
+    &:active {
+      background-color: $gray-1;
+    }
+  }
+}

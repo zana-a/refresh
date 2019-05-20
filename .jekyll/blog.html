@@ -5,13 +5,30 @@ permalink: "/blog/"
 
 <h1>Blog</h1>
 
-{% for post in site.posts %}
-  <div>
-    <a href="{{ post.url }}" class="btn btn-link btn-black">{{ post.title }}</a>
-    <br>
-    <small><i>{{ post.date | date_to_string }}</i></small>
-    <p>
-      {{ post.excerpt }}
-    </p>
+<div style="display: flex;">
+  <div style="margin: 10px; width: 300px;">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}"  class="box box-link">
+        <h1>{{ post.title }}</h1>
+        <small style="display: block;"><i>{{ post.date | date_to_string }}</i></small>
+        <br>
+        <p>
+          {{ post.excerpt }}
+        </p>
+      </a>
+    {% endfor %}
   </div>
-{% endfor %}
+
+  <div style="margin: 10px; width: 300px;">
+    {% for post in site.posts %}
+      <div class="box">
+        <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+        <small style="display: block;"><i>{{ post.date | date_to_string }}</i></small>
+        <br>
+        <p>
+          {{ post.excerpt }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
+</div>

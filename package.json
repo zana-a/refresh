@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "removeDest": "rm -Rf dest && rm -Rf docs/assets/css",
-    "src:build": "node-sass src -o docs/.jekyll/assets/css --indent-width=2 --output-style=expanded",
-    "src:serve": "node-sass src -o docs/.jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
+    "removeDest": "rm -Rf dest && rm -Rf ./jekyll/assets/css",
+    "src:build": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded",
+    "src:serve": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
     "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc",
     "docs:build": "jekyll build --source .jekyll --destination docs",
     "docs:serve": "jekyll serve --source .jekyll --destination docs"
