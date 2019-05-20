@@ -7,7 +7,8 @@
     "removeDest": "rm -Rf dest && rm -Rf docs/assets/css",
     "dev:build": "node-sass src -o docs/.jekyll/assets/css --indent-width=2 --output-style=expanded",
     "dev:watchSrc": "node-sass src -o docs/.jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
-    "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc"
+    "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc",
+    "docs:build": "jekyll build --source .jekyll --destination docs"
   },
   "keywords": [],
   "author": "",
