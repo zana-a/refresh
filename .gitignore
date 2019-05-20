@@ -1,5 +1,6 @@
 .c9
 .cache
+.sass-cache
 
 node_modules
 _site
