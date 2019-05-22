@@ -5,3 +5,7 @@
 node_modules/
 docs/
 _site/
+
+Gemfile.lock
+.prettierignore
+.gitignore
