@@ -11,7 +11,12 @@
     />
     <link
       rel="stylesheet"
-      href="http://localhost:4000/assets/css/refresh.css"
+      href="/assets/css/refresh.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://zana-a.github.io/refresh/assets/css/refresh.css"
     />
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -20,58 +25,57 @@
   <body>
     <header>
       <div
-        style="background-image: linear-gradient(to right, #434343 0%, black 100%);"
-      >
-        <div
-          style="justify-content: flex-end; padding: 10px; margin: 0 auto; max-width: 1200px; display: flex;"
+  style="background-image: linear-gradient(to right, #434343 0%, black 100%);"
+>
+  <div
+    style="justify-content: flex-end; padding: 10px; margin: 0 auto; max-width: 1200px; display: flex;"
+  >
+    <div style="width: 100%; display: flex; align-items: center;">
+      <a href="#" class="btn btn-black btn-link" style="border: 0 !important;">
+        <i data-feather="droplet" style="stroke: white;"></i>
+      </a>
+    </div>
+    <ul
+      style="align-items: center; list-style-type: none; display: flex; margin: 0; padding: 0; margin-right: 20px;"
+    >
+      <li style="padding-right: 10px;">
+        <a
+          href="/quick-start/"
+          class="btn btn-link btn-white"
+          style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
+          >Quick Start</a
         >
-          <div style="width: 100%; display: flex; align-items: center;">
-            <a
-              href="#"
-              class="btn btn-black btn-link"
-              style="border: 0 !important;"
-            >
-              <i data-feather="droplet" style="stroke: white;"></i>
-            </a>
-          </div>
-          <ul
-            style="align-items: center; list-style-type: none; display: flex; margin: 0; padding: 0; margin-right: 20px;"
-          >
-            <li style="padding-right: 10px;">
-              <a
-                href="http://localhost:4000/quick-start/"
-                class="btn btn-link btn-white"
-                style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
-                >Quick Start</a
-              >
-            </li>
-            <li style="padding-right: 10px;">
-              <a
-                href="http://localhost:4000/docs/"
-                class="btn btn-link btn-white"
-                style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
-                >Docs</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://localhost:4000/blog/"
-                class="btn btn-link btn-white"
-                style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
-                >Blog</a
-              >
-            </li>
-          </ul>
-          <a
-            href="https://github.com/zana-a/refresh"
-            class="btn btn-outline btn-white"
-          >
-            <span style="margin-right: 8px;">Repository</span>
-            <i data-feather="github"></i>
-          </a>
-        </div>
-      </div>
+      </li>
+      <li style="padding-right: 10px;">
+        <a
+          href="/docs/"
+          class="btn btn-link btn-white"
+          style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
+          >Docs</a
+        >
+      </li>
+      <li>
+        <a
+          href="/blog/"
+          class="btn btn-link btn-white"
+          style="border: 0 !important; text-decoration: none; font-size: 14px; display: flex;"
+          >Blog</a
+        >
+      </li>
+    </ul>
+    <a
+      href="https://github.com/zana-a/refresh"
+      class="btn btn-outline btn-white"
+    >
+      <span style="margin-right: 8px;">Repository</span>
+      <i data-feather="github"></i>
+    </a>
+  </div>
+</div>
+
     </header>
+
+    
 
     <script>
       feather.replace();

@@ -9,7 +9,9 @@
     "src:serve": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
     "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc",
     "docs:build": "jekyll build --source .jekyll --destination docs",
-    "docs:serve": "jekyll serve --source .jekyll --destination docs"
+    "docs:serve": "jekyll serve --source .jekyll --destination docs",
+    "format": "npx prettier \"./**/*.*\" --write",
+    "prime": "npm run docs:build && npm run src:build && git add . && git status"
   },
   "keywords": [],
   "author": "",

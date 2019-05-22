@@ -4,7 +4,7 @@
 
   padding: 8px;
   border-radius: 3px;
-  transition: ease-in 1ms all;
+  transition: box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
   text-decoration: none !important;
