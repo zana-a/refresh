@@ -30,10 +30,10 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($color-effect, 0.2);
+    box-shadow: 0 0 0 3px rgba($color-type, 0.2) !important;
   }
 
-  // icon control { supporting feather icons }
+  // icon control (supporting feather icons)
   svg {
     width: 20px;
     height: 20px;
