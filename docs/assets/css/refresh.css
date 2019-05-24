@@ -499,7 +499,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  color: #101010;
+  color: #495057;
   font-weight: 100;
 }
 
@@ -522,7 +522,7 @@ code {
  * Elements.
  * Singular modules.
  */
-/*
+/**
  * Basic Buttons. 
  * Has 3 different falvours. 
  * Needs improving but this works fine for now.
@@ -1636,20 +1636,22 @@ code {
   color: #343a40;
 }
 
+/**
+ * Basic Box. 
+ * A simple wrapper to be used to encapsulate content.
+ */
 .box {
-  padding: 8px;
   border-radius: 3px;
   transition: box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
-  text-decoration: none !important;
-  color: inherit;
+  color: #adb5bd !important;
 }
 
 .box:hover {
   box-shadow: 0 0 0 3px rgba(173, 181, 189, 0.2);
 }
 
-.box.box-link:active {
-  background-color: #f1f3f5;
+.box:focus {
+  box-shadow: 0 0 0 4px rgba(173, 181, 189, 0.4);
 }

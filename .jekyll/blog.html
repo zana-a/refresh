@@ -5,39 +5,27 @@ permalink: '/blog/'
 
 <h1>Blog</h1>
 
-<div style="display: flex;">
-  <div style="margin: 10px; width: 300px;">
-    {% for post in site.posts %}
-    <a
-      href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
-      class="box box-link"
+<div style="margin: 0 auto; width: 1200px;">
+  {% for post in site.posts %}
+  <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" class="box">
+    <h1>{{ post.title }}</h1>
+    <small style="display: block;"
+      ><i>{{ post.date | date_to_string }}</i></small
     >
-      <h1>{{ post.title }}</h1>
-      <small style="display: block;"
-        ><i>{{ post.date | date_to_string }}</i></small
-      >
-      <br />
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </a>
-    {% endfor %}
-  </div>
-
-  <div style="margin: 10px; width: 300px;">
-    {% for post in site.posts %}
-    <div class="box">
-      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
-        ><h1>{{ post.title }}</h1></a
-      >
-      <small style="display: block;"
-        ><i>{{ post.date | date_to_string }}</i></small
-      >
-      <br />
-      <p>
-        {{ post.excerpt }}
-      </p>
-    </div>
-    {% endfor %}
+    <br />
+    <p>
+      {{ post.excerpt }}
+    </p>
+  </a>
+  {% endfor %}
+  <br />
+  <div class="box">
+    <h1>Heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet provident
+      minus excepturi consectetur vel eaque laudantium? Sit perferendis vitae
+      cupiditate sed debitis, fugiat tenetur temporibus consequuntur numquam
+      amet incidunt quas.
+    </p>
   </div>
 </div>
