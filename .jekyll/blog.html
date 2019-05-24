@@ -8,7 +8,10 @@ permalink: '/blog/'
 <div style="display: flex;">
   <div style="margin: 10px; width: 300px;">
     {% for post in site.posts %}
-    <a href="{{ post.url }}" class="box box-link">
+    <a
+      href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+      class="box box-link"
+    >
       <h1>{{ post.title }}</h1>
       <small style="display: block;"
         ><i>{{ post.date | date_to_string }}</i></small
@@ -24,7 +27,9 @@ permalink: '/blog/'
   <div style="margin: 10px; width: 300px;">
     {% for post in site.posts %}
     <div class="box">
-      <a href="{{ post.url }}"><h1>{{ post.title }}</h1></a>
+      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}"
+        ><h1>{{ post.title }}</h1></a
+      >
       <small style="display: block;"
         ><i>{{ post.date | date_to_string }}</i></small
       >
