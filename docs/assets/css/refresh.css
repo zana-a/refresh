@@ -2093,6 +2093,7 @@ code {
   flex-direction: column;
   color: #adb5bd !important;
   text-decoration: none;
+  background-color: #ffffff;
 }
 
 .box:hover {
