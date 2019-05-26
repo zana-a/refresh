@@ -1,38 +1,66 @@
 /*
  * Basic Forms
  * Support for forms such as text inputs.
- * 
- * Note:
- * 1. Does not contain support for form type button. 
- *    Classes such as ``.btn`` can help change the look. 
  */
 
+@import './lib/base';
+
 .input {
-  display: inline-block;
-  position: relative;
-  line-height: 20px;
-  font-size: 14px;
-  border: 2px solid $gray-4;
-  border-radius: 2px;
-  color: $gray-6;
-  font-weight: 400;
-  text-decoration: none !important;
-  background-color: transparent;
-  box-sizing: border-box;
-  cursor: text;
-  outline: 0;
-  padding: 6px 12px;
-  vertical-align: middle;
-  white-space: nowrap;
-  min-width: 15px;
+  @include input-base($gray-6, $gray-8);
+}
 
-  &:hover {
-    border-color: $gray-6 !important;
-  }
+.input-black {
+  @include input-base($gray-6, $gray-8);
+}
 
-  &:focus {
-    box-shadow: 0 0 0 3px rgba($gray-6, 0.2);
-    border-color: $gray-8 !important;
-    color: $gray-8;
-  }
+.input-white {
+  @include input-base($gray-2, $gray-4);
+}
+
+.input-red {
+  @include input-base($red-6, $red-8);
+}
+
+.input-pink {
+  @include input-base($pink-6, $pink-8);
+}
+
+.input-grape {
+  @include input-base($grape-6, $grape-8);
+}
+
+.input-violet {
+  @include input-base($violet-6, $violet-8);
+}
+
+.input-indigo {
+  @include input-base($indigo-6, $indigo-8);
+}
+
+.input-blue {
+  @include input-base($blue-6, $blue-8);
+}
+
+.input-cyan {
+  @include input-base($cyan-6, $cyan-8);
+}
+
+.input-teal {
+  @include input-base($teal-6, $teal-8);
+}
+
+.input-green {
+  @include input-base($green-6, $green-8);
+}
+
+.input-lime {
+  @include input-base($lime-6, $lime-8);
+}
+
+.input-yellow {
+  @include input-base($yellow-6, $yellow-8);
+}
+
+.input-orange {
+  @include input-base($orange-6, $orange-8);
 }
