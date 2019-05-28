@@ -1,7 +1,7 @@
 <div>
   <div style="text-align: center;">
     <br /><br />
-    <h1 style="border: 0">REFRESH</h1>
+    <span style="font-size: 46px;">Refresh</span>
   </div>
 </div>
 
