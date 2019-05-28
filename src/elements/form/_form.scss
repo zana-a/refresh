@@ -64,3 +64,12 @@
 .input-orange {
   @include input-base($orange-6, $orange-8);
 }
+
+//
+
+// @each $a, $b in $color-list {
+//   .profile-link--#{$b}:focus,
+//   .profile-link--#{$b}:hover {
+//     background: $b;
+//   }
+// }

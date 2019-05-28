@@ -8,5 +8,6 @@
 6. ~~Button has problem with focus state. No box shadow. **fixed**~~
 7. Add Aliases for input and buttons.
 8. ~~Links should not go to localhost:4000 from github pages. **fixed**~~
+9. Button types should not rely on colors.
 
    _npm run prime should be run and jekyll server turned off before pushing changes_
