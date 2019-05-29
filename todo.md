@@ -10,6 +10,9 @@ Moving over to Githubs boards soon.
 4. Buttons should have sizes.
 5. Headings should be bigger.
 6. ~~Button has problem with focus state. No box shadow. **fixed**~~
+
+   _works in chrome browser but not in safari_
+
 7. Add Aliases for input and buttons.
 8. ~~Links should not go to localhost:4000 from github pages. **fixed**~~
 9. Button types should not rely on colors.
