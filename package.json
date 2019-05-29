@@ -1,23 +1,28 @@
 {
   "name": "workspace",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "removeDest": "rm -Rf dest && rm -Rf ./jekyll/assets/css",
-    "src:build": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded",
-    "src:serve": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
-    "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc",
-    "docs:build": "jekyll build --source .jekyll --destination docs",
-    "docs:serve": "jekyll serve --source .jekyll --destination docs",
+    "src:build": "npx node-sass src -o \"./jekyll/assets/css\" --indent-width=2 --output-style=expanded && npx postcss \"./jekyll/assets/css/refresh.css\" --use autoprefixer -d \"./jekyll/assets/css\"",
+    "src:serve": "npx nodemon -e \"scss\" -x \"npm run src:build\"",
+    "docs:build": "jekyll build --source jekyll --destination docs",
+    "docs:serve": "jekyll serve --source jekyll --destination docs",
     "format": "npx prettier \"./**/*.*\" --write",
-    "prime": "npm run docs:build && npm run src:build && git add . && git status"
+    "prime": "npm run clean && npx node-sass src -o \"./bin\" --indent-width=2 --output-style=expanded && npx postcss \"./bin/refresh.css\" --use autoprefixer -d \"./bin\" && npx postcss \"./bin/refresh.css\" > \"./bin/refresh.min.css\" -u cssnano && npm run docs:build && npm run src:build && git add . && git status",
+    "clean": "npx rimraf \"./bin\" \"./docs\"",
+    "start": "npx concurrently --kill-others \"npm run src:serve\" \"npm run docs:serve\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10",
     "node-sass": "^4.12.0",
-    "prettier": "^1.17.1"
+    "postcss-cli": "^6.1.2",
+    "prettier": "^1.17.1",
+    "rimraf": "^2.6.3"
   }
 }
