@@ -1,0 +1,32 @@
+/**
+ * Banner
+ */
+
+.banner {
+  background-color: $gray-8;
+  padding: 16px;
+  color: white;
+
+  .banner-title {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .banner-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}

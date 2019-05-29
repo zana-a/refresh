@@ -19,6 +19,8 @@ Moving over to Githubs boards soon.
 
    _npm run prime should be run and jekyll server turned off before pushing changes_
 
+10. Some items on button are repeated.
+
 ---
 
 - base
