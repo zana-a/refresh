@@ -3,10 +3,6 @@
  */
 
 .banner {
-  background-color: $gray-8;
-  padding: 16px;
-  color: white;
-
   .banner-title {
     font-size: 64px;
     font-weight: 500;
@@ -28,5 +24,15 @@
     &:last-child {
       margin-bottom: 0 !important;
     }
+  }
+
+  .container {
+    padding: 32px 0;
+  }
+}
+
+.container {
+  .banner {
+    padding: 32px;
   }
 }
