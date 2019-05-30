@@ -98,7 +98,10 @@ h6 {
 - clearfix
 - close
 - color
-- background
+
+  - background
+  - text
+
 - display
 - flex
 - float
@@ -107,7 +110,6 @@ h6 {
 - shadows
 - sizing
 - spacing
-- text
 - visibility
 - border
 

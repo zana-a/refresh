@@ -1,0 +1,15 @@
+@each $color_color-list, $color_list-color in $color-list {
+  @each $color_number, $color_color in $color_color-list {
+    .bg-#{$color_list-color}-#{$color_number} {
+      background-color: map-get($color_color-list, $color_number) !important;
+    }
+  }
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-white {
+  background-color: $white !important;
+}
