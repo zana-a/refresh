@@ -5,28 +5,28 @@ Moving over to Githubs boards soon.
 # TODO
 
 1. Move npm commands to it's own seperate folder called bin.
-2. ~~Fix `.box` issues. **fixed**~~
-3. ~~Add color to input forms. **fixed**~~
+2. ~Fix `.box` issues. **fixed**~
+3. ~Add color to input forms. **fixed**~
 4. Buttons should have sizes.
 5. Headings should be bigger.
-6. ~~Button has problem with focus state. No box shadow. **fixed**~~
+6. ~Button has problem with focus state. No box shadow. **fixed**~
 
    _works in chrome browser but not in safari_
 
 7. Add Aliases for input and buttons.
-8. ~~Links should not go to localhost:4000 from github pages. **fixed**~~
+8. ~Links should not go to localhost:4000 from github pages. **fixed**~
 9. Button types should not rely on colors.
 
    _npm run prime should be run and jekyll server turned off before pushing changes_
 
-10. Some items on button are repeated.
+10. Some properties on button are repeated.
 
 ---
 
 - base
 
-- ~~normalize~~
-- ~~typographgy~~
+- ~normalize~
+- ~typographgy~
 
   - change heading sizes
   - change heading weight
@@ -34,13 +34,13 @@ Moving over to Githubs boards soon.
 
 - elements // Singular Components
 
-- ~~button~~
+- ~button~
 
-  - ~~Add colors~~
+  - ~Add colors~
   - Add sizes
   - Add better handling of size and color generation.
 
-- ~~form~~
+- ~form~
 
 - tooltip
 - badge
@@ -97,17 +97,17 @@ h6 {
 
 - clearfix
 - close
-- color
+- ~color~
 
-  - background
-  - text
+  - ~background~
+  - ~text~
 
 - display
 - flex
 - float
 - overflow
 - position
-- shadows
+- shadows **doing**
 - sizing
 - spacing
 - visibility
