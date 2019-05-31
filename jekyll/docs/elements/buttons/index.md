@@ -1,6 +1,6 @@
 ---
 layout: docs
-permalink: '/docs/elements/buttons'
+permalink: '/docs/elements/buttons/'
 ---
 
 <div

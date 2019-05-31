@@ -113,4 +113,4 @@ h6 {
 - visibility
 - border
 
-1. marketing // Extra things for atoms, elements, components
+- marketing // Extra things for atoms, elements, components

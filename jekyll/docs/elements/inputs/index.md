@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-    <link
-      rel="stylesheet"
-      href="https://zana-a.github.io/refresh/assets/css/refresh.css"
-    />
-
-    <script src="https://unpkg.com/feather-icons"></script>
-
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div style="border-bottom: 1px solid #ccc;">
-  <div class="container">
-    <div style="display: flex; padding: 12px 0; align-items: center">
-      <div style="flex: 1;">
-        <a
-          href="https://zana-a.github.io/refresh/"
-          style="margin-right: 8px; text-decoration: none; color: #444;"
-        >
-          Home
-        </a>
-        <a
-          href="https://zana-a.github.io/refresh/quick-start"
-          style="margin-right: 8px; text-decoration: none; color: #444;"
-        >
-          Quick Start
-        </a>
-        <a
-          href="https://zana-a.github.io/refresh/docs"
-          style="margin-right: 8px; text-decoration: none; color: #444;"
-        >
-          Docs
-        </a>
-      </div>
-      <div style="display: flex; justify-content: flex-end;">
-        <a href="#" class="btn btn-outline btn-black">
-          Github <i data-feather="github" style="padding-left: 8px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </header>
-
-    <h1>Quick Start</h1>
+---
+layout: docs
+permalink: '/docs/elements/inputs/'
+---
 
 <div style="padding: 20px;">
   <form action="#" style="padding: 20px;">
@@ -222,10 +173,3 @@
   </form>
   <br />
 </div>
-
-
-    <script>
-      feather.replace();
-    </script>
-  </body>
-</html>

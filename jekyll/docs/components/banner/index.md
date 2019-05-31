@@ -1,10 +1,11 @@
 ---
-layout: default
-permalink: '/'
+layout: docs
+permalink: '/docs/components/banner/'
 ---
 
-<div class="banner">
-  <div class="container">
+<div class="container">
+  <br />
+  <div class="banner">
     <div class="banner-title">
       <span>Refresh</span>
     </div>
