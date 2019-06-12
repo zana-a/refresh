@@ -1,0 +1,29 @@
+$COLORS: (
+  "white": #ffffff,
+  "black": #000000,
+  "gray": #adb5bd,
+  "red": #ff6b6b,
+  "pink": #ff6b6b,
+  "grape": #cc5de8,
+  "violet": #845ef7,
+  "indigo": #5c7cfa,
+  "blue": #339af0,
+  "cyan": #22b8cf,
+  "teal": #20c997,
+  "green": #51cf66,
+  "lime": #94d82d,
+  "yellow": #fcc419,
+  "orange": #ff922b,
+);
+
+@each $_name, $_hex in $COLORS {
+  .bg-#{$_name} {
+    background-color: $_hex;
+  }
+}
+
+@each $_name, $_hex in $COLORS {
+  .tx-#{$_name} {
+    color: $_hex;
+  }
+}

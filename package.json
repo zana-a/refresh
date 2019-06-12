@@ -1,23 +1,20 @@
 {
-  "name": "workspace",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "lemonade",
+  "version": "1.0.0",
+  "description": "A css framework.",
+  "main": "main.js",
   "scripts": {
-    "start": "echo \"To edit.\""
+    "format": "prettier ./*/**.{js,jsx,scss,sass} --config prettierrc.json --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zana-a/refresh.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^9.5.1",
-    "concurrently": "^4.1.0",
-    "cssnano": "^4.1.10",
-    "delay-cli": "^1.1.0",
-    "move-cli": "^1.2.1",
-    "node-sass": "^4.12.0",
-    "postcss-cli": "^6.1.2",
-    "prettier": "^1.17.1",
-    "rimraf": "^2.6.3"
-  }
+  "bugs": {
+    "url": "https://github.com/zana-a/refresh/issues"
+  },
+  "homepage": "https://github.com/zana-a/refresh#readme"
 }
