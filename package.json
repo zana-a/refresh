@@ -1,20 +1,23 @@
 {
   "name": "workspace",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "removeDest": "rm -Rf dest && rm -Rf ./jekyll/assets/css",
-    "src:build": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded",
-    "src:serve": "node-sass src -o .jekyll/assets/css --indent-width=2 --output-style=expanded --watch",
-    "dev": "npm run removeDest && npm run dev:build && npm run dev:watchSrc",
-    "docs:build": "jekyll build --source .jekyll --destination docs",
-    "docs:serve": "jekyll serve --source .jekyll --destination docs"
+    "start": "echo \"To edit.\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "autoprefixer": "^9.5.1",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10",
+    "delay-cli": "^1.1.0",
+    "move-cli": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.2",
+    "prettier": "^1.17.1",
+    "rimraf": "^2.6.3"
   }
 }

@@ -1,0 +1,31 @@
+@mixin input-base($input-color, $input-effect) {
+  display: inline-block;
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
+  border: 2px solid $input-effect;
+  border-radius: 5em;
+  color: $input-effect;
+  font-weight: 400;
+  text-decoration: none !important;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: text;
+  outline: 0;
+  padding: 6px 12px;
+  vertical-align: middle;
+  white-space: nowrap;
+  min-width: 200px;
+  transition: box-shadow 0.2s cubic-bezier(0, 0, 0.2, 1);
+
+  &:hover {
+    border-color: $input-color !important;
+    color: $input-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($input-color, 0.4);
+    border-color: $input-effect !important;
+    color: $input-effect;
+  }
+}

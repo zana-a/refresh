@@ -1,6 +1,4 @@
 @mixin button-link-type($color-sign, $color-effect, $color-type) {
-  @include button-base($color-sign, $color-effect, $color-type);
-
   color: $color-type !important;
   background-color: transparent !important;
   padding: 0 !important;

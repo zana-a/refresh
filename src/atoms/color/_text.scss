@@ -1,0 +1,15 @@
+@each $color_color-list, $color_list-color in $color-list {
+  @each $color_number, $color_color in $color_color-list {
+    .t-#{$color_list-color}-#{$color_number} {
+      color: map-get($color_color-list, $color_number) !important;
+    }
+  }
+}
+
+.t-black {
+  color: $black !important;
+}
+
+.t-white {
+  color: $white !important;
+}

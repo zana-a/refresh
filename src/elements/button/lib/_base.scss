@@ -6,7 +6,7 @@
   line-height: 20px;
   font-size: 14px;
   border: 2px solid $color-type;
-  border-radius: 2px;
+  border-radius: 4px;
   color: $color-type;
   font-weight: 600;
   text-decoration: none !important;
@@ -30,10 +30,10 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($color-effect, 0.2);
+    box-shadow: 0 0 0 3px rgba($color-type, 0.4) !important;
   }
 
-  // icon control { supporting feather icons }
+  // icon control (supporting feather icons)
   svg {
     width: 20px;
     height: 20px;
