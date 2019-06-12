@@ -4,17 +4,21 @@
   "description": "A css framework.",
   "main": "main.js",
   "scripts": {
-    "format": "prettier ./*/**.{js,jsx,scss,sass} --config prettierrc.json --write"
+    "format": "prettier ./*/**.{js,jsx,scss,sass} --config prettierrc.json --write",
+    "start": "sass --watch sass:dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zana-a/refresh.git"
+    "url": "git+https://github.com/zana-a/lemonade.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zana-a/refresh/issues"
+    "url": "https://github.com/zana-a/lemonade/issues"
   },
-  "homepage": "https://github.com/zana-a/refresh#readme"
+  "homepage": "https://github.com/zana-a/lemonade#readme",
+  "dependencies": {
+    "bourbon": "^5.1.0"
+  }
 }

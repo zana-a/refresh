@@ -1,3 +1,6 @@
+// ? tf is this, why does it not import directly at "bourbon"
+@import "../node_modules/bourbon/core/_bourbon.scss";
+
 $COLORS: (
   "white": #ffffff,
   "black": #000000,
@@ -16,6 +19,139 @@ $COLORS: (
   "orange": #ff922b,
 );
 
+$COLORS_SHADE: (
+  "gray-1": tint(map-get($COLORS, "gray"), 80%),
+  "gray-2": tint(map-get($COLORS, "gray"), 60%),
+  "gray-3": tint(map-get($COLORS, "gray"), 40%),
+  "gray-4": tint(map-get($COLORS, "gray"), 20%),
+  "gray-5": map-get($COLORS, "gray"),
+  "gray-6": shade(map-get($COLORS, "gray"), 20%),
+  "gray-7": shade(map-get($COLORS, "gray"), 30%),
+  "gray-8": shade(map-get($COLORS, "gray"), 40%),
+  "gray-9": shade(map-get($COLORS, "gray"), 50%),
+
+  "red-1": tint(map-get($COLORS, "red"), 80%),
+  "red-2": tint(map-get($COLORS, "red"), 60%),
+  "red-3": tint(map-get($COLORS, "red"), 40%),
+  "red-4": tint(map-get($COLORS, "red"), 20%),
+  "red-5": map-get($COLORS, "red"),
+  "red-6": shade(map-get($COLORS, "red"), 20%),
+  "red-7": shade(map-get($COLORS, "red"), 30%),
+  "red-8": shade(map-get($COLORS, "red"), 40%),
+  "red-9": shade(map-get($COLORS, "red"), 50%),
+
+  "pink-1": tint(map-get($COLORS, "pink"), 80%),
+  "pink-2": tint(map-get($COLORS, "pink"), 60%),
+  "pink-3": tint(map-get($COLORS, "pink"), 40%),
+  "pink-4": tint(map-get($COLORS, "pink"), 20%),
+  "pink-5": map-get($COLORS, "pink"),
+  "pink-6": shade(map-get($COLORS, "pink"), 20%),
+  "pink-7": shade(map-get($COLORS, "pink"), 30%),
+  "pink-8": shade(map-get($COLORS, "pink"), 40%),
+  "pink-9": shade(map-get($COLORS, "pink"), 50%),
+
+  "grape-1": tint(map-get($COLORS, "grape"), 80%),
+  "grape-2": tint(map-get($COLORS, "grape"), 60%),
+  "grape-3": tint(map-get($COLORS, "grape"), 40%),
+  "grape-4": tint(map-get($COLORS, "grape"), 20%),
+  "grape-5": map-get($COLORS, "grape"),
+  "grape-6": shade(map-get($COLORS, "grape"), 20%),
+  "grape-7": shade(map-get($COLORS, "grape"), 30%),
+  "grape-8": shade(map-get($COLORS, "grape"), 40%),
+  "grape-9": shade(map-get($COLORS, "grape"), 50%),
+
+  "violet-1": tint(map-get($COLORS, "violet"), 80%),
+  "violet-2": tint(map-get($COLORS, "violet"), 60%),
+  "violet-3": tint(map-get($COLORS, "violet"), 40%),
+  "violet-4": tint(map-get($COLORS, "violet"), 20%),
+  "violet-5": map-get($COLORS, "violet"),
+  "violet-6": shade(map-get($COLORS, "violet"), 20%),
+  "violet-7": shade(map-get($COLORS, "violet"), 30%),
+  "violet-8": shade(map-get($COLORS, "violet"), 40%),
+  "violet-9": shade(map-get($COLORS, "violet"), 50%),
+
+  "indigo-1": tint(map-get($COLORS, "indigo"), 80%),
+  "indigo-2": tint(map-get($COLORS, "indigo"), 60%),
+  "indigo-3": tint(map-get($COLORS, "indigo"), 40%),
+  "indigo-4": tint(map-get($COLORS, "indigo"), 20%),
+  "indigo-5": map-get($COLORS, "indigo"),
+  "indigo-6": shade(map-get($COLORS, "indigo"), 20%),
+  "indigo-7": shade(map-get($COLORS, "indigo"), 30%),
+  "indigo-8": shade(map-get($COLORS, "indigo"), 40%),
+  "indigo-9": shade(map-get($COLORS, "indigo"), 50%),
+
+  "blue-1": tint(map-get($COLORS, "blue"), 80%),
+  "blue-2": tint(map-get($COLORS, "blue"), 60%),
+  "blue-3": tint(map-get($COLORS, "blue"), 40%),
+  "blue-4": tint(map-get($COLORS, "blue"), 20%),
+  "blue-5": map-get($COLORS, "blue"),
+  "blue-6": shade(map-get($COLORS, "blue"), 20%),
+  "blue-7": shade(map-get($COLORS, "blue"), 30%),
+  "blue-8": shade(map-get($COLORS, "blue"), 40%),
+  "blue-9": shade(map-get($COLORS, "blue"), 50%),
+
+  "cyan-1": tint(map-get($COLORS, "cyan"), 80%),
+  "cyan-2": tint(map-get($COLORS, "cyan"), 60%),
+  "cyan-3": tint(map-get($COLORS, "cyan"), 40%),
+  "cyan-4": tint(map-get($COLORS, "cyan"), 20%),
+  "cyan-5": map-get($COLORS, "cyan"),
+  "cyan-6": shade(map-get($COLORS, "cyan"), 20%),
+  "cyan-7": shade(map-get($COLORS, "cyan"), 30%),
+  "cyan-8": shade(map-get($COLORS, "cyan"), 40%),
+  "cyan-9": shade(map-get($COLORS, "cyan"), 50%),
+
+  "teal-1": tint(map-get($COLORS, "teal"), 80%),
+  "teal-2": tint(map-get($COLORS, "teal"), 60%),
+  "teal-3": tint(map-get($COLORS, "teal"), 40%),
+  "teal-4": tint(map-get($COLORS, "teal"), 20%),
+  "teal-5": map-get($COLORS, "teal"),
+  "teal-6": shade(map-get($COLORS, "teal"), 20%),
+  "teal-7": shade(map-get($COLORS, "teal"), 30%),
+  "teal-8": shade(map-get($COLORS, "teal"), 40%),
+  "teal-9": shade(map-get($COLORS, "teal"), 50%),
+
+  "green-1": tint(map-get($COLORS, "green"), 80%),
+  "green-2": tint(map-get($COLORS, "green"), 60%),
+  "green-3": tint(map-get($COLORS, "green"), 40%),
+  "green-4": tint(map-get($COLORS, "green"), 20%),
+  "green-5": map-get($COLORS, "green"),
+  "green-6": shade(map-get($COLORS, "green"), 20%),
+  "green-7": shade(map-get($COLORS, "green"), 30%),
+  "green-8": shade(map-get($COLORS, "green"), 40%),
+  "green-9": shade(map-get($COLORS, "green"), 50%),
+
+  "lime-1": tint(map-get($COLORS, "lime"), 80%),
+  "lime-2": tint(map-get($COLORS, "lime"), 60%),
+  "lime-3": tint(map-get($COLORS, "lime"), 40%),
+  "lime-4": tint(map-get($COLORS, "lime"), 20%),
+  "lime-5": map-get($COLORS, "lime"),
+  "lime-6": shade(map-get($COLORS, "lime"), 20%),
+  "lime-7": shade(map-get($COLORS, "lime"), 30%),
+  "lime-8": shade(map-get($COLORS, "lime"), 40%),
+  "lime-9": shade(map-get($COLORS, "lime"), 50%),
+
+  "yellow-1": tint(map-get($COLORS, "yellow"), 80%),
+  "yellow-2": tint(map-get($COLORS, "yellow"), 60%),
+  "yellow-3": tint(map-get($COLORS, "yellow"), 40%),
+  "yellow-4": tint(map-get($COLORS, "yellow"), 20%),
+  "yellow-5": map-get($COLORS, "yellow"),
+  "yellow-6": shade(map-get($COLORS, "yellow"), 20%),
+  "yellow-7": shade(map-get($COLORS, "yellow"), 30%),
+  "yellow-8": shade(map-get($COLORS, "yellow"), 40%),
+  "yellow-9": shade(map-get($COLORS, "yellow"), 50%),
+
+  "orange-1": tint(map-get($COLORS, "orange"), 80%),
+  "orange-2": tint(map-get($COLORS, "orange"), 60%),
+  "orange-3": tint(map-get($COLORS, "orange"), 40%),
+  "orange-4": tint(map-get($COLORS, "orange"), 20%),
+  "orange-5": map-get($COLORS, "orange"),
+  "orange-6": shade(map-get($COLORS, "orange"), 20%),
+  "orange-7": shade(map-get($COLORS, "orange"), 30%),
+  "orange-8": shade(map-get($COLORS, "orange"), 40%),
+  "orange-9": shade(map-get($COLORS, "orange"), 50%),
+);
+
+
 @each $_name, $_hex in $COLORS {
   .bg-#{$_name} {
     background-color: $_hex;
@@ -25,5 +161,12 @@ $COLORS: (
 @each $_name, $_hex in $COLORS {
   .tx-#{$_name} {
     color: $_hex;
+  }
+}
+
+// SHADES
+@each $_name, $_hex in $COLORS_SHADE {
+  .bgs-#{$_name} {
+    background-color: $_hex;
   }
 }
