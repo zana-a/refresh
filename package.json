@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "format": "prettier ./*/**.{js,jsx,scss,sass,html} --config prettierrc.json --write",
-    "start": "sass --watch sass:dist"
+    "start": "npx node-sass src/ -o dist/"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,11 @@
   "bugs": {
     "url": "https://github.com/zana-a/lemonade/issues"
   },
-  "homepage": "https://github.com/zana-a/lemonade808088880889028309128938aklsjdlasd#readme",
+  "homepage": "https://github.com/zana-a/lemonade#readme",
   "dependencies": {
     "bourbon": "^5.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }

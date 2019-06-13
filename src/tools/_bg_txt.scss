@@ -1,0 +1,13 @@
+/**
+ * This generates background and color classes that can be then used to overide or provide different colors for background and color properties.
+ */
+
+@each $_name, $_hex in $COLORS_SHADES {
+  .bg-#{$_name} {
+    background-color: $_hex !important;
+  }
+
+  .txt-#{$_name} {
+    color: $_hex !important;
+  }
+}
