@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "src:build": "",
-    "src:serve": "",
+    "src:build": "./node_modules/.bin/lessc ./src/lemonade.less ./dist/lemonade.css --autoprefix=\"defaults, last 2 versions\" --clean-css=\"--s1 --advanced --compatibility=ie10\" --lists",
+    "src:serve": "./node_modules/.bin/lessc --lists ./src/lemonade.less ./dist/lemonade.css --autoprefix=\"defaults, last 2 versions\" --clean-css=\"--s1 --advanced --compatibility=ie10\"",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
     "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
-    "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\""
   },
   "repository": {
     "type": "git",
@@ -34,6 +33,7 @@
     "concurrently": "^4.1.0",
     "less": "^3.9.0",
     "less-plugin-autoprefix": "^2.0.0",
+    "less-plugin-clean-css": "^1.5.1",
     "less-plugin-lists": "^1.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
