@@ -1,0 +1,41 @@
+{
+  "name": "lemonade",
+  "version": "1.0.0",
+  "description": "<!-- <p align=\"center\">\r   Lemonade.jpg\r </p> -->",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:build": "",
+    "docs:serve": "",
+    "src:build": "./node_modules/.bin/lessc ./src/lemonade.less ./dist/lemonade.css --lists --autoprefix=\"< 1%, defaults\" -x --source-map",
+    "src:serve": "",
+    "storybook:build": "./node_modules/.bin/build-storybook -c .storybook -o docs",
+    "storybook:serve": "start-storybook",
+    "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zana-a/lemonade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zana-a/lemonade/issues"
+  },
+  "homepage": "https://github.com/zana-a/lemonade#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/react": "^5.1.8",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.0",
+    "less": "^3.9.0",
+    "less-plugin-autoprefix": "^2.0.0",
+    "less-plugin-lists": "^1.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
