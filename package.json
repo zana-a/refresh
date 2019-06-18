@@ -7,6 +7,7 @@
     "src:serve": "./node_modules/.bin/lessc --lists ./src/lemonade.less ./dist/lemonade.css --autoprefix=\"defaults, last 2 versions\" --clean-css=\"--s1 --advanced --compatibility=ie10\"",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
     "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
+    "prime": "npm run src:build && git add . && npm run storybook:build",
     "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\""
   },
   "repository": {
