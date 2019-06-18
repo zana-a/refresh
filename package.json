@@ -1,18 +1,12 @@
 {
-  "name": "lemonade",
-  "version": "1.0.0",
-  "description": "<!-- <p align=\"center\">\r   Lemonade.jpg\r </p> -->",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "name": "lemonade-css",
+  "version": "0.1.0",
+  "description": "",
   "scripts": {
-    "docs:build": "",
-    "docs:serve": "",
-    "src:build": "./node_modules/.bin/lessc ./src/lemonade.less ./dist/lemonade.css --lists --autoprefix=\"< 1%, defaults\" -x --source-map",
+    "src:build": "",
     "src:serve": "",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
-    "storybook:serve": "start-storybook",
+    "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
     "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
