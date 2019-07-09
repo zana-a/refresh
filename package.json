@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "src:build": "./node_modules/.bin/lessc ./src/lemonade.less ./dist/lemonade.css --autoprefix=\"defaults, last 2 versions\" --clean-css=\"--s1 --advanced --compatibility=ie10\" --lists",
-    "src:serve": "./node_modules/.bin/lessc --lists ./src/lemonade.less ./dist/lemonade.css --autoprefix=\"defaults, last 2 versions\" --clean-css=\"--s1 --advanced --compatibility=ie10\"",
+    "src:build": "./node_modules/.bin/grunt less",
+    "src:serve": "",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
     "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
     "prime": "npm run src:build && git add . && npm run storybook:build",
-    "start": "./node_modules/.bin/concurrently --kill-others \"npm run docs:serve\" \"npm run src:serve\""
+    "start": "./node_modules/.bin/concurrently --kill-others \"npm run storybook:serve\" \"npm run src:serve\""
   },
   "repository": {
     "type": "git",
@@ -30,8 +30,11 @@
     "@babel/core": "^7.4.5",
     "@storybook/react": "^5.1.8",
     "@storybook/storybook-deployer": "^2.8.1",
+    "assemble-less": "^0.7.0",
     "babel-loader": "^8.0.6",
     "concurrently": "^4.1.0",
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
     "less": "^3.9.0",
     "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
