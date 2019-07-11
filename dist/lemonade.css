@@ -1,8 +1,14 @@
 html {
-  background-color: blue;
-}
-html {
+  background-color: #00f;
   color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+.container {
+  min-width: 960px;
+  margin: 0 auto
 }
