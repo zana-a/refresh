@@ -1,7 +1,8 @@
-/*! Lemonade 0.0.1 */
 html {
   background-color: blue;
 }
 html {
-  color: red;
+  color: pink;
+  display: flex;
+  flex: 1;
 }
