@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "src:build": "./node_modules/.bin/grunt watch",
+    "src:build": "./node_modules/.bin/gulp",
     "src:serve": "",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
     "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
