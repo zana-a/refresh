@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zana-a/lemonade.git"
+    "url": "https://github.com/zana-a/lemonade.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/zana-a/lemonade/issues"
   },
@@ -34,6 +34,7 @@
     "babel-loader": "^8.0.6",
     "concurrently": "^4.1.0",
     "gulp": "^4.0.2",
+    "gulp-append-prepend": "^1.0.8",
     "gulp-clean-css": "^4.2.0",
     "gulp-cli": "^2.2.0",
     "gulp-less": "^4.0.1",
