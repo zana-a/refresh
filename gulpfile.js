@@ -1,11 +1,14 @@
-let fs = require("fs");
-let gulp = require("gulp");
-let less = require("gulp-less");
-let lessAutoprefixer = require("less-plugin-autoprefix");
-let lessLists = require("less-plugin-lists");
-let sourcemaps = require("gulp-sourcemaps");
-let cleanCSS = require("gulp-clean-css");
-let gap = require("gulp-append-prepend");
+const fs = require("fs");
+const gulp = require("gulp");
+const less = require("gulp-less");
+const lessAutoprefixer = require("less-plugin-autoprefix");
+const lessLists = require("less-plugin-lists");
+const sourcemaps = require("gulp-sourcemaps");
+const gap = require("gulp-append-prepend");
+const color = require("gulp-color");
+const csso = require("gulp-csso");
+const prettier = require("gulp-prettier");
+const rename = require("gulp-rename");
 
 const pacakgeData = JSON.parse(fs.readFileSync("./package.json"));
 
@@ -21,13 +24,11 @@ const autoprefixer = new lessAutoprefixer({
   ]
 });
 
-const cleanCSSOptionsDev = {
-  level: 2,
-  format: "beautify"
-};
-
-const cleanCSSOptionsProd = {
-  level: 2
+const cssoOptions = {
+  restructure: true,
+  sourceMap: true,
+  debug: false,
+  forceMediaMerge: true
 };
 
 const metaData = {
@@ -35,27 +36,53 @@ const metaData = {
     src: "./src/lemonade.less",
     dist: "./dist"
   },
-  fileHeader: `/*!\n * ${pacakgeData.name} (${pacakgeData.version}) ~ ${pacakgeData.license}\n * ${pacakgeData.repository.url}\n */`
+  // Prepends header to css output files.
+  // Managed by package.json
+  fileHeader: `/*!\n * ${pacakgeData.name} (${pacakgeData.version}) | ${pacakgeData.license}\n * repo: ${pacakgeData.repository.url}\n */`
 };
 
 gulp.task("less:prod", async () => {
   return gulp
     .src(metaData.locations.src)
     .pipe(gap.prependText(metaData.fileHeader))
-    .pipe(less({ plugins: [autoprefixer, lessLists] }))
     .pipe(sourcemaps.init())
-    .pipe(
-      cleanCSS(cleanCSSOptionsProd, details => {
-        console.log(
-          `\nOriginal Size: ${details.name}: ${details.stats.originalSize}`
-        );
-        console.log(
-          `Minified Size: ${details.name}: ${details.stats.minifiedSize}\n`
-        );
-      })
-    )
+    .pipe(less({ plugins: [autoprefixer, lessLists] }))
+    .pipe(csso(cssoOptions))
+    .pipe(rename("lemonade.min.css")) // Renames to lemonade.min.css
+    .pipe(sourcemaps.write("./")) // Automatically chooses the lemonade.min.css.map filename
+    .pipe(gulp.dest(metaData.locations.dist));
+});
+
+gulp.task("less:dev", async () => {
+  return gulp
+    .src(metaData.locations.src)
+    .pipe(gap.prependText(metaData.fileHeader))
+    .pipe(sourcemaps.init())
+    .pipe(less({ plugins: [autoprefixer, lessLists] }))
+    .pipe(csso(cssoOptions))
+    .pipe(prettier())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(metaData.locations.dist));
 });
 
-gulp.task("default", gulp.parallel("less:prod"));
+gulp.task("watch", async () => {
+  const watcher = gulp.watch(
+    ["./src/**/*.less"],
+    gulp.parallel(["less:dev", "less:prod"])
+  );
+
+  watcher.on("change", function(path, stats) {
+    console.log(color("\n" + path + " was changed" + "\n", "GREEN"));
+  });
+
+  watcher.on("add", function(path, stats) {
+    console.log(color("\n" + path + " was changed" + "\n", "BLUE"));
+  });
+
+  watcher.on("unlink", function(path, stats) {
+    console.log(color("\n" + path + " was changed" + "\n", "RED"));
+  });
+});
+
+gulp.task("build", gulp.parallel(["less:dev", "less:prod"]));
+gulp.task("default", gulp.series("watch"));
