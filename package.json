@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "src:build": "./node_modules/.bin/gulp",
-    "src:serve": "",
+    "src:build": "./node_modules/.bin/gulp build",
+    "src:serve": "./node_modules/.bin/gulp",
     "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
     "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
     "prime": "npm run src:build && git add . && npm run storybook:build",

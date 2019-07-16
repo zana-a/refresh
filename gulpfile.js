@@ -27,7 +27,7 @@ const autoprefixer = new lessAutoprefixer({
 const cssoOptions = {
   restructure: true,
   sourceMap: true,
-  debug: false,
+  debug: true,
   forceMediaMerge: true
 };
 
