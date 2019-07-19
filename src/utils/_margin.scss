@@ -5,11 +5,11 @@
 @each $name, $size in $common_dimensions {
   @each $direction in $directions {
     .margin-#{$name} {
-      padding: $size;
+      margin: $size !important;
     }
 
     .margin-#{$direction}-#{$name} {
-      padding-#{$direction}: $size;
+      margin-#{$direction}: $size !important;
     }
   }
 }

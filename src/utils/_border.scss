@@ -1,0 +1,28 @@
+/**
+ * BORDER UTILITY
+ * ───────────────
+ */
+
+@each $direction in $directions {
+  @each $name, $color in $colors {
+    .border-color-#{$name} {
+      border-color: $color !important;
+    }
+
+    .border-#{$direction}-#{$name} {
+      border-#{$direction}-color: $color !important;
+    }
+  }
+}
+
+@each $direction in $directions {
+  @each $style in $border_styles {
+    .border-style-#{$style} {
+      border-style: unquote($style) !important;
+    }
+
+    .border-#{$direction}-#{$style} {
+      border-#{$direction}-style: unquote($style) !important;
+    }
+  }
+}

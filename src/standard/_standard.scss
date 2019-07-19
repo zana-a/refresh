@@ -14,3 +14,31 @@ $common_dimensions: (
 );
 
 $directions: ("top", "right", "bottom", "left");
+
+//-- Border
+$border_styles: (
+  "dotted",
+  "dashed",
+  "solid",
+  "double",
+  "groove",
+  "ridge",
+  "inset",
+  "outset",
+  "none",
+  "hidden",
+  "mix"
+);
+
+//-- Display
+$display_types: (
+  "inline",
+  "block",
+  "flex",
+  "grid",
+  "inline-block",
+  "inline-flex",
+  "inline-grid",
+  "none",
+  "inherit"
+);
