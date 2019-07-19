@@ -12,7 +12,6 @@ const boxes = {
 function Colors() {
   return (
     <div>
-      <h3>Basic Colors</h3>
       <div style={boxes}>
         <div style={box} className='bg-white' />
         <div style={box} className='bg-black' />

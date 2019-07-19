@@ -1,0 +1,15 @@
+/**
+ * PADDING UTILITY
+ * ───────────────
+ */
+@each $name, $size in $common_dimensions {
+  @each $direction in $directions {
+    .padding-#{$name} {
+      padding: $size;
+    }
+
+    .padding-#{$direction}-#{$name} {
+      padding-#{$direction}: $size;
+    }
+  }
+}
