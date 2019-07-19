@@ -1,8 +1,15 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, addDecorator } from "@storybook/react";
 
-import Button from "./components/Button";
+import Colors from "./components/Base/Colors";
+import Headings from "./components/Base/Headings";
+import Paragraphs from "./components/Base/Paragraphs";
+import Buttons from "./components/Elements/Buttons";
 
 import "../../dist/lemonade.css";
 
-storiesOf("Button", module).add("Base", () => <Button />);
+storiesOf("Base", module)
+  .add("Colors", () => <Colors />)
+  .add("Headings", () => <Headings />)
+  .add("Paragraphs", () => <Paragraphs />);
+storiesOf("Elements", module).add("Buttons", () => <Buttons />);

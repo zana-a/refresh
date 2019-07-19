@@ -1,18 +1,17 @@
 const fs = require("fs");
 const gulp = require("gulp");
-const less = require("gulp-less");
-const lessAutoprefixer = require("less-plugin-autoprefix");
-const lessLists = require("less-plugin-lists");
 const sourcemaps = require("gulp-sourcemaps");
 const gap = require("gulp-append-prepend");
 const color = require("gulp-color");
-const csso = require("gulp-csso");
+const cleanCSS = require("gulp-clean-css");
 const prettier = require("gulp-prettier");
 const rename = require("gulp-rename");
+const sass = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
 
 const pacakgeData = JSON.parse(fs.readFileSync("./package.json"));
 
-const autoprefixer = new lessAutoprefixer({
+const autoprefixerOptions = {
   browsers: [
     "last 2 version",
     "safari 5",
@@ -22,18 +21,19 @@ const autoprefixer = new lessAutoprefixer({
     "ios 6",
     "android 4"
   ]
-});
+};
 
-const cssoOptions = {
-  restructure: true,
-  sourceMap: true,
-  debug: true,
-  forceMediaMerge: true
+const cleanCSSOptions = {
+  2: {
+    all: false, // sets all values to `false`
+    removeDuplicateRules: true, // turns on removing duplicate rules
+    restructureRules: true // controls rule restructuring; defaults to false
+  }
 };
 
 const metaData = {
   locations: {
-    src: "./src/lemonade.less",
+    src: "./src/lemonade.scss",
     dist: "./dist"
   },
   // Prepends header to css output files.
@@ -41,25 +41,27 @@ const metaData = {
   fileHeader: `/*!\n * ${pacakgeData.name} (${pacakgeData.version}) | ${pacakgeData.license}\n * repo: ${pacakgeData.repository.url}\n */`
 };
 
-gulp.task("less:prod", async () => {
+gulp.task("sass:prod", async () => {
   return gulp
     .src(metaData.locations.src)
     .pipe(gap.prependText(metaData.fileHeader))
     .pipe(sourcemaps.init())
-    .pipe(less({ plugins: [autoprefixer, lessLists] }))
-    .pipe(csso(cssoOptions))
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer({ autoprefixerOptions }))
+    .pipe(cleanCSS(cleanCSSOptions))
     .pipe(rename("lemonade.min.css")) // Renames to lemonade.min.css
     .pipe(sourcemaps.write("./")) // Automatically chooses the lemonade.min.css.map filename
     .pipe(gulp.dest(metaData.locations.dist));
 });
 
-gulp.task("less:dev", async () => {
+gulp.task("sass:dev", async () => {
   return gulp
     .src(metaData.locations.src)
     .pipe(gap.prependText(metaData.fileHeader))
     .pipe(sourcemaps.init())
-    .pipe(less({ plugins: [autoprefixer, lessLists] }))
-    .pipe(csso(cssoOptions))
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer({ autoprefixerOptions }))
+    .pipe(cleanCSS(cleanCSSOptions))
     .pipe(prettier())
     .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(metaData.locations.dist));
@@ -67,8 +69,8 @@ gulp.task("less:dev", async () => {
 
 gulp.task("watch", async () => {
   const watcher = gulp.watch(
-    ["./src/**/*.less"],
-    gulp.parallel(["less:dev", "less:prod"])
+    ["./src/**/*.scss"],
+    gulp.parallel(["sass:dev", "sass:prod"])
   );
 
   watcher.on("change", function(path, stats) {
@@ -84,5 +86,5 @@ gulp.task("watch", async () => {
   });
 });
 
-gulp.task("build", gulp.parallel(["less:dev", "less:prod"]));
+gulp.task("build", gulp.parallel(["sass:dev", "sass:prod"]));
 gulp.task("default", gulp.series("watch"));
