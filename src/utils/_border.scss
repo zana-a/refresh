@@ -12,7 +12,7 @@
       border-color: $color !important;
     }
 
-    .border-#{$direction}-#{$name} {
+    .border-color-#{$direction}-#{$name} {
       border-#{$direction}-color: $color !important;
     }
   }
@@ -28,4 +28,8 @@
       border-#{$direction}-style: unquote($style) !important;
     }
   }
+}
+
+.border-none {
+  border: none !important;
 }
