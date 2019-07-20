@@ -2,6 +2,9 @@
  * BORDER UTILITY
  * ───────────────
  */
+.border {
+  border: 1px solid !important;
+}
 
 @each $direction in $directions {
   @each $name, $color in $colors {

@@ -1,0 +1,9 @@
+/**
+ * POSITION UTILITY
+ * ────────────────
+ */
+@each $position in $position_types {
+  .postion-#{$position} {
+    position: unquote($position) !important;
+  }
+}

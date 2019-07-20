@@ -42,3 +42,6 @@ $display_types: (
   "none",
   "inherit"
 );
+
+//-- Position
+$position_types: ("static", "relative", "absolute", "fixed", "sticky");

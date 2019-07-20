@@ -1079,6 +1079,9 @@ template {
 .margin-left-xl {
   margin-left: 46px !important;
 }
+.border {
+  border: 1px solid !important;
+}
 .border-color-white {
   border-color: #fff !important;
 }
@@ -4321,6 +4324,34 @@ template {
 }
 .display-inherit {
   display: inherit !important;
+}
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
+.float-none {
+  float: none !important;
+}
+.clearfix {
+  clear: both;
+}
+.postion-static {
+  position: static !important;
+}
+.postion-relative {
+  position: relative !important;
+}
+.postion-absolute {
+  position: absolute !important;
+}
+.postion-fixed {
+  position: fixed !important;
+}
+.postion-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
 }
 
 /*# sourceMappingURL=lemonade.css.map */
