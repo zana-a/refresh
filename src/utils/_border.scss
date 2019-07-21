@@ -7,14 +7,14 @@
 }
 
 @each $direction in $directions {
-  @each $name, $color in $colors {
+  @each $name, $color in $all_colors {
     .border-color-#{$name} {
       border-color: $color !important;
     }
 
-    .border-color-#{$direction}-#{$name} {
-      border-#{$direction}-color: $color !important;
-    }
+    // .border-color-#{$direction}-#{$name} {
+    //   border-#{$direction}-color: $color !important;
+    // }
   }
 }
 
@@ -24,9 +24,9 @@
       border-style: unquote($style) !important;
     }
 
-    .border-#{$direction}-#{$style} {
-      border-#{$direction}-style: unquote($style) !important;
-    }
+    // .border-#{$direction}-#{$style} {
+    //   border-#{$direction}-style: unquote($style) !important;
+    // }
   }
 }
 

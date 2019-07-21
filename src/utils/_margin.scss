@@ -4,11 +4,11 @@
  */
 @each $name, $size in $common_dimensions {
   @each $direction in $directions {
-    .margin-#{$name} {
+    .m-#{$name} {
       margin: $size !important;
     }
 
-    .margin-#{$direction}-#{$name} {
+    .m-#{$direction}-#{$name} {
       margin-#{$direction}: $size !important;
     }
   }

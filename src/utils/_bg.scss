@@ -2,7 +2,7 @@
  * BACKGROUND UTILITY
  * ──────────────────
  */
-@each $name, $color in $colors {
+@each $name, $color in $all_colors {
   .bg-#{$name} {
     background-color: $color !important;
   }

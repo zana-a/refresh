@@ -4,11 +4,11 @@
  */
 @each $name, $size in $common_dimensions {
   @each $direction in $directions {
-    .padding-#{$name} {
+    .p-#{$name} {
       padding: $size !important;
     }
 
-    .padding-#{$direction}-#{$name} {
+    .p-#{$direction}-#{$name} {
       padding-#{$direction}: $size !important;
     }
   }

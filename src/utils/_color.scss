@@ -2,7 +2,7 @@
  * TEXT COLOR UTILITY
  * ──────────────────
  */
-@each $name, $color in $colors {
+@each $name, $color in $all_colors {
   .color-#{$name} {
     color: $color !important;
   }
