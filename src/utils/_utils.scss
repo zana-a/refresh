@@ -3,10 +3,15 @@
  * ─────────
  */
 @import "./bg";
-@import "./color";
+@import "./text";
 @import "./padding";
 @import "./margin";
 @import "./border";
 @import "./display";
 @import "./float";
 @import "./position";
+
+// Temp -- Move to grid possibly
+.w-full {
+  width: 100% !important;
+}

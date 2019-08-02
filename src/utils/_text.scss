@@ -2,8 +2,12 @@
  * TEXT COLOR UTILITY
  * ──────────────────
  */
-@each $name, $color in $all_colors {
-  .color-#{$name} {
+@each $name, $color in $prime_colors {
+  .t-#{$name} {
     color: $color !important;
   }
+}
+
+.t-transparent {
+  color: transparent !important;
 }

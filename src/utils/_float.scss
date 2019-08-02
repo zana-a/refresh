@@ -2,18 +2,18 @@
  * FLOAT UTILITY
  * ─────────────
  */
-.float-left {
+.f-left {
   float: left !important;
 }
 
-.float-right {
+.f-right {
   float: right !important;
 }
 
-.float-none {
+.f-none {
   float: none !important;
 }
 
 .clearfix {
-  clear: both;
+  clear: both !important;
 }

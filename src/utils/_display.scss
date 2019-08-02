@@ -3,7 +3,7 @@
  * ─────────────── 
  */
 @each $display_type in $display_types {
-  .display-#{$display_type} {
+  .d-#{$display_type} {
     display: unquote($display_type) !important;
   }
 }

@@ -4,6 +4,8 @@
  */
 @import "./node_modules/open-color/open-color.scss";
 
+$oc-transparent: transparent;
+
 $all_colors: (
   "white": $oc-white,
   "black": $oc-black,
@@ -137,4 +139,31 @@ $all_colors: (
   "orange-7": $oc-orange-7,
   "orange-8": $oc-orange-8,
   "orange-9": $oc-orange-9
+);
+
+$prime_colors: (
+  "white": $oc-white,
+  "black": $oc-black,
+  "gray": $oc-gray-5,
+  "red": $oc-red-5,
+  "pink": $oc-pink-5,
+  "grape": $oc-grape-5,
+  "violet": $oc-violet-5,
+  "indigo": $oc-indigo-5,
+  "blue": $oc-blue-5,
+  "cyan": $oc-cyan-5,
+  "teal": $oc-teal-5,
+  "green": $oc-green-5,
+  "lime": $oc-lime-5,
+  "yellow": $oc-yellow-5,
+  "orange": $oc-orange-5,
+  "gray-1": $oc-gray-1,
+  "gray-2": $oc-gray-2,
+  "gray-3": $oc-gray-3,
+  "gray-4": $oc-gray-4,
+  "gray-5": $oc-gray-5,
+  "gray-6": $oc-gray-6,
+  "gray-7": $oc-gray-7,
+  "gray-8": $oc-gray-8,
+  "gray-9": $oc-gray-9
 );

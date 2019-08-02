@@ -5,30 +5,24 @@
 @import "./color-pallete";
 @import "./reset";
 
-// MISC VARS //
+//-- Misc
 $common_dimensions: (
-  "sm": 12px,
-  "md": 24px,
-  "lg": 32px,
-  "xl": 46px
+  "sm": 24px,
+  "md": 24 * 2px,
+  "lg": 24 * 3px,
+  "xl": 24 * 4px,
+  "1": 14px,
+  "2": 14 * 2px,
+  "3": 14 * 3px,
+  "4": 14 * 4px,
+  "5": 14 * 5px,
+  "6": 14 * 6px,
+  "7": 14 * 7px,
+  "8": 14 * 8px,
+  "9": 14 * 9px
 );
 
 $directions: ("top", "right", "bottom", "left");
-
-//-- Border
-$border_styles: (
-  "dotted",
-  "dashed",
-  "solid",
-  "double",
-  "groove",
-  "ridge",
-  "inset",
-  "outset",
-  "none",
-  "hidden",
-  "mix"
-);
 
 //-- Display
 $display_types: (

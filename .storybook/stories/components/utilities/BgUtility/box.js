@@ -12,6 +12,11 @@ const stBox = {
   alignItems: "flex-end"
 };
 
+const backgroundImageBox = {
+  width: "100%",
+  height: "450px"
+};
+
 export function Flex(props) {
   return <div style={stContainer}>{props.children}</div>;
 }

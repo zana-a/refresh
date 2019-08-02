@@ -2,8 +2,52 @@
  * BACKGROUND UTILITY
  * ──────────────────
  */
-@each $name, $color in $all_colors {
+
+/**
+ * Background Solid Color Generator
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Generator for solid colors. 
+ * It uses the the primary colors as set in standard/color-pallete.scss
+ */
+@each $name, $color in $prime_colors {
   .bg-#{$name} {
     background-color: $color !important;
   }
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/**
+ * Background Image
+ * ~~~~~~~~~~~~~~~~
+ * Changes the size and position of a background image.
+ *
+ * EXAMPLE: 
+ * <div
+ *   class="bg-img bg-img-cover bg-img-norepeat bg-img-center w-full"
+ *   style="height: 450px; background-image: url('https://www.placecage.com/640/360');"
+ * >
+ *   <h1>Hello</h1>
+ * </div>
+ */
+.bg-img-repeat {
+  background-repeat: repeat !important;
+}
+
+.bg-img-norepeat {
+  background-repeat: no-repeat !important;
+}
+
+.bg-img-contain {
+  background-size: contain !important;
+}
+
+.bg-img-cover {
+  background-size: cover !important;
+}
+
+.bg-img-center {
+  background-position: center center !important;
 }
