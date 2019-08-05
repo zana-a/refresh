@@ -5,6 +5,11 @@
 
 $position_types: ("static", "relative", "absolute", "fixed", "sticky");
 
+/**
+ * Position
+ * ~~~~~~~~
+ * Sets the position based on the above variable.
+ */
 @each $position in $position_types {
   .postion-#{$position} {
     position: unquote($position) !important;

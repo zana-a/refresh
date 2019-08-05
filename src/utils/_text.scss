@@ -15,16 +15,24 @@ $t-transparancy: (
   90: 0.9
 );
 
+/**
+ * Text Color Generator
+ * ~~~~~~~~~~~~~~~~~~~~
+ * Creates all the classes based on the $prime_colors. 
+ * It will not generate all the shades apart from grayscale. 
+ */
 @each $name, $color in $prime_colors {
   .t-#{$name} {
     color: $color !important;
   }
 }
 
-.t-transparent {
-  color: transparent !important;
-}
-
+/**
+ * Text Color Opacity Generator
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * Generates the opacity colors for black (dark) and white (light).
+ * Other colors do not need opacity as that adds too much complexity to UI.
+ */
 @each $t-transparancy-level, $t-transparancy-opac in $t-transparancy {
   .t-opac-light-#{$t-transparancy-level} {
     color: rgba(map_get($all_colors, "white"), $t-transparancy-opac) !important;
@@ -35,15 +43,37 @@ $t-transparancy: (
   }
 }
 
-.t-inherit {
-  color: inherit !important;
+/**
+ * Text Shadow On Dark
+ * ~~~~~~~~~~~~~~~~~~~
+ * Creates an emboss effect on the text that are on dark surfaces.
+ */
+.t-shadow-on-dark {
+  text-shadow: 0 1px 0 rgba(map_get($all_colors, "white"), 0.5) !important;
 }
 
-.t-shadow-light {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
-}
-
-.t-shadow-dark {
+/**
+ * Text Shadow On Light
+ * ~~~~~~~~~~~~~~~~~~~
+ * Creates a drop shadow for text that are on lighter surfaces such as white.
+ */
+.t-shadow-on-light {
   text-shadow: 0 1px 1px rgba(map_get($all_colors, "black"), 0.15),
     0 1px 25px rgba(map_get($all_colors, "black"), 0.65) !important;
+}
+
+/**
+ * Text Transparency
+ * ~~~~~~~~~~~~~~~~~~~
+ */
+.t-transparent {
+  color: transparent !important;
+}
+
+/**
+ * Text Inherit
+ * ~~~~~~~~~~~~~~~~~~~
+ */
+.t-inherit {
+  color: inherit !important;
 }

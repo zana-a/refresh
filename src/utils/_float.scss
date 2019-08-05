@@ -3,6 +3,11 @@
  * ─────────────
  */
 
+/**
+ * Floating
+ * ~~~~~~~~
+ * Floats the active styled div either to left, right or none if already set.
+ */
 .f-left {
   float: left !important;
 }
@@ -13,6 +18,19 @@
 
 .f-none {
   float: none !important;
+}
+
+/**
+ * Clearfix
+ * ~~~~~~~~
+ * Clears the current styled div either on left, right or both sides.
+ */
+.clear-left {
+  clear: left !important;
+}
+
+.clear-right {
+  clear: right !important;
 }
 
 .clearfix {

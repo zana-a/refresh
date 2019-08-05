@@ -19,11 +19,19 @@ $spacing_dimensions: (
   "9": 14 * 9px
 );
 
+/**
+ * Spacing Generator
+ * ~~~~~~~~~~~~~~~~~
+ * Generates all the padding and margin classes. 
+ * See below comments for more information.
+ */
 @each $name, $size in $spacing_dimensions {
   /**
-  * PADDING
-  * ~~~~~~~
-  */
+   * Padding
+   * ~~~~~~~
+   * Adds padding classes for all, x-axis, y-axis, top, right, bottom or right.
+   * spacing
+   */
   .p-#{$name} {
     padding: $size !important;
   }
@@ -59,8 +67,10 @@ $spacing_dimensions: (
   }
 
   /**
-   * MARGIN
+   * Margin
    * ~~~~~~
+   * Adds margin classes for all, x-axis, y-axis, top, right, bottom or right
+   * spacing.
    */
   .m-#{$name} {
     margin: $size !important;

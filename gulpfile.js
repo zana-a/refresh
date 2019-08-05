@@ -38,7 +38,7 @@ const metaData = {
   },
   // Prepends header to css output files.
   // Managed by package.json
-  fileHeader: `/*!\n * ${pacakgeData.name} (${pacakgeData.version}) | ${pacakgeData.license}\n * repo: ${pacakgeData.repository.url}\n */`
+  fileHeader: `\n\n/*!\n * ${pacakgeData.name} (${pacakgeData.version}) | ${pacakgeData.license}\n * repo: ${pacakgeData.repository.url}\n */\n\n`
 };
 
 gulp.task("sass:prod", async () => {

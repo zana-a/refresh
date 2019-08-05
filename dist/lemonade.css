@@ -315,9 +315,6 @@ html {
 .t-gray-9 {
   color: #212529 !important;
 }
-.t-transparent {
-  color: transparent !important;
-}
 .t-opac-light-10 {
   color: rgba(255, 255, 255, 0.1) !important;
 }
@@ -372,14 +369,17 @@ html {
 .t-opac-dark-90 {
   color: rgba(0, 0, 0, 0.9) !important;
 }
-.t-inherit {
-  color: inherit !important;
-}
-.t-shadow-light {
+.t-shadow-on-dark {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
 }
-.t-shadow-dark {
+.t-shadow-on-light {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 1px 25px rgba(0, 0, 0, 0.65) !important;
+}
+.t-transparent {
+  color: transparent !important;
+}
+.t-inherit {
+  color: inherit !important;
 }
 .p-sm {
   padding: 24px !important;
@@ -1105,6 +1105,24 @@ html {
 .border-none {
   border: none !important;
 } /*! Add direction based styling for color, weight and disabling or enable */
+.f-left {
+  float: left !important;
+}
+.f-right {
+  float: right !important;
+}
+.f-none {
+  float: none !important;
+}
+.clear-left {
+  clear: left !important;
+}
+.clear-right {
+  clear: right !important;
+}
+.clearfix {
+  clear: both !important;
+}
 .d-inline {
   display: inline !important;
 }
@@ -1131,18 +1149,6 @@ html {
 }
 .d-inherit {
   display: inherit !important;
-}
-.f-left {
-  float: left !important;
-}
-.f-right {
-  float: right !important;
-}
-.f-none {
-  float: none !important;
-}
-.clearfix {
-  clear: both !important;
 }
 .postion-static {
   position: static !important;
