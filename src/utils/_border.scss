@@ -38,7 +38,7 @@ $border_weights: (1, 2, 4, 8);
  * certain border color from below to show. 
  */
 @each $border-weight in $border_weights {
-  .border-weight-#{$border-weight} {
+  .border-w-#{$border-weight} {
     border-width: #{$border-weight + unquote("px")} !important;
   }
 }
@@ -50,7 +50,7 @@ $border_weights: (1, 2, 4, 8);
  * It uses the $prime_colors not the $all_colors as not every shade is needed.
  */
 @each $name, $color in $prime_colors {
-  .border-color-#{$name} {
+  .border-#{$name} {
     border-color: $color !important;
   }
 }

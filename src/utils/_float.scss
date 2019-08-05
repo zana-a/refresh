@@ -21,9 +21,8 @@
 }
 
 /**
- * Clearfix
+ * Clear
  * ~~~~~~~~
- * Clears the current styled div either on left, right or both sides.
  */
 .clear-left {
   clear: left !important;
@@ -33,6 +32,16 @@
   clear: right !important;
 }
 
-.clearfix {
+.clear-both {
+  clear: both !important;
+}
+
+/**
+ * Clearfix
+ * ~~~~~~~~
+ */
+.clearfix:after {
+  content: "" !important;
+  display: table !important;
   clear: both !important;
 }
