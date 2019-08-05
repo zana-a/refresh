@@ -2,6 +2,9 @@
  * POSITION UTILITY
  * ────────────────
  */
+
+$position_types: ("static", "relative", "absolute", "fixed", "sticky");
+
 @each $position in $position_types {
   .postion-#{$position} {
     position: unquote($position) !important;

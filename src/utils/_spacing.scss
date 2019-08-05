@@ -1,0 +1,98 @@
+/**
+ * SPACING UTILITY
+ * ───────────────
+ */
+
+$spacing_dimensions: (
+  "sm": 24px,
+  "md": 24 * 2px,
+  "lg": 24 * 3px,
+  "xl": 24 * 4px,
+  "1": 14px,
+  "2": 14 * 2px,
+  "3": 14 * 3px,
+  "4": 14 * 4px,
+  "5": 14 * 5px,
+  "6": 14 * 6px,
+  "7": 14 * 7px,
+  "8": 14 * 8px,
+  "9": 14 * 9px
+);
+
+@each $name, $size in $spacing_dimensions {
+  /**
+  * PADDING
+  * ~~~~~~~
+  */
+  .p-#{$name} {
+    padding: $size !important;
+  }
+
+  .px-#{$name} {
+    padding: {
+      left: $size !important;
+      right: $size !important;
+    }
+  }
+
+  .py-#{$name} {
+    padding: {
+      top: $size !important;
+      bottom: $size !important;
+    }
+  }
+
+  .pt-#{$name} {
+    padding-top: $size !important;
+  }
+
+  .pr-#{$name} {
+    padding-right: $size !important;
+  }
+
+  .pb-#{$name} {
+    padding-right: $size !important;
+  }
+
+  .pl-#{$name} {
+    padding-left: $size !important;
+  }
+
+  /**
+   * MARGIN
+   * ~~~~~~
+   */
+  .m-#{$name} {
+    margin: $size !important;
+  }
+
+  .mx-#{$name} {
+    margin: {
+      left: $size !important;
+      right: $size !important;
+    }
+  }
+
+  .my-#{$name} {
+    margin: {
+      top: $size !important;
+      bottom: $size !important;
+    }
+  }
+
+  .mt-#{$name} {
+    margin-top: $size !important;
+  }
+
+  .mr-#{$name} {
+    margin-right: $size !important;
+  }
+
+  .mb-#{$name} {
+    margin-right: $size !important;
+  }
+
+  .ml-#{$name} {
+    margin-left: $size !important;
+  }
+}

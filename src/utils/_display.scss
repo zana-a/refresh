@@ -2,6 +2,19 @@
  * DISPLAY UTILITY
  * ─────────────── 
  */
+
+$display_types: (
+  "inline",
+  "block",
+  "flex",
+  "grid",
+  "inline-block",
+  "inline-flex",
+  "inline-grid",
+  "none",
+  "inherit"
+);
+
 @each $display_type in $display_types {
   .d-#{$display_type} {
     display: unquote($display_type) !important;

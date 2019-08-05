@@ -2,6 +2,19 @@
  * TEXT COLOR UTILITY
  * ──────────────────
  */
+
+$t-transparancy: (
+  10: 0.1,
+  20: 0.2,
+  30: 0.3,
+  40: 0.4,
+  50: 0.5,
+  60: 0.6,
+  70: 0.7,
+  80: 0.8,
+  90: 0.9
+);
+
 @each $name, $color in $prime_colors {
   .t-#{$name} {
     color: $color !important;
@@ -12,8 +25,25 @@
   color: transparent !important;
 }
 
-/*! TODO 
- *
- * 1. add transparency colors from 0% to 100%
- * 2. add text shadow
- */
+@each $t-transparancy-level, $t-transparancy-opac in $t-transparancy {
+  .t-opac-light-#{$t-transparancy-level} {
+    color: rgba(map_get($all_colors, "white"), $t-transparancy-opac) !important;
+  }
+
+  .t-opac-dark-#{$t-transparancy-level} {
+    color: rgba(map_get($all_colors, "black"), $t-transparancy-opac) !important;
+  }
+}
+
+.t-inherit {
+  color: inherit !important;
+}
+
+.t-shadow-light {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+.t-shadow-dark {
+  text-shadow: 0 1px 1px rgba(map_get($all_colors, "black"), 0.15),
+    0 1px 25px rgba(map_get($all_colors, "black"), 0.65) !important;
+}

@@ -1,41 +1,7 @@
 /**
- * SUPPORT
- * ─────────────
+ * STANDARD
+ * ────────
  */
+
 @import "./color-pallete";
 @import "./reset";
-
-//-- Misc
-$common_dimensions: (
-  "sm": 24px,
-  "md": 24 * 2px,
-  "lg": 24 * 3px,
-  "xl": 24 * 4px,
-  "1": 14px,
-  "2": 14 * 2px,
-  "3": 14 * 3px,
-  "4": 14 * 4px,
-  "5": 14 * 5px,
-  "6": 14 * 6px,
-  "7": 14 * 7px,
-  "8": 14 * 8px,
-  "9": 14 * 9px
-);
-
-$directions: ("top", "right", "bottom", "left");
-
-//-- Display
-$display_types: (
-  "inline",
-  "block",
-  "flex",
-  "grid",
-  "inline-block",
-  "inline-flex",
-  "inline-grid",
-  "none",
-  "inherit"
-);
-
-//-- Position
-$position_types: ("static", "relative", "absolute", "fixed", "sticky");
