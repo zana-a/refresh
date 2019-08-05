@@ -17,19 +17,41 @@ $border_styles: (
   "mix"
 );
 
+$border_weights: (1, 2, 4, 8);
+
+/**
+ * Set Border
+ * ~~~~~~~~~~
+ * This bit of code does only one thing.
+ * It adds 1px solid border with no color. This means you will have to set a
+ * certain border color from below to show. 
+ */
 .border {
   border: 1px solid !important;
 }
 
-@each $name, $color in $prime_colors {
-  .border-color-#{$name} {
-    border-color: $color !important;
+/**
+ * Border Weight
+ * ~~~~~~~~~~~~~
+ * This bit of code does only one thing.
+ * It adds 1px solid border with no color. This means you will have to set a
+ * certain border color from below to show. 
+ */
+@each $border-weight in $border_weights {
+  .border-weight-#{$border-weight} {
+    border-width: #{$border-weight + unquote("px")} !important;
   }
 }
 
-@each $style in $border_styles {
-  .border-style-#{$style} {
-    border-style: unquote($style) !important;
+/**
+ * Generate Border Colors
+ * ~~~~~~~~~~~~~~~~~~~~~~
+ * This generates the classes based on the colors from the color pallete.
+ * It uses the $prime_colors not the $all_colors as not every shade is needed.
+ */
+@each $name, $color in $prime_colors {
+  .border-color-#{$name} {
+    border-color: $color !important;
   }
 }
 
@@ -37,6 +59,25 @@ $border_styles: (
   border-color: $oc-transparent !important;
 }
 
+/**
+ * Border Style Generator
+ * ~~~~~~~~~~~~~~~~~~~~~~
+ * This creates the classes for changing the default "solid" border style type.
+ * It uses the above $border_style variable to generate all the border styles.
+ */
+@each $style in $border_styles {
+  .border-style-#{$style} {
+    border-style: unquote($style) !important;
+  }
+}
+
+/**
+ * Border Reset
+ * ~~~~~~~~~~~~
+ * Removes all border styling and defaults to nothing.
+ */
 .border-none {
   border: none !important;
 }
+
+/*! Add direction based styling for color, weight and disabling or enable */
