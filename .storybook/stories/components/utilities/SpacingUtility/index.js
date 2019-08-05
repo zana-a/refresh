@@ -14,11 +14,13 @@ const BoxPadding = props => {
 
 const BoxMargin = props => {
   return (
-    <div className='border d-inline-block'>
-      <div
-        className={"d-inline-block bg-gray-5 t-opac-light-80 " + props.class}
-      >
-        Example Box | <strong>{props.class}</strong>
+    <div className='clearfix d-block my-4'>
+      <div className='f-left clear-both border border-gray-8 d-inline-block'>
+        <div
+          className={"d-inline-block bg-orange t-opac-light-80 " + props.class}
+        >
+          Example Box | <strong>{props.class}</strong>
+        </div>
       </div>
     </div>
   );
