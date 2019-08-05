@@ -384,190 +384,6 @@ html {
 .t-inherit {
   color: inherit !important;
 } /*! TODO: 1. Add text to upper and to lower and Capitalize etc. */
-.p-sm {
-  padding: 24px !important;
-}
-.px-sm {
-  padding-left: 24px !important;
-  padding-right: 24px !important;
-}
-.py-sm {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
-.pt-sm {
-  padding-top: 24px !important;
-}
-.pr-sm {
-  padding-right: 24px !important;
-}
-.pb-sm {
-  padding-right: 24px !important;
-}
-.pl-sm {
-  padding-left: 24px !important;
-}
-.m-sm {
-  margin: 24px !important;
-}
-.mx-sm {
-  margin-left: 24px !important;
-  margin-right: 24px !important;
-}
-.my-sm {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important;
-}
-.mt-sm {
-  margin-top: 24px !important;
-}
-.mr-sm {
-  margin-right: 24px !important;
-}
-.mb-sm {
-  margin-right: 24px !important;
-}
-.ml-sm {
-  margin-left: 24px !important;
-}
-.p-md {
-  padding: 48px !important;
-}
-.px-md {
-  padding-left: 48px !important;
-  padding-right: 48px !important;
-}
-.py-md {
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
-}
-.pt-md {
-  padding-top: 48px !important;
-}
-.pr-md {
-  padding-right: 48px !important;
-}
-.pb-md {
-  padding-right: 48px !important;
-}
-.pl-md {
-  padding-left: 48px !important;
-}
-.m-md {
-  margin: 48px !important;
-}
-.mx-md {
-  margin-left: 48px !important;
-  margin-right: 48px !important;
-}
-.my-md {
-  margin-top: 48px !important;
-  margin-bottom: 48px !important;
-}
-.mt-md {
-  margin-top: 48px !important;
-}
-.mr-md {
-  margin-right: 48px !important;
-}
-.mb-md {
-  margin-right: 48px !important;
-}
-.ml-md {
-  margin-left: 48px !important;
-}
-.p-lg {
-  padding: 72px !important;
-}
-.px-lg {
-  padding-left: 72px !important;
-  padding-right: 72px !important;
-}
-.py-lg {
-  padding-top: 72px !important;
-  padding-bottom: 72px !important;
-}
-.pt-lg {
-  padding-top: 72px !important;
-}
-.pr-lg {
-  padding-right: 72px !important;
-}
-.pb-lg {
-  padding-right: 72px !important;
-}
-.pl-lg {
-  padding-left: 72px !important;
-}
-.m-lg {
-  margin: 72px !important;
-}
-.mx-lg {
-  margin-left: 72px !important;
-  margin-right: 72px !important;
-}
-.my-lg {
-  margin-top: 72px !important;
-  margin-bottom: 72px !important;
-}
-.mt-lg {
-  margin-top: 72px !important;
-}
-.mr-lg {
-  margin-right: 72px !important;
-}
-.mb-lg {
-  margin-right: 72px !important;
-}
-.ml-lg {
-  margin-left: 72px !important;
-}
-.p-xl {
-  padding: 96px !important;
-}
-.px-xl {
-  padding-left: 96px !important;
-  padding-right: 96px !important;
-}
-.py-xl {
-  padding-top: 96px !important;
-  padding-bottom: 96px !important;
-}
-.pt-xl {
-  padding-top: 96px !important;
-}
-.pr-xl {
-  padding-right: 96px !important;
-}
-.pb-xl {
-  padding-right: 96px !important;
-}
-.pl-xl {
-  padding-left: 96px !important;
-}
-.m-xl {
-  margin: 96px !important;
-}
-.mx-xl {
-  margin-left: 96px !important;
-  margin-right: 96px !important;
-}
-.my-xl {
-  margin-top: 96px !important;
-  margin-bottom: 96px !important;
-}
-.mt-xl {
-  margin-top: 96px !important;
-}
-.mr-xl {
-  margin-right: 96px !important;
-}
-.mb-xl {
-  margin-right: 96px !important;
-}
-.ml-xl {
-  margin-left: 96px !important;
-}
 .p-1 {
   padding: 6px !important;
 }
@@ -586,7 +402,7 @@ html {
   padding-right: 6px !important;
 }
 .pb-1 {
-  padding-right: 6px !important;
+  padding-bottom: 6px !important;
 }
 .pl-1 {
   padding-left: 6px !important;
@@ -609,7 +425,7 @@ html {
   margin-right: 6px !important;
 }
 .mb-1 {
-  margin-right: 6px !important;
+  margin-bottom: 6px !important;
 }
 .ml-1 {
   margin-left: 6px !important;
@@ -632,7 +448,7 @@ html {
   padding-right: 12px !important;
 }
 .pb-2 {
-  padding-right: 12px !important;
+  padding-bottom: 12px !important;
 }
 .pl-2 {
   padding-left: 12px !important;
@@ -655,7 +471,7 @@ html {
   margin-right: 12px !important;
 }
 .mb-2 {
-  margin-right: 12px !important;
+  margin-bottom: 12px !important;
 }
 .ml-2 {
   margin-left: 12px !important;
@@ -678,7 +494,7 @@ html {
   padding-right: 18px !important;
 }
 .pb-3 {
-  padding-right: 18px !important;
+  padding-bottom: 18px !important;
 }
 .pl-3 {
   padding-left: 18px !important;
@@ -701,7 +517,7 @@ html {
   margin-right: 18px !important;
 }
 .mb-3 {
-  margin-right: 18px !important;
+  margin-bottom: 18px !important;
 }
 .ml-3 {
   margin-left: 18px !important;
@@ -724,7 +540,7 @@ html {
   padding-right: 24px !important;
 }
 .pb-4 {
-  padding-right: 24px !important;
+  padding-bottom: 24px !important;
 }
 .pl-4 {
   padding-left: 24px !important;
@@ -747,7 +563,7 @@ html {
   margin-right: 24px !important;
 }
 .mb-4 {
-  margin-right: 24px !important;
+  margin-bottom: 24px !important;
 }
 .ml-4 {
   margin-left: 24px !important;
@@ -770,7 +586,7 @@ html {
   padding-right: 30px !important;
 }
 .pb-5 {
-  padding-right: 30px !important;
+  padding-bottom: 30px !important;
 }
 .pl-5 {
   padding-left: 30px !important;
@@ -793,7 +609,7 @@ html {
   margin-right: 30px !important;
 }
 .mb-5 {
-  margin-right: 30px !important;
+  margin-bottom: 30px !important;
 }
 .ml-5 {
   margin-left: 30px !important;
@@ -816,7 +632,7 @@ html {
   padding-right: 36px !important;
 }
 .pb-6 {
-  padding-right: 36px !important;
+  padding-bottom: 36px !important;
 }
 .pl-6 {
   padding-left: 36px !important;
@@ -839,7 +655,7 @@ html {
   margin-right: 36px !important;
 }
 .mb-6 {
-  margin-right: 36px !important;
+  margin-bottom: 36px !important;
 }
 .ml-6 {
   margin-left: 36px !important;
@@ -862,7 +678,7 @@ html {
   padding-right: 42px !important;
 }
 .pb-7 {
-  padding-right: 42px !important;
+  padding-bottom: 42px !important;
 }
 .pl-7 {
   padding-left: 42px !important;
@@ -885,7 +701,7 @@ html {
   margin-right: 42px !important;
 }
 .mb-7 {
-  margin-right: 42px !important;
+  margin-bottom: 42px !important;
 }
 .ml-7 {
   margin-left: 42px !important;
@@ -908,7 +724,7 @@ html {
   padding-right: 48px !important;
 }
 .pb-8 {
-  padding-right: 48px !important;
+  padding-bottom: 48px !important;
 }
 .pl-8 {
   padding-left: 48px !important;
@@ -931,7 +747,7 @@ html {
   margin-right: 48px !important;
 }
 .mb-8 {
-  margin-right: 48px !important;
+  margin-bottom: 48px !important;
 }
 .ml-8 {
   margin-left: 48px !important;
@@ -954,7 +770,7 @@ html {
   padding-right: 54px !important;
 }
 .pb-9 {
-  padding-right: 54px !important;
+  padding-bottom: 54px !important;
 }
 .pl-9 {
   padding-left: 54px !important;
@@ -977,10 +793,56 @@ html {
   margin-right: 54px !important;
 }
 .mb-9 {
-  margin-right: 54px !important;
+  margin-bottom: 54px !important;
 }
 .ml-9 {
   margin-left: 54px !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.mx-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
 }
 .border {
   border: 1px solid !important;
