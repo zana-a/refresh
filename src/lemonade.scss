@@ -7,3 +7,8 @@
 @import "./elements/_elements";
 // @import "./components/_components";
 @import "./utils/_utils";
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

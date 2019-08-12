@@ -1,0 +1,41 @@
+$btn-colors: (
+  "red",
+  "pink",
+  "grape",
+  "violet",
+  "indigo",
+  "blue",
+  "cyan",
+  "teal",
+  "green",
+  "lime",
+  "yellow",
+  "orange",
+  "gray"
+);
+
+$btn-text-dark: rgba(map-get($prime_colors, "white"), 0.85);
+$btn-text-light: rgba(map-get($prime_colors, "black"), 0.85);
+
+$btn-sizing: (
+  sm: (
+    btn-size-padding-sm: 4px 8px,
+    btn-size-fontsize-sm: 16px,
+    btn-size-lineheight-sm: 1.2
+  ),
+  md: (
+    btn-size-padding-md: 4px 8px,
+    btn-size-fontsize-md: 16px,
+    btn-size-lineheight-md: 1.2
+  ),
+  lg: (
+    btn-size-padding-lg: 4px 8px,
+    btn-size-fontsize-lg: 16px,
+    btn-size-lineheight-lg: 1.2
+  ),
+  xl: (
+    btn-size-padding-xl: 4px 8px,
+    btn-size-fontsize-xl: 16px,
+    btn-size-lineheight-xl: 1.2
+  )
+);

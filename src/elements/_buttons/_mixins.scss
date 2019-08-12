@@ -1,0 +1,23 @@
+@mixin btn-color(
+  $btn-orig-color,
+  $btn-hover-color,
+  $btn-active-color,
+  $btn-text-color
+) {
+  background-color: $btn-orig-color !important;
+  color: $btn-text-color;
+
+  &:hover {
+    background-color: $btn-hover-color !important;
+  }
+
+  &:active {
+    background-color: $btn-active-color !important;
+  }
+}
+
+@mixin btn-size($btn-size-padding, $btn-size-fontsize, $btn-size-lineheight) {
+  padding: $btn-size-padding !important;
+  font-size: $btn-size-fontsize !important;
+  line-height: $btn-size-lineheight !important;
+}
