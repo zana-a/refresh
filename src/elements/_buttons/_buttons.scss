@@ -13,40 +13,21 @@
   border-radius: 0.2em;
   outline: none;
   cursor: pointer;
-  @include btn-size(
-    map-get(map-get($btn-sizing, md), btn-size-padding-md),
-    map-get(map-get($btn-sizing, md), btn-size-fontsize-md),
-    map-get(map-get($btn-sizing, md), btn-size-lineheight-md)
-  );
+  padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
+  font-size: map-get(map-get($btn-sizing, md), btn-size-fontsize-md);
+  line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
 }
 
 @each $btn-general-color in $btn-colors {
   .btn-#{$btn-general-color} {
     @include btn-color(
+      map-get($all_colors, #{$btn-general-color + "-4"}),
       map-get($all_colors, #{$btn-general-color + "-6"}),
-      map-get($all_colors, #{$btn-general-color + "-8"}),
+      map-get($all_colors, #{$btn-general-color + "-7"}),
       map-get($all_colors, #{$btn-general-color + "-9"}),
       $btn-text-dark
     );
   }
-}
-
-.btn-light {
-  @include btn-color(
-    map-get($prime_colors, "white"),
-    map-get($prime_colors, "gray-1"),
-    map-get($prime_colors, "gray-3"),
-    $btn-text-light
-  );
-}
-
-.btn-dark {
-  @include btn-color(
-    map-get($prime_colors, "black"),
-    map-get($prime_colors, "gray-9"),
-    map-get($prime_colors, "black"),
-    $btn-text-dark
-  );
 }
 
 @each $btn-size, $_ in $btn-sizing {
