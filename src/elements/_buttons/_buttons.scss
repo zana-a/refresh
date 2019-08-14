@@ -18,14 +18,13 @@
   line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
 }
 
-@each $btn-general-color in $btn-colors {
-  .btn-#{$btn-general-color} {
+@each $btn-color in $btn-colors {
+  .btn-#{$btn-color} {
     @include btn-color(
-      map-get($all_colors, #{$btn-general-color + "-2"}),
-      map-get($all_colors, #{$btn-general-color + "-4"}),
-      map-get($all_colors, #{$btn-general-color + "-6"}),
-      map-get($all_colors, #{$btn-general-color + "-7"}),
-      map-get($all_colors, #{$btn-general-color + "-9"}),
+      map-get($all_colors, #{$btn-color + "-2"}),
+      map-get($all_colors, #{$btn-color + "-5"}),
+      map-get($all_colors, #{$btn-color + "-7"}),
+      map-get($all_colors, #{$btn-color + "-9"}),
       $btn-text-dark
     );
   }

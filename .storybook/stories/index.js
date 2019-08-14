@@ -12,6 +12,7 @@ import DisplayUtility from "./components/utilities/DisplayUtility";
 import SpacingUtility from "./components/utilities/SpacingUtility";
 
 import Buttons from "./components/elements/Buttons";
+import Inputs from "./components/elements/Inputs";
 
 storiesOf("Utilities", module)
   .add("Background Utility", () => <BgUtility />)
@@ -22,4 +23,6 @@ storiesOf("Utilities", module)
   .add("Display Utility", () => <DisplayUtility />)
   .add("Position Utility", () => <PositionUtility />);
 
-storiesOf("Elements", module).add("Buttons", () => <Buttons />);
+storiesOf("Elements", module)
+  .add("Buttons", () => <Buttons />)
+  .add("Inputs", () => <Inputs />);

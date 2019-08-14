@@ -48,15 +48,15 @@ const ButtonSize = BtnSizes.map(size => {
 function Buttons() {
   return (
     <div>
-      {/* <div>{Button}</div>
+      <div>{Button}</div>
       <div>{ButtonSize}</div>
-      <div>{ButtonOutline}</div> */}
-      {/* <div>
+      <div>{ButtonOutline}</div>
+      <div>
         <ButtonBase
           class={"btn btn-outline btn-orange btn-rounded "}
           name='Download Firefox'
         />
-      </div> */}
+      </div>
       <div>
         <ButtonBase class='btn btn-blue' name='Button' />
         <ButtonBase class='btn btn-blue btn-disabled' name='Button Disabled' />

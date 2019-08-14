@@ -1,12 +1,11 @@
 @mixin btn-color(
   $btn-lightest-color,
-  $btn-outline-color,
-  $btn-orig-color,
+  $btn-default-color,
   $btn-hover-color,
   $btn-active-color,
   $btn-text-color
 ) {
-  background-color: $btn-orig-color !important;
+  background-color: $btn-default-color !important;
   color: $btn-text-color;
 
   &:hover {
@@ -17,10 +16,14 @@
     background-color: $btn-active-color !important;
   }
 
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($btn-lightest-color, 0.75);
+  }
+
   &.btn-outline {
     background-color: transparent !important;
-    color: $btn-outline-color;
-    border-color: $btn-outline-color;
+    color: $btn-default-color;
+    border-color: $btn-default-color;
 
     &:hover {
       background-color: transparent !important;
@@ -36,8 +39,12 @@
   }
 
   &.btn-disabled {
-    background-color: $btn-outline-color !important;
+    background-color: $btn-default-color !important;
     cursor: not-allowed !important;
+
+    &:focus {
+      box-shadow: none !important;
+    }
 
     &.btn-outline {
       background-color: transparent !important;
