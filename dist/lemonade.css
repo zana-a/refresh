@@ -744,7 +744,7 @@ html {
 }
 .input {
   display: inline-block;
-  background-color: #f1f3f5;
+  background-color: transparent;
   font-weight: 500;
   color: #868e96;
   text-align: left;
@@ -756,110 +756,206 @@ html {
   padding: 8px 14px;
   font-size: 14px;
   line-height: 1.2;
+  border-color: rgba(173, 181, 189, 0.3) !important;
+  background-color: rgba(173, 181, 189, 0.05) !important;
+  color: rgba(173, 181, 189, 0.8) !important;
 }
 .input:hover {
-  background-color: #e9ecef;
-  color: #495057 !important;
+  border-color: rgba(173, 181, 189, 0.5) !important;
+  color: rgba(173, 181, 189, 0.8) !important;
 }
 .input:active,
 .input:focus {
-  background-color: #dee2e6 !important;
-  color: #343a40 !important;
-}
-.input.input-outline {
-  border-color: rgba(206, 212, 218, 0.25) !important;
-  background-color: rgba(206, 212, 218, 0.05) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.input.input-outline:hover {
-  background-color: rgba(173, 181, 189, 0.25) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.input.input-outline:active,
-.input.input-outline:focus {
-  background-color: rgba(134, 142, 150, 0.35) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-.input.input-outline.input-success {
-  border-color: rgba(105, 219, 124, 0.25) !important;
-  background-color: rgba(105, 219, 124, 0.05) !important;
-  color: rgba(43, 138, 62, 0.8) !important;
-}
-.input.input-outline.input-success:hover {
-  background-color: rgba(81, 207, 102, 0.25) !important;
-  color: rgba(43, 138, 62, 0.8) !important;
-}
-.input.input-outline.input-success:active,
-.input.input-outline.input-success:focus {
-  background-color: rgba(64, 192, 87, 0.35) !important;
-  color: rgba(43, 138, 62, 0.8) !important;
-}
-.input.input-outline.input-warning {
-  border-color: rgba(255, 212, 59, 0.25) !important;
-  background-color: rgba(255, 212, 59, 0.05) !important;
-  color: rgba(230, 119, 0, 0.8) !important;
-}
-.input.input-outline.input-warning:hover {
-  background-color: rgba(252, 196, 25, 0.25) !important;
-  color: rgba(230, 119, 0, 0.8) !important;
-}
-.input.input-outline.input-warning:active,
-.input.input-outline.input-warning:focus {
-  background-color: rgba(250, 176, 5, 0.35) !important;
-  color: rgba(230, 119, 0, 0.8) !important;
-}
-.input.input-outline.input-danger {
-  border-color: rgba(255, 135, 135, 0.25) !important;
-  background-color: rgba(255, 135, 135, 0.05) !important;
-  color: rgba(201, 42, 42, 0.8) !important;
-}
-.input.input-outline.input-danger:hover {
-  background-color: rgba(255, 107, 107, 0.25) !important;
-  color: rgba(201, 42, 42, 0.8) !important;
-}
-.input.input-outline.input-danger:active,
-.input.input-outline.input-danger:focus {
-  background-color: rgba(250, 82, 82, 0.35) !important;
-  color: rgba(201, 42, 42, 0.8) !important;
+  border-color: rgba(173, 181, 189, 0.8) !important;
+  color: rgba(173, 181, 189, 0.8) !important;
 }
 .input-success {
-  background-color: #d3f9d8 !important;
-  color: #2b8a3e !important;
+  border-color: rgba(81, 207, 102, 0.3) !important;
+  background-color: rgba(81, 207, 102, 0.05) !important;
+  color: rgba(81, 207, 102, 0.8) !important;
 }
 .input-success:hover {
-  background-color: #b2f2bb !important;
-  color: #2b8a3e !important;
+  border-color: rgba(81, 207, 102, 0.5) !important;
+  color: rgba(81, 207, 102, 0.8) !important;
 }
 .input-success:active,
 .input-success:focus {
-  background-color: #8ce99a !important;
-  color: #2b8a3e !important;
+  border-color: rgba(81, 207, 102, 0.8) !important;
+  color: rgba(81, 207, 102, 0.8) !important;
 }
 .input-warning {
-  background-color: #fff3bf !important;
-  color: #e67700 !important;
+  border-color: rgba(252, 196, 25, 0.3) !important;
+  background-color: rgba(252, 196, 25, 0.05) !important;
+  color: rgba(252, 196, 25, 0.8) !important;
 }
 .input-warning:hover {
-  background-color: #ffec99 !important;
-  color: #e67700 !important;
+  border-color: rgba(252, 196, 25, 0.5) !important;
+  color: rgba(252, 196, 25, 0.8) !important;
 }
 .input-warning:active,
 .input-warning:focus {
-  background-color: #ffe066 !important;
-  color: #e67700 !important;
+  border-color: rgba(252, 196, 25, 0.8) !important;
+  color: rgba(252, 196, 25, 0.8) !important;
 }
 .input-danger {
-  background-color: #ffe3e3 !important;
-  color: #c92a2a !important;
+  border-color: rgba(255, 107, 107, 0.3) !important;
+  background-color: rgba(255, 107, 107, 0.05) !important;
+  color: rgba(255, 107, 107, 0.8) !important;
 }
 .input-danger:hover {
-  background-color: #ffc9c9 !important;
-  color: #c92a2a !important;
+  border-color: rgba(255, 107, 107, 0.5) !important;
+  color: rgba(255, 107, 107, 0.8) !important;
 }
 .input-danger:active,
 .input-danger:focus {
-  background-color: #ffa8a8 !important;
-  color: #c92a2a !important;
+  border-color: rgba(255, 107, 107, 0.8) !important;
+  color: rgba(255, 107, 107, 0.8) !important;
+}
+.input-pink {
+  border-color: rgba(240, 101, 149, 0.3) !important;
+  background-color: rgba(240, 101, 149, 0.05) !important;
+  color: rgba(240, 101, 149, 0.8) !important;
+}
+.input-pink:hover {
+  border-color: rgba(240, 101, 149, 0.5) !important;
+  color: rgba(240, 101, 149, 0.8) !important;
+}
+.input-pink:active,
+.input-pink:focus {
+  border-color: rgba(240, 101, 149, 0.8) !important;
+  color: rgba(240, 101, 149, 0.8) !important;
+}
+.input-grape {
+  border-color: rgba(204, 93, 232, 0.3) !important;
+  background-color: rgba(204, 93, 232, 0.05) !important;
+  color: rgba(204, 93, 232, 0.8) !important;
+}
+.input-grape:hover {
+  border-color: rgba(204, 93, 232, 0.5) !important;
+  color: rgba(204, 93, 232, 0.8) !important;
+}
+.input-grape:active,
+.input-grape:focus {
+  border-color: rgba(204, 93, 232, 0.8) !important;
+  color: rgba(204, 93, 232, 0.8) !important;
+}
+.input-violet {
+  border-color: rgba(132, 94, 247, 0.3) !important;
+  background-color: rgba(132, 94, 247, 0.05) !important;
+  color: rgba(132, 94, 247, 0.8) !important;
+}
+.input-violet:hover {
+  border-color: rgba(132, 94, 247, 0.5) !important;
+  color: rgba(132, 94, 247, 0.8) !important;
+}
+.input-violet:active,
+.input-violet:focus {
+  border-color: rgba(132, 94, 247, 0.8) !important;
+  color: rgba(132, 94, 247, 0.8) !important;
+}
+.input-indigo {
+  border-color: rgba(92, 124, 250, 0.3) !important;
+  background-color: rgba(92, 124, 250, 0.05) !important;
+  color: rgba(92, 124, 250, 0.8) !important;
+}
+.input-indigo:hover {
+  border-color: rgba(92, 124, 250, 0.5) !important;
+  color: rgba(92, 124, 250, 0.8) !important;
+}
+.input-indigo:active,
+.input-indigo:focus {
+  border-color: rgba(92, 124, 250, 0.8) !important;
+  color: rgba(92, 124, 250, 0.8) !important;
+}
+.input-blue {
+  border-color: rgba(51, 154, 240, 0.3) !important;
+  background-color: rgba(51, 154, 240, 0.05) !important;
+  color: rgba(51, 154, 240, 0.8) !important;
+}
+.input-blue:hover {
+  border-color: rgba(51, 154, 240, 0.5) !important;
+  color: rgba(51, 154, 240, 0.8) !important;
+}
+.input-blue:active,
+.input-blue:focus {
+  border-color: rgba(51, 154, 240, 0.8) !important;
+  color: rgba(51, 154, 240, 0.8) !important;
+}
+.input-cyan {
+  border-color: rgba(34, 184, 207, 0.3) !important;
+  background-color: rgba(34, 184, 207, 0.05) !important;
+  color: rgba(34, 184, 207, 0.8) !important;
+}
+.input-cyan:hover {
+  border-color: rgba(34, 184, 207, 0.5) !important;
+  color: rgba(34, 184, 207, 0.8) !important;
+}
+.input-cyan:active,
+.input-cyan:focus {
+  border-color: rgba(34, 184, 207, 0.8) !important;
+  color: rgba(34, 184, 207, 0.8) !important;
+}
+.input-teal {
+  border-color: rgba(32, 201, 151, 0.3) !important;
+  background-color: rgba(32, 201, 151, 0.05) !important;
+  color: rgba(32, 201, 151, 0.8) !important;
+}
+.input-teal:hover {
+  border-color: rgba(32, 201, 151, 0.5) !important;
+  color: rgba(32, 201, 151, 0.8) !important;
+}
+.input-teal:active,
+.input-teal:focus {
+  border-color: rgba(32, 201, 151, 0.8) !important;
+  color: rgba(32, 201, 151, 0.8) !important;
+}
+.input-lime {
+  border-color: rgba(148, 216, 45, 0.3) !important;
+  background-color: rgba(148, 216, 45, 0.05) !important;
+  color: rgba(148, 216, 45, 0.8) !important;
+}
+.input-lime:hover {
+  border-color: rgba(148, 216, 45, 0.5) !important;
+  color: rgba(148, 216, 45, 0.8) !important;
+}
+.input-lime:active,
+.input-lime:focus {
+  border-color: rgba(148, 216, 45, 0.8) !important;
+  color: rgba(148, 216, 45, 0.8) !important;
+}
+.input-orange {
+  border-color: rgba(255, 146, 43, 0.3) !important;
+  background-color: rgba(255, 146, 43, 0.05) !important;
+  color: rgba(255, 146, 43, 0.8) !important;
+}
+.input-orange:hover {
+  border-color: rgba(255, 146, 43, 0.5) !important;
+  color: rgba(255, 146, 43, 0.8) !important;
+}
+.input-orange:active,
+.input-orange:focus {
+  border-color: rgba(255, 146, 43, 0.8) !important;
+  color: rgba(255, 146, 43, 0.8) !important;
+}
+.input-sm {
+  padding: 4px 8px !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+.input-md {
+  padding: 8px 14px !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+}
+.input-lg {
+  padding: 14px 26px !important;
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+}
+.input-xl {
+  padding: 26px 48px !important;
+  font-size: 22px !important;
+  line-height: 1.2 !important;
 }
 .input-rounded {
   border-radius: 1000em !important;

@@ -1,0 +1,26 @@
+@mixin input-color($input-color) {
+  border-color: rgba($input-color, 0.3) !important;
+  background-color: rgba($input-color, 0.05) !important;
+  color: rgba($input-color, 0.8) !important;
+
+  &:hover {
+    border-color: rgba($input-color, 0.5) !important;
+    color: rgba($input-color, 0.8) !important;
+  }
+
+  &:active,
+  &:focus {
+    border-color: rgba($input-color, 0.8) !important;
+    color: rgba($input-color, 0.8) !important;
+  }
+}
+
+@mixin input-size(
+  $input-size-padding,
+  $input-size-fontsize,
+  $input-size-lineheight
+) {
+  padding: $input-size-padding !important;
+  font-size: $input-size-fontsize !important;
+  line-height: $input-size-lineheight !important;
+}

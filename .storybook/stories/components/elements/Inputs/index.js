@@ -52,7 +52,7 @@ function Input() {
       </div>
       <div className='t-white p-4 bg-black'>
         <h2>Outline</h2>
-        <InputExample type='input-outline' />
+        <InputExample type='input-light' />
       </div>
       <div className='bg-white'>
         <div className='p-4'>
@@ -98,6 +98,7 @@ function Input() {
             className='input input-warning input-outline'
             placeholder='Warning!'
           />
+          <input type='button' className='btn btn-yellow' value='Search' />
         </div>
       </div>
     </div>

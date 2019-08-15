@@ -1,0 +1,37 @@
+$input-colors: (
+  success: "green",
+  warning: "yellow",
+  danger: "red",
+  pink: "pink",
+  grape: "grape",
+  violet: "violet",
+  indigo: "indigo",
+  blue: "blue",
+  cyan: "cyan",
+  teal: "teal",
+  lime: "lime",
+  orange: "orange"
+);
+
+$input-sizing: (
+  sm: (
+    input-size-padding-sm: 4px 8px,
+    input-size-fontsize-sm: 14px,
+    input-size-lineheight-sm: 1.2
+  ),
+  md: (
+    input-size-padding-md: 8px 14px,
+    input-size-fontsize-md: 14px,
+    input-size-lineheight-md: 1.2
+  ),
+  lg: (
+    input-size-padding-lg: 14px 26px,
+    input-size-fontsize-lg: 18px,
+    input-size-lineheight-lg: 1.2
+  ),
+  xl: (
+    input-size-padding-xl: 26px 48px,
+    input-size-fontsize-xl: 22px,
+    input-size-lineheight-xl: 1.2
+  )
+);
