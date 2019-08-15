@@ -3,41 +3,14 @@
  * ──────────────────
  */
 
-$bg-colors: (
-  black: "black",
-  white: "white",
-  red: "red-4",
-  pink: "pink-4",
-  grape: "grape-4",
-  violet: "violet-4",
-  indigo: "indigo-4",
-  blue: "blue-4",
-  cyan: "cyan-4",
-  teal: "teal-4",
-  green: "green-4",
-  lime: "lime-4",
-  yellow: "yellow-4",
-  orange: "orange-4",
-  gray-1: "gray-1",
-  gray-2: "gray-2",
-  gray-3: "gray-3",
-  gray-4: "gray-4",
-  gray-5: "gray-5",
-  gray-6: "gray-6",
-  gray-7: "gray-7",
-  gray-8: "gray-8",
-  gray-9: "gray-9"
-);
-
 /**
  * Background Solid Color Generator
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * Generator for solid colors. 
- * It uses the the primary colors as set in standard/color-pallete.scss
  */
-@each $name, $bg-color in $bg-colors {
+@each $name, $bg-color in $all_colors {
   .bg-#{$name} {
-    background-color: map-get($all_colors, $bg-color) !important;
+    background-color: map-get($all_colors, $name) !important;
   }
 }
 

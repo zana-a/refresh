@@ -51,7 +51,7 @@ function Input() {
         <InputExample />
       </div>
       <div className='t-white p-4 bg-black'>
-        <h2>Normal</h2>
+        <h2>Outline</h2>
         <InputExample type='input-outline-light' />
       </div>
     </div>
