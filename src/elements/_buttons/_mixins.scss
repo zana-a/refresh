@@ -16,23 +16,21 @@
     background-color: $btn-active-color !important;
   }
 
-  &:focus {
-    box-shadow: 0 0 0 3px rgba($btn-lightest-color, 0.75);
-  }
+  // &:focus {
+  //   box-shadow: 0 0 0 3px rgba($btn-lightest-color, 0.25);
+  // }
 
   &.btn-outline {
-    background-color: transparent !important;
+    background-color: rgba($btn-default-color, 0.05) !important;
     color: $btn-default-color;
     border-color: $btn-default-color;
 
     &:hover {
-      background-color: transparent !important;
       color: $btn-hover-color !important;
       border-color: $btn-hover-color !important;
     }
 
     &:active {
-      background-color: transparent !important;
       color: $btn-active-color !important;
       border-color: $btn-active-color !important;
     }
@@ -42,9 +40,9 @@
     background-color: $btn-default-color !important;
     cursor: not-allowed !important;
 
-    &:focus {
-      box-shadow: none !important;
-    }
+    // &:focus {
+    //   box-shadow: none !important;
+    // }
 
     &.btn-outline {
       background-color: transparent !important;

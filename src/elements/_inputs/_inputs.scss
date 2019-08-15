@@ -1,88 +1,43 @@
-// $input-colors: (
-//   "red",
-//   "pink",
-//   "grape",
-//   "violet",
-//   "indigo",
-//   "blue",
-//   "cyan",
-//   "teal",
-//   "green",
-//   "lime",
-//   "yellow",
-//   "orange",
-//   "gray"
-// );
+.input {
+  display: inline-block;
+  background-color: map-get($prime_colors, "gray-1");
+  font-weight: 500;
+  color: map-get($prime_colors, "gray-6");
+  text-align: left;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  border-radius: 0.2em;
+  outline: none;
+  cursor: text;
+  padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
+  font-size: map-get(map-get($btn-sizing, md), btn-size-fontsize-md);
+  line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
 
-// @mixin input-color(
-//   $input-lightest-color,
-//   $input-default-color,
-//   $input-hover-color,
-//   $input-active-color,
-//   $input-text-color
-// ) {
-//   background-color: $input-default-color !important;
-//   color: $input-text-color;
+  &:hover {
+    background-color: map-get($prime_colors, "gray-2");
+    color: map-get($prime_colors, "gray-7") !important;
+  }
 
-//   &:hover {
-//     background-color: $input-hover-color !important;
-//   }
+  &:active,
+  &:focus {
+    background-color: map-get($prime_colors, "gray-3") !important;
+    color: map-get($prime_colors, "gray-8") !important;
+  }
 
-//   &:active {
-//     background-color: $input-active-color !important;
-//   }
+  &.input-outline-light {
+    border-color: rgba(map-get($prime_colors, "white"), 0.25) !important;
+    background-color: rgba(map-get($prime_colors, "white"), 0.05) !important;
+    color: rgba(map-get($prime_colors, "white"), 0.4) !important;
 
-//   &:focus {
-//     box-shadow: 0 0 0 3px rgba($input-lightest-color, 0.75);
-//   }
+    &:hover {
+      background-color: rgba(map-get($prime_colors, "white"), 0.25) !important;
+      color: rgba(map-get($prime_colors, "white"), 0.6) !important;
+    }
 
-//   &.input-outline {
-//     background-color: transparent !important;
-//     color: $input-default-color;
-//     border-color: $input-default-color;
-
-//     &:hover {
-//       background-color: transparent !important;
-//       color: $input-hover-color !important;
-//       border-color: $input-hover-color !important;
-//     }
-
-//     &:active {
-//       background-color: transparent !important;
-//       color: $input-active-color !important;
-//       border-color: $input-active-color !important;
-//     }
-
-//     &:focus {
-//       box-shadow: 0 0 4px rgba($input-default-color, 0.7);
-//     }
-//   }
-// }
-
-// .input {
-//   display: inline-block;
-//   background-color: map-get($prime_colors, "gray-2");
-//   font-weight: 500;
-//   color: map-get($prime_colors, "gray-9");
-//   text-align: center;
-//   vertical-align: middle;
-//   user-select: none;
-//   border: 2px solid transparent;
-//   border-radius: 0.2em;
-//   outline: none;
-//   cursor: pointer;
-//   padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
-//   font-size: map-get(map-get($btn-sizing, md), btn-size-fontsize-md);
-//   line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
-// }
-
-// @each $input-color in $input-colors {
-//   .input-#{$input-color} {
-//     @include input-color(
-//       map-get($all_colors, #{$input-color + "-2"}),
-//       map-get($all_colors, #{$input-color + "-5"}),
-//       map-get($all_colors, #{$input-color + "-7"}),
-//       map-get($all_colors, #{$input-color + "-9"})
-//     );
-//   }
-// }
+    &:active,
+    &:focus {
+      background-color: rgba(map-get($prime_colors, "white"), 0.35) !important;
+      color: rgba(map-get($prime_colors, "white"), 0.8) !important;
+    }
+  }
+}
