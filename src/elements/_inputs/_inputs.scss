@@ -1,3 +1,46 @@
+@mixin input-type(
+  $input-default-color,
+  $input-hover-color,
+  $input-active-color,
+  $input-text-color
+) {
+  background-color: $input-default-color !important;
+  color: $input-text-color !important;
+
+  &:hover {
+    background-color: $input-hover-color !important;
+    color: $input-text-color !important;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $input-active-color !important;
+    color: $input-text-color !important;
+  }
+}
+
+@mixin input-type-outline(
+  $input-default-color,
+  $input-hover-color,
+  $input-active-color,
+  $input-text-color
+) {
+  border-color: rgba($input-default-color, 0.25) !important;
+  background-color: rgba($input-default-color, 0.05) !important;
+  color: rgba($input-text-color, 0.8) !important;
+
+  &:hover {
+    background-color: rgba($input-hover-color, 0.25) !important;
+    color: rgba($input-text-color, 0.8) !important;
+  }
+
+  &:active,
+  &:focus {
+    background-color: rgba($input-active-color, 0.35) !important;
+    color: rgba($input-text-color, 0.8) !important;
+  }
+}
+
 .input {
   display: inline-block;
   background-color: map-get($prime_colors, "gray-1");
@@ -24,20 +67,70 @@
     color: map-get($prime_colors, "gray-8") !important;
   }
 
-  &.input-outline-light {
-    border-color: rgba(map-get($prime_colors, "white"), 0.25) !important;
-    background-color: rgba(map-get($prime_colors, "white"), 0.05) !important;
-    color: rgba(map-get($prime_colors, "white"), 0.4) !important;
+  &.input-outline {
+    @include input-type-outline(
+      map-get($all-colors, "gray-4"),
+      map-get($all-colors, "gray-5"),
+      map-get($all-colors, "gray-6"),
+      map-get($all-colors, "white")
+    );
 
-    &:hover {
-      background-color: rgba(map-get($prime_colors, "white"), 0.25) !important;
-      color: rgba(map-get($prime_colors, "white"), 0.6) !important;
+    &.input-success {
+      @include input-type-outline(
+        map-get($all-colors, "green-4"),
+        map-get($all-colors, "green-5"),
+        map-get($all-colors, "green-6"),
+        map-get($all-colors, "green-9")
+      );
     }
 
-    &:active,
-    &:focus {
-      background-color: rgba(map-get($prime_colors, "white"), 0.35) !important;
-      color: rgba(map-get($prime_colors, "white"), 0.8) !important;
+    &.input-warning {
+      @include input-type-outline(
+        map-get($all-colors, "yellow-4"),
+        map-get($all-colors, "yellow-5"),
+        map-get($all-colors, "yellow-6"),
+        map-get($all-colors, "yellow-9")
+      );
+    }
+
+    &.input-danger {
+      @include input-type-outline(
+        map-get($all-colors, "red-4"),
+        map-get($all-colors, "red-5"),
+        map-get($all-colors, "red-6"),
+        map-get($all-colors, "red-9")
+      );
     }
   }
+}
+
+.input-success {
+  @include input-type(
+    map-get($all-colors, "green-1"),
+    map-get($all-colors, "green-2"),
+    map-get($all-colors, "green-3"),
+    map-get($all-colors, "green-9")
+  );
+}
+
+.input-warning {
+  @include input-type(
+    map-get($all-colors, "yellow-1"),
+    map-get($all-colors, "yellow-2"),
+    map-get($all-colors, "yellow-3"),
+    map-get($all-colors, "yellow-9")
+  );
+}
+
+.input-danger {
+  @include input-type(
+    map-get($all-colors, "red-1"),
+    map-get($all-colors, "red-2"),
+    map-get($all-colors, "red-3"),
+    map-get($all-colors, "red-9")
+  );
+}
+
+.input-rounded {
+  border-radius: 1000em !important;
 }
