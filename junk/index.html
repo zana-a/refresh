@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <div class="bg-violet">
+    <div class="bg-black">
       <div class="d-flex container">
         <a
           href="#"
@@ -58,67 +58,41 @@
     </div>
 
     <!-- Header -->
-    <div class="bg-teal">
+    <div class="bg-gray-9 py-9">
       <div class="container t-gray-8">
         <div
-          class="d-flex"
+          class="d-flex t-opac-light-70"
           style="align-items: center;
         justify-content: center;"
         >
           <div
-            class="d-block"
+            class="d-block mr-5"
             style="justify-content: center; flex: 1; flex-direction: column"
           >
             <h1>
               A very catchy thing to say here that makes no sense whatsoever!
             </h1>
             <div class="t-right">
-              <a class="btn btn-red btn-rounded btn-outline t-right"
+              <a class="btn btn-red btn-rounded btn-outline"
                 >Download Source Code</a
               >
             </div>
           </div>
-          <form
-            class="py-9 w-full d-flex"
-            style="align-items: flex-end; flex-direction: column; flex:1;"
-          >
-            <h1>Sign up. It's free!</h1>
-
-            <div class="d-flex">
-              <input
-                type="text"
-                class="input  my-1 mr-2"
-                placeholder="First Name"
-                style="width: 200px;"
-              />
-              <input
-                type="text"
-                class="input  my-1"
-                placeholder="Last Name"
-                style="width: 200px;"
-              />
+          <form>
+            <h3>Sign Up. It's Free!</h3>
+            <div class="InputGroup InputGroup-row mb-2">
+              <input class="input" placeholder="Firstname" />
+              <input class="input" placeholder="LastName" />
             </div>
-            <div>
-              <input
-                type="text"
-                class="input my-1"
-                placeholder="Email Address (example@mail.com)"
-                style="width: 444px;"
-              />
+            <div class="InputGroup InputGroup-column">
+              <input class="input" placeholder="Username" />
+              <input class="input" placeholder="Email Address" />
             </div>
-            <div>
-              <input
-                type="text"
-                class="input  my-1"
-                placeholder="Password"
-                style="width: 444px;"
-              />
-            </div>
-            <div class="d-flex  mt-1" style="align-items: center">
-              <input type="button" value="Sign Up" class="btn btn-blue" />
-              <span class="px-2">or</span>
-              <a href="#" class="t-blue">Login</a>
-            </div>
+            <input
+              type="button"
+              class="btn btn-outline btn-blue my-2 f-right"
+              value="Sign Up"
+            />
           </form>
         </div>
       </div>

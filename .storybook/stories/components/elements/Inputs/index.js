@@ -41,64 +41,30 @@ const InputExample = porps => {
 
 function Input() {
   return (
-    <div className='p-4'>
-      <div>
-        <InputText class='input-red' placeholder='Hello' />
-        <button className='btn btn-blue'>Go!</button>
+    <div>
+      <div className='InputGroup m-4'>
+        <input className='input' placeholder='Firstname' />
+        <input className='input' placeholder='LastName' />
       </div>
-      <div className='py-4'>
-        <h2>Normal</h2>
-        <InputExample />
+      <div className='InputGroup InputGroup-row m-4'>
+        <input className='input' placeholder='Firstname' />
+        <input className='input' placeholder='Middle Name' />
+        <input className='input' placeholder='LastName' />
       </div>
-      <div className='t-white p-4 bg-black'>
-        <h2>Outline</h2>
-        <InputExample type='input-light' />
+      <div className='InputGroup InputGroup-column m-4'>
+        <input className='input' placeholder='Firstname' />
+        <input className='input' placeholder='Middle Name' />
+        <input className='input' placeholder='LastName' />
       </div>
-      <div className='bg-white'>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-success'
-            placeholder='All Good!'
-          />
+
+      <div className='bg-gray-9 py-5 container' style={{ width: "420px" }}>
+        <div className='InputGroup InputGroup-row mx-4 mb-2'>
+          <input className='input' placeholder='Firstname' />
+          <input className='input' placeholder='LastName' />
         </div>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-danger'
-            placeholder='Unsuccessful!'
-          />
-        </div>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-warning'
-            placeholder='Warning!'
-          />
-        </div>
-      </div>
-      <div className='bg-gray-9'>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-success input-outline'
-            placeholder='All Good!'
-          />
-        </div>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-danger input-outline'
-            placeholder='Unsuccessful!'
-          />
-        </div>
-        <div className='p-4'>
-          <input
-            type='text'
-            className='input input-warning input-outline'
-            placeholder='Warning!'
-          />
-          <input type='button' className='btn btn-yellow' value='Search' />
+        <div className='InputGroup InputGroup-column mx-4'>
+          <input className='input' placeholder='Username' />
+          <input className='input' placeholder='Email Address' />
         </div>
       </div>
     </div>

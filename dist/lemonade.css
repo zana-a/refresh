@@ -960,6 +960,34 @@ html {
 .input-rounded {
   border-radius: 1000em !important;
 }
+.InputGroup.InputGroup-column {
+  display: flex;
+  flex-direction: column;
+}
+.InputGroup.InputGroup-column .input {
+  margin-bottom: 12px;
+}
+.InputGroup.InputGroup-column .input:last-child {
+  margin-bottom: 0;
+}
+.InputGroup.InputGroup-row {
+  display: flex;
+}
+.InputGroup.InputGroup-row .input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+}
+.InputGroup.InputGroup-row .input:first-child {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+.InputGroup.InputGroup-row .input:last-child {
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+}
 .bg-white {
   background-color: #fff !important;
 }
