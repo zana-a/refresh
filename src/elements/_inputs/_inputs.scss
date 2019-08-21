@@ -12,6 +12,7 @@
   border-radius: 0.2em;
   outline: none;
   cursor: text;
+  box-sizing: border-box;
 
   // Change this to be more dynamic
   padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
@@ -20,6 +21,10 @@
 
   // Colors are not right
   @include input-color(map-get($all-colors, "gray-5"));
+
+  &.input-rounded {
+    border-radius: 1000em !important;
+  }
 }
 
 @each $name, $color in $input-colors {
@@ -47,6 +52,12 @@
   }
 }
 
-.input-rounded {
-  border-radius: 1000em !important;
+// TODO: Flesh out form and label -- maybe move to its own file or folder with
+// input.
+form {
+  label {
+    color: map-get($all_colors, "gray-8");
+    padding: 8px 0;
+    font-size: 14px;
+  }
 }

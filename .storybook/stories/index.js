@@ -14,6 +14,10 @@ import SpacingUtility from "./components/utilities/SpacingUtility";
 import Buttons from "./components/elements/Buttons";
 import Inputs from "./components/elements/Inputs";
 
+import InputGroup from "./components/components/InputGroup";
+
+import LoginPage from "./components/examples/LoginPage";
+
 storiesOf("Utilities", module)
   .add("Background Utility", () => <BgUtility />)
   .add("Color Utility", () => <ColorUtility />)
@@ -26,3 +30,7 @@ storiesOf("Utilities", module)
 storiesOf("Elements", module)
   .add("Buttons", () => <Buttons />)
   .add("Inputs", () => <Inputs />);
+
+storiesOf("Components", module).add("InputGroup", () => <InputGroup />);
+
+storiesOf("Examples", module).add("Login Page", () => <LoginPage />);

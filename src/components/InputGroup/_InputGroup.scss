@@ -1,19 +1,29 @@
 .InputGroup {
-  &.InputGroup-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
+  &.InputGroup-column {
     .input {
-      margin-bottom: 12px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 100%;
+    }
+
+    .input:first-child {
+      border-top-left-radius: 3px !important;
+      border-top-right-radius: 3px !important;
     }
 
     .input:last-child {
-      margin-bottom: 0;
+      border-bottom-left-radius: 3px !important;
+      border-bottom-right-radius: 3px !important;
     }
   }
 
   &.InputGroup-row {
-    display: flex;
+    flex-direction: row !important;
 
     .input {
       border-top-right-radius: 0;

@@ -160,6 +160,7 @@ html {
   font-weight: 500;
   color: #212529;
   text-align: center;
+  text-transform: capitalize;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -753,6 +754,7 @@ html {
   border-radius: 0.2em;
   outline: 0;
   cursor: text;
+  box-sizing: border-box;
   padding: 8px 14px;
   font-size: 14px;
   line-height: 1.2;
@@ -768,6 +770,9 @@ html {
 .input:focus {
   border-color: rgba(173, 181, 189, 0.8) !important;
   color: rgba(173, 181, 189, 0.8) !important;
+}
+.input.input-rounded {
+  border-radius: 1000em !important;
 }
 .input-success {
   border-color: rgba(81, 207, 102, 0.3) !important;
@@ -957,21 +962,32 @@ html {
   font-size: 22px !important;
   line-height: 1.2 !important;
 }
-.input-rounded {
-  border-radius: 1000em !important;
+form label {
+  color: #343a40;
+  padding: 8px 0;
+  font-size: 14px;
 }
-.InputGroup.InputGroup-column {
+.InputGroup {
   display: flex;
   flex-direction: column;
 }
 .InputGroup.InputGroup-column .input {
-  margin-bottom: 12px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 100%;
+}
+.InputGroup.InputGroup-column .input:first-child {
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
 }
 .InputGroup.InputGroup-column .input:last-child {
-  margin-bottom: 0;
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
 }
 .InputGroup.InputGroup-row {
-  display: flex;
+  flex-direction: row !important;
 }
 .InputGroup.InputGroup-row .input {
   border-top-right-radius: 0;
@@ -2533,6 +2549,19 @@ html {
 .position-sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
+}
+.flex-auto {
+  flex: auto !important;
+}
+.flex-align-items-center {
+  align-items: center !important;
+}
+.flex-justify-content-center {
+  justify-content: center !important;
+}
+.flex-center {
+  justify-content: center !important;
+  align-items: center !important;
 } /*! Temp -- Move to grid possibly */
 .w-full {
   width: 100% !important;

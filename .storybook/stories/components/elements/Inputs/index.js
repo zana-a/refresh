@@ -10,13 +10,13 @@ const InputText = props => {
   );
 };
 
-const InputExample = porps => {
+const InputExample = props => {
   return (
     <div>
       <input
         placeholder='text'
         name='firstname'
-        className={"input input-gray " + porps.type}
+        className={"input input-gray " + props.type}
         autoComplete='off'
       />
       <br />
@@ -24,7 +24,7 @@ const InputExample = porps => {
       <input
         placeholder='text'
         name='lastname'
-        className={"input input-gray " + porps.type}
+        className={"input input-gray " + props.type}
         autoComplete='off'
       />
       <br />
@@ -42,31 +42,7 @@ const InputExample = porps => {
 function Input() {
   return (
     <div>
-      <div className='InputGroup m-4'>
-        <input className='input' placeholder='Firstname' />
-        <input className='input' placeholder='LastName' />
-      </div>
-      <div className='InputGroup InputGroup-row m-4'>
-        <input className='input' placeholder='Firstname' />
-        <input className='input' placeholder='Middle Name' />
-        <input className='input' placeholder='LastName' />
-      </div>
-      <div className='InputGroup InputGroup-column m-4'>
-        <input className='input' placeholder='Firstname' />
-        <input className='input' placeholder='Middle Name' />
-        <input className='input' placeholder='LastName' />
-      </div>
-
-      <div className='bg-gray-9 py-5 container' style={{ width: "420px" }}>
-        <div className='InputGroup InputGroup-row mx-4 mb-2'>
-          <input className='input' placeholder='Firstname' />
-          <input className='input' placeholder='LastName' />
-        </div>
-        <div className='InputGroup InputGroup-column mx-4'>
-          <input className='input' placeholder='Username' />
-          <input className='input' placeholder='Email Address' />
-        </div>
-      </div>
+      <input placeholder='Simple Input' class='input' />
     </div>
   );
 }
