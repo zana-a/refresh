@@ -4,9 +4,9 @@
  */
 
 @import "./standard/standard";
-@import "./elements/_elements";
-@import "./components/_components";
-@import "./utils/_utils";
+@import "./elements/elements";
+@import "./components/components";
+@import "./utils/utils";
 
 .container {
   max-width: 1200px;

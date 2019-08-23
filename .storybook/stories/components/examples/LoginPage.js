@@ -18,7 +18,7 @@ function LoginPage() {
               <input type='text' class='input' id='login-usernameoremail' />
             </div>
             <div className='InputGroup'>
-              <div className='d-flex flex-align-items-center'>
+              <div className='d-flex flex-items-center'>
                 <label for='login-pass' className='flex-auto'>
                   Password
                 </label>

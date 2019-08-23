@@ -3,14 +3,14 @@
  * ─────────
  */
 
-@import "./bg";
-@import "./text";
-@import "./spacing";
-@import "./border";
-@import "./float";
-@import "./display";
-@import "./position";
-@import "./flex";
+@import "./bg/bg";
+@import "./text/text";
+@import "./spacing/spacing";
+@import "./border/border";
+@import "./float/float";
+@import "./display/display";
+@import "./position/position";
+@import "./flex/flex";
 
 /*! Temp -- Move to grid possibly */
 .w-full {

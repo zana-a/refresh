@@ -10,6 +10,7 @@ import FloatUtility from "./components/utilities/FloatUtility";
 import PositionUtility from "./components/utilities/PositionUtility";
 import DisplayUtility from "./components/utilities/DisplayUtility";
 import SpacingUtility from "./components/utilities/SpacingUtility";
+import FlexUtility from "./components/utilities/FlexUtility";
 
 import Buttons from "./components/elements/Buttons";
 import Inputs from "./components/elements/Inputs";
@@ -25,7 +26,8 @@ storiesOf("Utilities", module)
   .add("Border Utility", () => <BorderUtility />)
   .add("Float Utility", () => <FloatUtility />)
   .add("Display Utility", () => <DisplayUtility />)
-  .add("Position Utility", () => <PositionUtility />);
+  .add("Position Utility", () => <PositionUtility />)
+  .add("Flex Utility", () => <FlexUtility />);
 
 storiesOf("Elements", module)
   .add("Buttons", () => <Buttons />)

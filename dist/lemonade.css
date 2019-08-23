@@ -2550,18 +2550,104 @@ form label {
   position: -webkit-sticky !important;
   position: sticky !important;
 }
+.flex-row {
+  flex-direction: row !important;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
+}
+.flex-column {
+  flex-direction: column-reverse !important;
+}
+.flex-justify-start {
+  justify-content: flex-start !important;
+}
+.flex-justify-end {
+  justify-content: flex-end !important;
+}
+.flex-justify-center {
+  justify-content: center !important;
+}
+.flex-justify-between {
+  justify-content: space-between !important;
+}
+.flex-justify-around {
+  justify-content: space-around !important;
+}
+.flex-items-start {
+  align-items: flex-start;
+}
+.flex-items-end {
+  align-items: flex-end;
+}
+.flex-items-center {
+  align-items: center;
+}
+.flex-items-baseline {
+  align-items: baseline;
+}
+.flex-items-stretch {
+  align-items: stretch;
+}
+.flex-content-start {
+  align-content: flex-start;
+}
+.flex-content-end {
+  align-content: flex-end;
+}
+.flex-content-center {
+  align-content: center;
+}
+.flex-content-between {
+  align-content: space-between;
+}
+.flex-content-around {
+  align-content: space-around;
+}
+.flex-content-stretch {
+  align-content: stretch;
+}
+.flex-self-auto {
+  align-self: auto;
+}
+.flex-self-start {
+  align-self: flex-start;
+}
+.flex-self-end {
+  align-self: flex-end;
+}
+.flex-self-center {
+  align-self: center;
+}
+.flex-self-baseline {
+  align-self: baseline;
+}
+.flex-self-stretch {
+  align-self: stretch;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
 .flex-auto {
-  flex: auto !important;
+  flex: 1 1 auto !important;
 }
-.flex-align-items-center {
-  align-items: center !important;
+.flex-grow-0 {
+  flex-grow: 0 !important;
 }
-.flex-justify-content-center {
-  justify-content: center !important;
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
 }
-.flex-center {
-  justify-content: center !important;
-  align-items: center !important;
+.flex-order-1 {
+  order: 1 !important;
+}
+.flex-order-2 {
+  order: 2 !important;
+}
+.flex-order-none {
+  order: inherit !important;
 } /*! Temp -- Move to grid possibly */
 .w-full {
   width: 100% !important;
