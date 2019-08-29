@@ -19,6 +19,12 @@ import InputGroup from "./components/components/InputGroup";
 
 import LoginPage from "./components/examples/LoginPage";
 
+storiesOf("Elements", module)
+  .add("Buttons", () => <Buttons />)
+  .add("Inputs", () => <Inputs />);
+
+storiesOf("Components", module).add("InputGroup", () => <InputGroup />);
+
 storiesOf("Utilities", module)
   .add("Background Utility", () => <BgUtility />)
   .add("Color Utility", () => <ColorUtility />)
@@ -28,11 +34,5 @@ storiesOf("Utilities", module)
   .add("Display Utility", () => <DisplayUtility />)
   .add("Position Utility", () => <PositionUtility />)
   .add("Flex Utility", () => <FlexUtility />);
-
-storiesOf("Elements", module)
-  .add("Buttons", () => <Buttons />)
-  .add("Inputs", () => <Inputs />);
-
-storiesOf("Components", module).add("InputGroup", () => <InputGroup />);
 
 storiesOf("Examples", module).add("Login Page", () => <LoginPage />);

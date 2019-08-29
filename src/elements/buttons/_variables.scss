@@ -19,23 +19,23 @@ $btn-text-light: rgba(map-get($prime_colors, "black"), 0.85);
 
 $btn-sizing: (
   sm: (
-    btn-size-padding-sm: 4px 8px,
+    btn-size-padding-sm: 2px 8px,
     btn-size-fontsize-sm: 14px,
     btn-size-lineheight-sm: 1.2
   ),
   md: (
-    btn-size-padding-md: 8px 14px,
+    btn-size-padding-md: 6px 14px,
     btn-size-fontsize-md: 14px,
     btn-size-lineheight-md: 1.2
   ),
   lg: (
-    btn-size-padding-lg: 14px 26px,
-    btn-size-fontsize-lg: 18px,
+    btn-size-padding-lg: 8px 26px,
+    btn-size-fontsize-lg: 20px,
     btn-size-lineheight-lg: 1.2
   ),
   xl: (
-    btn-size-padding-xl: 26px 48px,
-    btn-size-fontsize-xl: 22px,
+    btn-size-padding-xl: 12px 42px,
+    btn-size-fontsize-xl: 24px,
     btn-size-lineheight-xl: 1.2
   )
 );
