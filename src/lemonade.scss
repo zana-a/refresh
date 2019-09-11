@@ -1,14 +1,9 @@
-/**
- * LEMONADE-CSS
- * ────────────
- */
+//-> LEMONADE CSS FRAMEWORK
 
 @import "./standard/standard";
 @import "./elements/elements";
-@import "./components/components";
-@import "./utils/utils";
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+// Errors with variable names.
+// Will be fixed shortly.
+// @import "./components/components";
+// @import "./utils/utils";

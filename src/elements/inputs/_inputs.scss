@@ -1,63 +1,63 @@
-// @import "./variables";
-// @import "./mixins";
+@import "./variables";
+@import "./mixins";
 
-// .input {
-//   display: inline-block;
-//   background-color: transparent;
-//   font-weight: 500;
-//   color: map-get($prime_colors, "gray-6");
-//   text-align: left;
-//   vertical-align: middle;
-//   border: 2px solid transparent;
-//   border-radius: 0.2em;
-//   outline: none;
-//   cursor: text;
-//   box-sizing: border-box;
+.input {
+  display: inline-block;
+  background-color: transparent;
+  font-weight: 500;
+  color: map-get($prime_colors, "gray-6");
+  text-align: left;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  border-radius: 0.2em;
+  outline: none;
+  cursor: text;
+  box-sizing: border-box;
 
-//   // Change this to be more dynamic
-//   padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
-//   font-size: map-get(map-get($btn-sizing, md), btn-size-fontsize-md);
-//   line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
+  // Change this to be more dynamic
+  padding: map-get(map-get($btn-sizing, md), btn-size-padding-md);
+  font-size: map-get(map-get($btn-sizing, md), btn-size-fontsize-md);
+  line-height: map-get(map-get($btn-sizing, md), btn-size-lineheight-md);
 
-//   // Colors are not right
-//   @include input-color(map-get($all-colors, "gray-5"));
+  // Colors are not right
+  @include input-color(map-get($all-colors, "gray-5"));
 
-//   &.input-rounded {
-//     border-radius: 1000em !important;
-//   }
-// }
+  &.input-rounded {
+    border-radius: 1000em !important;
+  }
+}
 
-// @each $name, $color in $input-colors {
-//   .input-#{$name} {
-//     @include input-color(map-get($all-colors, #{$color + "-5"}));
-//   }
-// }
+@each $name, $color in $input-colors {
+  .input-#{$name} {
+    @include input-color(map-get($all-colors, #{$color + "-5"}));
+  }
+}
 
-// @each $input-size, $_ in $input-sizing {
-//   .input-#{$input-size} {
-//     @include input-size(
-//       map-get(
-//         map-get($input-sizing, $input-size),
-//         input-size-padding-#{$input-size}
-//       ),
-//       map-get(
-//         map-get($input-sizing, $input-size),
-//         input-size-fontsize-#{$input-size}
-//       ),
-//       map-get(
-//         map-get($input-sizing, $input-size),
-//         input-size-lineheight-#{$input-size}
-//       )
-//     );
-//   }
-// }
+@each $input-size, $_ in $input-sizing {
+  .input-#{$input-size} {
+    @include input-size(
+      map-get(
+        map-get($input-sizing, $input-size),
+        input-size-padding-#{$input-size}
+      ),
+      map-get(
+        map-get($input-sizing, $input-size),
+        input-size-fontsize-#{$input-size}
+      ),
+      map-get(
+        map-get($input-sizing, $input-size),
+        input-size-lineheight-#{$input-size}
+      )
+    );
+  }
+}
 
-// // TODO: Flesh out form and label -- maybe move to its own file or folder with
-// // input.
-// form {
-//   label {
-//     color: map-get($all_colors, "gray-8");
-//     padding: 8px 0;
-//     font-size: 14px;
-//   }
-// }
+// TODO: Flesh out form and label -- maybe move to its own file or folder with
+// input.
+form {
+  label {
+    color: map-get($all_colors, "gray-8");
+    padding: 8px 0;
+    font-size: 14px;
+  }
+}

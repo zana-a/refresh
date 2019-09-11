@@ -103,3 +103,10 @@ $spacing_dimensions: (
     margin-left: $size !important;
   }
 }
+
+.mx-auto {
+  margin: {
+    left: auto !important;
+    right: auto !important;
+  }
+}

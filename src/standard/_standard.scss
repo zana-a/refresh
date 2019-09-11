@@ -1,7 +1,7 @@
-/**
- * STANDARD
- * ────────
- */
+//-> STANDARD IMPORTS
+// Uses Open Color & Normalize as base.
 
-@import "./color-pallete";
-@import "./reset";
+@import "./reset/reset";
+
+@import "./variables/variables";
+@import "./typography/typography";

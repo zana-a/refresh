@@ -1,11 +1,5 @@
-# Notes
+# NOTES
 
-This project is structured into modules. Each folder has it's own master file named the same as the folder it resides in. For example:
+All files should define the variables before the import.
 
-```
-.(root)
-├── elements <- module
-│   ├── _elements_.scss <- root module file
-│   └── _buttons.scss <- any other files
-└── lemonade.scss <- master file
-```
+Each variable should have a prefix to ensure that variables do not collide.

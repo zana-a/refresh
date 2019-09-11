@@ -18,6 +18,11 @@ import Inputs from "./components/elements/Inputs";
 import InputGroup from "./components/components/InputGroup";
 
 import LoginPage from "./components/examples/LoginPage";
+import TextPage from "./components/examples/TextPage";
+
+import FontSize from "./components/standard/FontSize";
+
+storiesOf("Standard", module).add("Head", () => <FontSize />);
 
 storiesOf("Elements", module)
   .add("Buttons", () => <Buttons />)
@@ -35,4 +40,6 @@ storiesOf("Utilities", module)
   .add("Position Utility", () => <PositionUtility />)
   .add("Flex Utility", () => <FlexUtility />);
 
-storiesOf("Examples", module).add("Login Page", () => <LoginPage />);
+storiesOf("Examples", module)
+  .add("Login Page", () => <LoginPage />)
+  .add("Text Page", () => <TextPage />);
