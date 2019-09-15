@@ -1,5 +1,4 @@
 import { configure, addParameters } from "@storybook/react";
-import yourTheme from "./lemonadeTheme";
 
 const req = require.context("../src", true, /.stories.js$/);
 
@@ -57,11 +56,11 @@ addParameters({
      * show/hide tool bar
      * @type {Boolean}
      */
-    isToolshown: true,
+    isToolshown: true
     /**
      * theme storybook
      */
-    theme: yourTheme
+    // theme: storybook
   }
 });
 

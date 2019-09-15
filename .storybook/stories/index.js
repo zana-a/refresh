@@ -1,10 +1,20 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
+//-> STORYBOOK | A REACT BASED PLAYGROUND
+
+import * as React from "react";
+import * as Storybook from "@storybook/react";
 
 import "../../dist/lemonade.css";
 
-function ResetModule() {
-  return <p>Hello</p>;
-}
+import ResetIntroduction from "./StandardPackage/Reset/ResetIntroduction";
+import Normalize from "./StandardPackage/Reset/Normalize";
 
-storiesOf("Standard Package", module).add("Reset", () => <ResetModule />);
+import BaseIntroduction from "./StandardPackage/Base/BaseIntroduction";
+import Heading from "./StandardPackage/Base/Heading";
+
+Storybook.storiesOf("Standard Package|Reset", module)
+  .add("Introduction", () => <ResetIntroduction />)
+  .add("Normalize", () => <Normalize />);
+
+Storybook.storiesOf("Standard Package|Base", module)
+  .add("Introduction", () => <BaseIntroduction />)
+  .add("Heading", () => <Heading />);

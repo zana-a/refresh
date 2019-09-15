@@ -27,14 +27,16 @@
     "commitMessage": "Deploy Storybook"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@storybook/addon-info": "^5.1.9",
-    "@storybook/react": "^5.1.9",
+    "@babel/core": "^7.6.0",
+    "@storybook/addon-info": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-viewport": "^5.1.11",
+    "@storybook/react": "^5.1.11",
     "@storybook/storybook-deployer": "^2.8.1",
     "assemble-less": "^0.7.0",
     "babel-loader": "^8.0.6",
     "clean-css": "^4.2.1",
-    "concurrently": "^4.1.1",
+    "concurrently": "^4.1.2",
     "gulp": "^4.0.2",
     "gulp-append-prepend": "^1.0.8",
     "gulp-autoprefixer": "^6.1.0",
@@ -48,8 +50,8 @@
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "dependencies": {
     "open-color": "^1.7.0"

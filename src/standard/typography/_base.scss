@@ -1,0 +1,24 @@
+// customizes the base of a page.
+html {
+  font: {
+    family: $DEFAULT_SANS-SERIF_FONT-FAMILY;
+    size: 16px;
+  }
+
+  line-height: $DEFAULT_LINE-HEIGHT;
+  color: map-get($DEFAULT_COLOR-PALLET, gray-9);
+}
+
+// removes some styling from normalize.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small {
+  font-size: $DEFAULT_FONT-SIZE;
+  line-height: $DEFAULT_LINE-HEIGHT;
+  margin: 0;
+}

@@ -1,23 +1,4 @@
 //-> TYPOGRAPHY
 
-html {
-  font: {
-    family: $DEFAULT_SERIF_FONT-FAMILY;
-    size: 16px;
-  }
-
-  line-height: $DEFAULT_LINE-HEIGHT;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-small {
-  font-size: $DEFAULT_FONT-SIZE;
-  line-height: $DEFAULT_LINE-HEIGHT;
-  margin: 0;
-}
+@import "./base";
+@import "./heading";
