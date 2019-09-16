@@ -168,6 +168,18 @@ small {
   line-height: 1;
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+hr {
+  margin: 0 !important;
+  border: 0.5px solid #dee2e6;
+}
 h1 {
   font-size: 3rem !important;
 }
@@ -188,6 +200,31 @@ h6 {
 }
 .btn {
   background: #00f;
+}
+.Content h1,
+.Content h2,
+.Content h3,
+.Content h4,
+.Content h5,
+.Content h6 {
+  line-height: 1.5;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.Content p {
+  line-height: 1.6;
+  font-size: 1.25rem;
+  margin-bottom: 1.6rem;
+}
+.Content p:first-child {
+  margin-top: 2rem;
+}
+.Content iframe,
+.Content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=lemonade.css.map */

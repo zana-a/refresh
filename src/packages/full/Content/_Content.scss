@@ -1,0 +1,32 @@
+//-> CONTENT
+
+.Content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.5;
+    margin-top: 1.5rem * 2;
+    margin-bottom: 1.5rem;
+    font-family: $DEFAULT_SERIF_FONT-FAMILY;
+  }
+
+  p {
+    line-height: 1.6;
+    font-size: 1.25rem;
+    margin-bottom: 1.6rem;
+
+    &:first-child {
+      margin-top: 1rem * 2;
+    }
+  }
+
+  img,
+  iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}

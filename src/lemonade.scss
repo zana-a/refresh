@@ -1,9 +1,5 @@
 //-> LEMONADE CSS FRAMEWORK
 
-@import "./standard/standard";
-@import "./elements/elements";
-
-// Errors with variable names.
-// Will be fixed shortly.
-// @import "./components/components";
-// @import "./utils/utils";
+@import "./packages/standard/index";
+@import "./packages/basic/index";
+@import "./packages/full/index";
