@@ -1,0 +1,50 @@
+//-> TOOLTIPS MODULE
+
+.tooltip {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    z-index: 1000000;
+    display: none;
+    padding: 0.25em 0.5em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: break-word;
+    white-space: pre;
+    pointer-events: none;
+    content: attr(aria-label);
+    background-color: #000;
+    left: 20%;
+    bottom: 100%;
+    margin-bottom: 6px;
+    font-size: $DEFAULT_FONT-SIZE - 2;
+    border-radius: map-get($DEFAULT_BORDER_RADII, 1);
+  }
+
+  &:before {
+    position: absolute;
+    z-index: 1000001;
+    display: none;
+    width: 0;
+    height: 0;
+    color: #000;
+    pointer-events: none;
+    content: "";
+    border: 6px solid transparent;
+    top: -7px;
+    bottom: auto;
+    left: auto;
+    border-top-color: black;
+  }
+
+  &:hover  {
+    &:before, &:after {
+      display: flex !important;
+    }
+  }
+}

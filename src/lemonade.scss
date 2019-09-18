@@ -1,5 +1,8 @@
 //-> LEMONADE CSS FRAMEWORK
 
-@import "./packages/standard/index";
-@import "./packages/basic/index";
-@import "./packages/full/index";
+@import "./packages/base/base";
+@import "./packages/buttons/buttons";
+@import "./packages/forms/forms";
+@import "./packages/content/content";
+@import "./packages/tooltips/tooltips";
+@import "./packages/utilities/utilities";
