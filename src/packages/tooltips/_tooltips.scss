@@ -1,50 +1,290 @@
 //-> TOOLTIPS MODULE
+// Based on balloon tooltips.
+
+@mixin arrow {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+}
+@mixin arrow-down() {
+  @include arrow();
+  border-top-color: black;
+}
+
+@mixin arrow-up() {
+  @include arrow();
+  border-bottom-color: black;
+}
+
+@mixin arrow-left() {
+  @include arrow();
+  border-right-color: black;
+}
+
+@mixin arrow-right() {
+  @include arrow();
+  border-left-color: black;
+}
+
+@mixin base-effects() {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-out 0.15s;
+}
 
 .tooltip {
   position: relative;
+  cursor: pointer;
 
   &:after {
-    position: absolute;
-    z-index: 1000000;
-    display: none;
-    padding: 0.25em 0.5em;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: break-word;
-    white-space: pre;
-    pointer-events: none;
+    @include base-effects();
+    font-size: 14px;
+
+    background: black;
+    border-radius: 2px;
+    color: #fff;
     content: attr(aria-label);
-    background-color: #000;
-    left: 20%;
-    bottom: 100%;
-    margin-bottom: 6px;
-    font-size: $DEFAULT_FONT-SIZE - 2;
-    border-radius: map-get($DEFAULT_BORDER_RADII, 1);
+    padding: 0.2em 0.4em;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 10;
   }
 
   &:before {
-    position: absolute;
-    z-index: 1000001;
-    display: none;
-    width: 0;
-    height: 0;
-    color: #000;
-    pointer-events: none;
+    @include arrow-down();
+    @include base-effects();
+
     content: "";
-    border: 6px solid transparent;
-    top: -7px;
-    bottom: auto;
-    left: auto;
-    border-top-color: black;
+    position: absolute;
+    z-index: 10;
   }
 
-  &:hover  {
-    &:before, &:after {
-      display: flex !important;
+  &:hover,
+  &:focus {
+    &:before,
+    &:after {
+      opacity: 1;
+      pointer-events: none;
+    }
+  }
+}
+
+.tooltip-n {
+  &:after {
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: 1px + 5px;
+    transform: translate(-50%, 4px);
+    transform-origin: top;
+  }
+  &:before {
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 4px);
+    transform-origin: top;
+    margin-bottom: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(-50%, 0);
+    }
+
+    &:before {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.tooltip-ne {
+  &:after {
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 1px + 5px;
+    transform: translate(0, 4px);
+    transform-origin: top;
+  }
+  &:before {
+    bottom: 100%;
+    left: 5px;
+    transform: translate(0, 4px);
+    transform-origin: top;
+    margin-bottom: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, 0);
+    }
+
+    &:before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.tooltip-nw {
+  &:after {
+    bottom: 100%;
+    right: 0;
+    margin-bottom: 1px + 5px;
+    transform: translate(0, 4px);
+    transform-origin: top;
+  }
+  &:before {
+    bottom: 100%;
+    right: 5px;
+    transform: translate(0, 4px);
+    transform-origin: top;
+    margin-bottom: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, 0);
+    }
+
+    &:before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.tooltip-s {
+  &:after {
+    left: 50%;
+    margin-top: 1px + 5px;
+    top: 100%;
+    transform: translate(-50%, calc(4px * -1));
+  }
+
+  &:before {
+    @include arrow-up();
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, calc(4px * -1));
+    margin-top: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(-50%, 0);
+    }
+
+    &:before {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.tooltip-sw {
+  &:after {
+    left: 0;
+    margin-top: 1px + 5px;
+    top: 100%;
+    transform: translate(0, calc(4px * -1));
+  }
+
+  &:before {
+    @include arrow-up();
+
+    left: 5px;
+    top: 100%;
+    transform: translate(0, calc(4px * -1));
+    margin-top: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, 0);
+    }
+
+    &:before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.tooltip-se {
+  &:after {
+    right: 0;
+    margin-top: 1px + 5px;
+    top: 100%;
+    transform: translate(0, calc(4px * -1));
+  }
+
+  &:before {
+    @include arrow-up();
+
+    right: 5px;
+    top: 100%;
+    transform: translate(0, calc(4px * -1));
+    margin-top: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, 0);
+    }
+
+    &:before {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.tooltip-w {
+  &:after {
+    margin-right: 1px + 5px;
+    right: 100%;
+    top: 50%;
+    transform: translate(4px, -50%);
+  }
+
+  &:before {
+    @include arrow-right();
+
+    right: 100%;
+    top: 50%;
+    transform: translate(4px, -50%);
+    margin-right: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, -50%);
+    }
+
+    &:before {
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.tooltip-e {
+  &:after {
+    left: 100%;
+    margin-left: 1px + 5px;
+    top: 50%;
+    transform: translate(calc(4px * -1), -50%);
+  }
+
+  &:before {
+    @include arrow-left();
+
+    left: 100%;
+    top: 50%;
+    transform: translate(calc(4px * -1), -50%);
+    margin-left: -4px;
+  }
+
+  &:hover {
+    &:after {
+      transform: translate(0, -50%);
+    }
+
+    &:before {
+      transform: translate(0, -50%);
     }
   }
 }
