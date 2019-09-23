@@ -8,22 +8,22 @@
 }
 @mixin arrow-down() {
   @include arrow();
-  border-top-color: black;
+  border-top-color: map-get($DEFAULT_COLOR-PALLET, gray-9);
 }
 
 @mixin arrow-up() {
   @include arrow();
-  border-bottom-color: black;
+  border-bottom-color: map-get($DEFAULT_COLOR-PALLET, gray-9);
 }
 
 @mixin arrow-left() {
   @include arrow();
-  border-right-color: black;
+  border-right-color: map-get($DEFAULT_COLOR-PALLET, gray-9);
 }
 
 @mixin arrow-right() {
   @include arrow();
-  border-left-color: black;
+  border-left-color: map-get($DEFAULT_COLOR-PALLET, gray-9);
 }
 
 @mixin base-effects() {
@@ -38,13 +38,14 @@
 
   &:after {
     @include base-effects();
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1;
 
-    background: black;
+    background: map-get($DEFAULT_COLOR-PALLET, gray-9);
     border-radius: 2px;
-    color: #fff;
+    color: map-get($DEFAULT_COLOR-PALLET, gray-1);
     content: attr(aria-label);
-    padding: 0.2em 0.4em;
+    padding: 8px 10px;
     position: absolute;
     white-space: nowrap;
     z-index: 10;
