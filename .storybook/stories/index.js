@@ -22,10 +22,20 @@ Storybook.storiesOf("Standard Package|Base", module)
 Storybook.storiesOf("Lab|Default", module).add("Test Lab", () => {
   return (
     <div>
-      <div className="banner">
-        <div className="banner-body">
-          <h1>Hello, World!</h1>
-        </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-default">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-primary">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-success">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-warning">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-danger">Hello, World!</button>
       </div>
     </div>
   );

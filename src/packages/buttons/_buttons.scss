@@ -1,6 +1,78 @@
 //-> BUTTON ELEMENT | A singular button.
 // Does not affect HTML element <button> directly.
 
+@mixin btn-solid($_default, $_hover, $_active, $_color) {
+  border-color: rgba(
+    map-get($DEFAULT_COLOR-PALLET, #{$_color}-#{$_default}),
+    0.8
+  ) !important;
+
+  color: map-get($DEFAULT_COLOR-PALLET, #{$_color}-1) !important;
+
+  background-color: map-get(
+    $DEFAULT_COLOR-PALLET,
+    #{$_color}-#{$_default}
+  ) !important;
+
+  &:hover {
+    border-color: rgba(
+      map-get($DEFAULT_COLOR-PALLET, #{$_color}-#{$_hover}),
+      0.8
+    ) !important;
+
+    color: map-get($DEFAULT_COLOR-PALLET, #{$_color}-2) !important;
+
+    background-color: map-get(
+      $DEFAULT_COLOR-PALLET,
+      #{$_color}-#{$_hover}
+    ) !important;
+  }
+
+  &:active {
+    border-color: rgba(
+      map-get($DEFAULT_COLOR-PALLET, #{$_color}-#{$_hover}),
+      0.8
+    ) !important;
+    color: map-get($DEFAULT_COLOR-PALLET, #{$_color}-3) !important;
+    background-color: map-get(
+      $DEFAULT_COLOR-PALLET,
+      #{$_color}-#{$_hover}
+    ) !important;
+  }
+}
+
 .btn {
-  background: blue;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: $DEFAULT_FONT-SIZE - 2;
+  font-weight: $DEFAULT_FONT-WEIGHT;
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0;
+  outline: none !important;
+  text-decoration: none;
+  border: 1px solid;
+}
+
+.btn-default {
+  @include btn-solid(6, 7, 9, gray);
+}
+
+.btn-primary {
+  @include btn-solid(6, 7, 9, blue);
+}
+
+.btn-success {
+  @include btn-solid(6, 7, 9, green);
+}
+
+.btn-warning {
+  @include btn-solid(6, 7, 9, yellow);
+}
+
+.btn-danger {
+  @include btn-solid(6, 7, 9, red);
 }
