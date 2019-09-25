@@ -358,6 +358,9 @@ h6 {
   border-color: #c92a2a !important;
   background-color: #c92a2a !important;
 }
+.btn-rounded {
+  border-radius: 100000em;
+}
 .container {
   max-width: 960px;
   width: 100%;

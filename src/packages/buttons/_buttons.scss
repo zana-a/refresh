@@ -120,3 +120,7 @@
     @include btn-outline(red);
   }
 }
+
+.btn-rounded {
+  border-radius: map-get($DEFAULT_BORDER-RADII, full);
+}
