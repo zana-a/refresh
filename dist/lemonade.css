@@ -201,6 +201,13 @@ h6 {
 .btn {
   background: #00f;
 }
+.banner {
+  background-color: #ced4da;
+}
+.banner-body {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
 .content h1,
 .content h2,
 .content h3,

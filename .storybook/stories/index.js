@@ -21,104 +21,10 @@ Storybook.storiesOf("Standard Package|Base", module)
 
 Storybook.storiesOf("Lab|Default", module).add("Test Lab", () => {
   return (
-    <div style={{ margin: "4em" }}>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-n' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-ne' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-nw' aria-label='Hello, World! '>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-s' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-se' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-sw' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-e' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-      <div style={{ margin: "4em 2em" }}>
-        <a href='#' class='tooltip tooltip-w' aria-label='Hello, World!'>
-          Hello!
-        </a>
-      </div>
-
-      <div style={{ margin: "4em" }}>
-        <div style={{ margin: "4em 2em" }}>
-          <button href='#' class='tooltip tooltip-n' aria-label='Hello, World!'>
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button
-            href='#'
-            class='tooltip tooltip-ne'
-            aria-label='Hello, World!'
-          >
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button
-            href='#'
-            class='tooltip tooltip-nw'
-            aria-label='Hello, World!'
-          >
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button href='#' class='tooltip tooltip-s' aria-label='Hello, World!'>
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button
-            href='#'
-            class='tooltip tooltip-se'
-            aria-label='Hello, World!'
-          >
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button
-            href='#'
-            class='tooltip tooltip-sw'
-            aria-label='Hello, World!'
-          >
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button href='#' class='tooltip tooltip-e' aria-label='Hello, World!'>
-            Hello!
-          </button>
-        </div>
-        <div style={{ margin: "4em 2em" }}>
-          <button href='#' class='tooltip tooltip-w' aria-label='Hello, World!'>
-            Hello!
-          </button>
+    <div>
+      <div className="banner">
+        <div className="banner-body">
+          <h1>Hello, World!</h1>
         </div>
       </div>
     </div>
