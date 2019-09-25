@@ -361,6 +361,23 @@ h6 {
 .btn-rounded {
   border-radius: 100000em;
 }
+.input {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 0;
+  outline: 0 !important;
+  text-decoration: none;
+  border: 1px solid #868e96;
+}
 .container {
   max-width: 960px;
   width: 100%;

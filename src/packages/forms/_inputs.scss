@@ -1,0 +1,16 @@
+//-> INPUTS MODULE
+
+.input {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: $DEFAULT_FONT-SIZE - 2;
+  font-weight: $DEFAULT_FONT-WEIGHT;
+  line-height: 1.2;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 0;
+  outline: none !important;
+  text-decoration: none;
+  border: 1px solid map-get($DEFAULT_COLOR-PALLET, gray-6);
+}

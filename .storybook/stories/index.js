@@ -21,73 +21,11 @@ Storybook.storiesOf("Standard Package|Base", module)
 
 Storybook.storiesOf("Lab|Default", module).add("Test Lab", () => {
   return (
-    <div>
-      <div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-default">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-primary">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-success">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-warning">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-danger">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-default btn-outline">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-success btn-outline">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-warning btn-outline">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-danger btn-outline">Hello, World!</button>
-        </div>
-      </div>
-      <div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-default btn-rounded">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-primary btn-rounded">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-success btn-rounded">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-warning btn-rounded">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-danger btn-rounded">Hello, World!</button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-default btn-outline btn-rounded">
-            Hello, World!
-          </button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-success btn-outline btn-rounded">
-            Hello, World!
-          </button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-warning btn-outline btn-rounded">
-            Hello, World!
-          </button>
-        </div>
-        <div style={{ margin: "1em" }}>
-          <button class="btn btn-danger btn-outline btn-rounded">
-            Hello, World!
-          </button>
-        </div>
-      </div>
+    <div style={{ margin: "1em" }}>
+      <form>
+        <input type="text" className="input" placeholder="Search database..." />
+        <input type="button" className="btn btn-success" value="Submit" />
+      </form>
     </div>
   );
 });
