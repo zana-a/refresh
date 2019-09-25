@@ -41,6 +41,30 @@
   }
 }
 
+@mixin btn-outline($_color) {
+  color: map-get($DEFAULT_COLOR-PALLET, #{$_color + "-6"}) !important;
+  background-color: transparent !important;
+  border-color: map-get($DEFAULT_COLOR-PALLET, #{$_color + "-6"}) !important;
+
+  &:hover {
+    color: map-get($DEFAULT_COLOR-PALLET, #{$_color}-1) !important;
+
+    background-color: map-get(
+      $DEFAULT_COLOR-PALLET,
+      #{$_color + "-6"}
+    ) !important;
+  }
+
+  &:active {
+    color: map-get($DEFAULT_COLOR-PALLET, #{$_color}-2) !important;
+    border-color: map-get($DEFAULT_COLOR-PALLET, #{$_color + "-9"}) !important;
+    background-color: map-get(
+      $DEFAULT_COLOR-PALLET,
+      #{$_color + "-9"}
+    ) !important;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 6px 12px;
@@ -59,20 +83,40 @@
 
 .btn-default {
   @include btn-solid(6, 7, 9, gray);
+
+  &.btn-outline {
+    @include btn-outline(gray);
+  }
 }
 
 .btn-primary {
   @include btn-solid(6, 7, 9, blue);
+
+  &.btn-outline {
+    @include btn-outline(blue);
+  }
 }
 
 .btn-success {
   @include btn-solid(6, 7, 9, green);
+
+  &.btn-outline {
+    @include btn-outline(green);
+  }
 }
 
 .btn-warning {
   @include btn-solid(6, 7, 9, yellow);
+
+  &.btn-outline {
+    @include btn-outline(yellow);
+  }
 }
 
 .btn-danger {
   @include btn-solid(6, 7, 9, red);
+
+  &.btn-outline {
+    @include btn-outline(red);
+  }
 }

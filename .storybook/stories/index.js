@@ -37,6 +37,18 @@ Storybook.storiesOf("Lab|Default", module).add("Test Lab", () => {
       <div style={{ margin: "1em" }}>
         <button class="btn btn-danger">Hello, World!</button>
       </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-default btn-outline">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-success btn-outline">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-warning btn-outline">Hello, World!</button>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <button class="btn btn-danger btn-outline">Hello, World!</button>
+      </div>
     </div>
   );
 });
