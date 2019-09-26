@@ -21,11 +21,38 @@ Storybook.storiesOf("Standard Package|Base", module)
 
 Storybook.storiesOf("Lab|Default", module).add("Test Lab", () => {
   return (
-    <div style={{ margin: "1em" }}>
-      <form>
+    <div>
+      <div style={{ margin: "1em" }}>
         <input type="text" className="input" placeholder="Search database..." />
-        <input type="button" className="btn btn-success" value="Submit" />
-      </form>
+      </div>
+      <div style={{ margin: "1em" }}>
+        <input
+          type="text"
+          className="input input-default"
+          placeholder="Search database..."
+        />
+      </div>
+      <div style={{ margin: "1em" }}>
+        <input
+          type="text"
+          className="input input-success"
+          placeholder="Search database..."
+        />
+      </div>
+      <div style={{ margin: "1em" }}>
+        <input
+          type="text"
+          className="input input-warning"
+          placeholder="Search database..."
+        />
+      </div>
+      <div style={{ margin: "1em" }}>
+        <input
+          type="text"
+          className="input input-danger"
+          placeholder="Search database..."
+        />
+      </div>
     </div>
   );
 });

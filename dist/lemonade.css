@@ -358,7 +358,7 @@ h6 {
   border-color: #c92a2a !important;
   background-color: #c92a2a !important;
 }
-.btn-rounded {
+.rounded {
   border-radius: 100000em;
 }
 .input {
@@ -376,7 +376,55 @@ h6 {
   border-radius: 0;
   outline: 0 !important;
   text-decoration: none;
-  border: 1px solid #868e96;
+  border: 1px solid;
+}
+.input-default {
+  border-color: #adb5bd;
+  color: #495057;
+}
+.input-default:hover {
+  border-color: #868e96;
+  color: #343a40;
+}
+.input-default:focus {
+  border-color: #212529;
+  color: #212529;
+}
+.input-success {
+  border-color: #51cf66;
+  color: #37b24d;
+}
+.input-success:hover {
+  border-color: #40c057;
+  color: #2f9e44;
+}
+.input-success:focus {
+  border-color: #2b8a3e;
+  color: #2b8a3e;
+}
+.input-warning {
+  border-color: #fcc419;
+  color: #f59f00;
+}
+.input-warning:hover {
+  border-color: #fab005;
+  color: #f08c00;
+}
+.input-warning:focus {
+  border-color: #e67700;
+  color: #e67700;
+}
+.input-danger {
+  border-color: #ff6b6b;
+  color: #f03e3e;
+}
+.input-danger:hover {
+  border-color: #fa5252;
+  color: #e03131;
+}
+.input-danger:focus {
+  border-color: #c92a2a;
+  color: #c92a2a;
 }
 .container {
   max-width: 960px;
