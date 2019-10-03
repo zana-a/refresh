@@ -9,30 +9,37 @@ This page will describe the way the framework should be laid out.
 The folder structure is to be kept simple.
 
 ```
-.
-└── sass/
-    ├── lemonade.sass
-    └── src/
-        ├── abstracts/
-        │   ├── _functions.sass
-        │   ├── _mixins.sass
-        │   └── _variables.sass
-        ├── base/
-        │   ├── _reset.sass
-        │   └── _typography.sass
-        ├── components/
-        │   ├── _alerts.sass
-        │   ├── _banner.sass
-        │   ├── _billboard.sass
-        │   ├── _buttons.sass
-        │   ├── _cards.sass
-        │   ├── _content.sass
-        │   ├── _forms.sass
-        │   ├── _media.sass
-        │   ├── _navs.sass
-        │   └── _tooltips.sass
-        ├── layout/
-        │   ├── _container.sass
-        │   └── _grid.sass
-        └── marketing/
+sass                            # root
+├── lemonade.sass               # sass entry point
+└── src                         # packages root
+    ├── abstracts               
+    │   ├── _functions.sass     # sass functions (if any)
+    │   ├── _mixins.sass        # mixins (if any)
+    │   └── _variables.sass     # variables (global only)
+    ├── base
+    │   ├── _reset.sass         # reset for default css
+    │   └── _typography.sass    # typography of base html (no class or id related styles)
+    ├── components              
+    │   ├── _alerts.sass        # simple alerts
+    │   ├── _billboard.sass     # information header
+    │   ├── _buttons.sass       # simple & grouped buttons
+    │   ├── _cards.sass         # for showing user profile
+    │   ├── _content.sass       # for formatting reading content
+    │   ├── _forms.sass         # inputs, selectables & textarea
+    │   ├── _media.sass         # nestable component for comment
+    │   ├── _navs.sass          # stylised lists for both horizontal and vertical
+    │   └── _tooltips.sass      # extra help on hover
+    ├── layout
+    │   ├── _banner.sass        # eye catching header
+    │   ├── _container.sass     # constrained & flexible container
+    │   └── _grid.sass          # grid system for any layout
+    │── marketing               # for more specific components
+    │   ├── _buttons.sass       # different colors and sizes
+    │   └── _headings.sass      # stylised headings of different sizes
+    └── atoms                   # utlities and tools
+        ├── _ignore.sass        # eye catching header
+        └── _ignore.sass        # grid system for any layout
+    
 ```
+
+ 

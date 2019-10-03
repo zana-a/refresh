@@ -33,7 +33,7 @@ const cleanCSSOptions = {
 
 const metaData = {
   locations: {
-    src: "./src/lemonade.sass",
+    src: "./sass/src/lemonade.sass",
     dist: "./dist"
   },
   // Prepends header to css output files.
@@ -69,7 +69,7 @@ gulp.task("sass:dev", async () => {
 
 gulp.task("watch", async () => {
   const watcher = gulp.watch(
-    ["./src/**/*.sass"],
+    ["./sass/src/**/*.sass"],
     gulp.parallel(["sass:dev", "sass:prod"])
   );
 
