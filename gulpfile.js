@@ -9,7 +9,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 
-const pacakgeData = JSON.parse(fs.readFileSync("./package.json"));
+const packageData = JSON.parse(fs.readFileSync("./package.json"));
 
 const autoprefixerOptions = {
   browsers: [
@@ -33,12 +33,12 @@ const cleanCSSOptions = {
 
 const metaData = {
   locations: {
-    src: "./src/lemonade.scss",
+    src: "./src/lemonade.sass",
     dist: "./dist"
   },
   // Prepends header to css output files.
   // Managed by package.json
-  fileHeader: `\n\n/*!\n * ${pacakgeData.name} (${pacakgeData.version}) | ${pacakgeData.license}\n * repo: ${pacakgeData.repository.url}\n */\n\n`
+  fileHeader: `\n\n/*!\n * ${packageData.name} (${packageData.version}) | ${packageData.license}\n * repo: ${packageData.repository.url}\n */\n\n`
 };
 
 gulp.task("sass:prod", async () => {
@@ -69,7 +69,7 @@ gulp.task("sass:dev", async () => {
 
 gulp.task("watch", async () => {
   const watcher = gulp.watch(
-    ["./src/**/*.scss"],
+    ["./src/**/*.sass"],
     gulp.parallel(["sass:dev", "sass:prod"])
   );
 
