@@ -25,7 +25,6 @@ const autoprefixerOptions = {
 
 const cleanCSSOptions = {
   2: {
-    all: false, // sets all values to `false`
     removeDuplicateRules: true, // turns on removing duplicate rules
     restructureRules: true // controls rule restructuring; defaults to false
   }
@@ -33,7 +32,7 @@ const cleanCSSOptions = {
 
 const metaData = {
   locations: {
-    src: "./sass/src/lemonade.sass",
+    src: "./sass/lemonade.sass",
     dist: "./dist"
   },
   // Prepends header to css output files.
@@ -69,7 +68,7 @@ gulp.task("sass:dev", async () => {
 
 gulp.task("watch", async () => {
   const watcher = gulp.watch(
-    ["./sass/src/**/*.sass"],
+    ["./sass/**/*.sass"],
     gulp.parallel(["sass:dev", "sass:prod"])
   );
 

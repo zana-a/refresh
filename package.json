@@ -5,10 +5,7 @@
   "scripts": {
     "src:build": "./node_modules/.bin/gulp build",
     "src:serve": "./node_modules/.bin/gulp",
-    "storybook:build": "./node_modules/.bin/storybook-to-ghpages",
-    "storybook:serve": "./node_modules/.bin/start-storybook .storybook",
-    "prime": "npm run src:build && git add . && npm run storybook:build",
-    "start": "./node_modules/.bin/concurrently --kill-others \"npm run storybook:serve\" \"npm run src:serve\""
+    "start": "npm run src:serve"
   },
   "repository": {
     "type": "git",
