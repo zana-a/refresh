@@ -32,8 +32,9 @@ const cleanCSSOptions = {
 
 const metaData = {
   locations: {
-    src: "./sass/lemonade.sass",
-    dist: "./dist"
+    src: "./sass/lemonade.scss",
+    dist: "./dist",
+    dist: "./docs/assets/css"
   },
   // Prepends header to css output files.
   // Managed by package.json
@@ -66,9 +67,21 @@ gulp.task("sass:dev", async () => {
     .pipe(gulp.dest(metaData.locations.dist));
 });
 
+gulp.task("sass:docs", async () => {
+  return gulp
+      .src(metaData.locations.src)
+      .pipe(gap.prependText(metaData.fileHeader))
+      .pipe(sourcemaps.init())
+      .pipe(sass().on("error", sass.logError))
+      .pipe(autoprefixer({ autoprefixerOptions }))
+      .pipe(cleanCSS(cleanCSSOptions))
+      .pipe(prettier())
+      .pipe(gulp.dest(metaData.locations.docs));
+});
+
 gulp.task("watch", async () => {
   const watcher = gulp.watch(
-    ["./sass/**/*.sass"],
+    ["./sass/**/*.scss"],
     gulp.parallel(["sass:dev", "sass:prod"])
   );
 
@@ -85,5 +98,5 @@ gulp.task("watch", async () => {
   });
 });
 
-gulp.task("build", gulp.parallel(["sass:dev", "sass:prod"]));
+gulp.task("build", gulp.parallel(["sass:dev", "sass:prod", "sass:docs"]));
 gulp.task("default", gulp.series("watch"));
