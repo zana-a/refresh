@@ -1,0 +1,92 @@
+/** Variables */
+
+//= Colors =//
+$_DEFAULT_BLUE: rgba(0, 122, 255);
+$_DEFAULT_GREEN: rgba(52, 199, 89);
+$_DEFAULT_INDIGO: rgba(88, 86, 214);
+$_DEFAULT_ORANGE: rgba(255, 149, 0);
+$_DEFAULT_PINK: rgba(255, 45, 85);
+$_DEFAULT_PURPLE: rgba(175, 82, 222);
+$_DEFAULT_RED: rgba(255, 59, 48);
+$_DEFAULT_TEAL: rgba(90, 200, 250);
+$_DEFAULT_YELLOW: rgba(255, 204, 0);
+
+$_DARK_BLUE: rgba(10, 132, 255);
+$_DARK_GREEN: rgba(48, 209, 88);
+$_DARK_INDIGO: rgba(94, 92, 230);
+$_DARK_ORANGE: rgba(255, 159, 10);
+$_DARK_PINK: rgba(255, 55, 95);
+$_DARK_PURPLE: rgba(191, 90, 242);
+$_DARK_RED: rgba(255, 69, 58);
+$_DARK_TEAL: rgba(100, 210, 255);
+$_DARK_YELLOW: rgba(255, 214, 10);
+
+$_DEFAULT_GRAY-1: rgba(142, 142, 147);
+$_DEFAULT_GRAY-2: rgba(174, 174, 178);
+$_DEFAULT_GRAY-3: rgba(199, 199, 204);
+$_DEFAULT_GRAY-4: rgba(209, 209, 204);
+$_DEFAULT_GRAY-5: rgba(229, 229, 234);
+$_DEFAULT_GRAY-6: rgba(242, 242, 247);
+
+$_DARK_GRAY-1: $_DEFAULT_GRAY-1;
+$_DARK_GRAY-2: rgba(99, 99, 102);
+$_DARK_GRAY-3: rgba(72, 72, 74);
+$_DARK_GRAY-4: rgba(58, 58, 60);
+$_DARK_GRAY-5: rgba(44, 44, 46);
+$_DARK_GRAY-6: rgba(28, 28, 40);
+
+//= Font Faces =//
+
+$_DEFAULT_SANS-SERIF: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$_DEFAULT_SERIF: "Times New Roman", Times, serif;
+$_DEFAULT_MONOSPACE: "Courier New", Courier, "Lucida Sans Typewriter",
+  "Lucida Typewriter", monospace;
+
+//= Font Size =//
+
+$_DEFAULT_FONT-SIZE-1: 0;
+$_DEFAULT_FONT-SIZE-2: 34pt;
+$_DEFAULT_FONT-SIZE-3: 28pt;
+$_DEFAULT_FONT-SIZE-4: 22pt;
+$_DEFAULT_FONT-SIZE-5: 20pt;
+$_DEFAULT_FONT-SIZE-6: 16pt;
+$_DEFAULT_FONT-SIZE-7: 14pt;
+$_DEFAULT_FONT-SIZE-8: 12pt;
+$_DEFAULT_FONT-SIZE-9: 11pt;
+
+//= Font Weight =//
+
+$_DEFAULT_FONT-WEIGHT-1: 100;
+$_DEFAULT_FONT-WEIGHT-2: 200;
+$_DEFAULT_FONT-WEIGHT-3: 300;
+$_DEFAULT_FONT-WEIGHT-4: 400;
+$_DEFAULT_FONT-WEIGHT-5: 500;
+$_DEFAULT_FONT-WEIGHT-6: 600;
+
+//= Border Width =//
+
+$_DEFAULT_BORDER-WIDTH-1: 0;
+$_DEFAULT_BORDER-WIDTH-2: 1px;
+$_DEFAULT_BORDER-WIDTH-3: 2px;
+$_DEFAULT_BORDER-WIDTH-4: 4px;
+$_DEFAULT_BORDER-WIDTH-5: 6px;
+$_DEFAULT_BORDER-WIDTH-2: 12px;
+
+//= Edges =//
+
+$_DEFAULT_EDGE-1: 0;
+$_DEFAULT_EDGE-3: 4pt;
+$_DEFAULT_EDGE-4: 6pt;
+$_DEFAULT_EDGE-4: 8pt;
+$_DEFAULT_EDGE-5: 12pt;
+$_DEFAULT_EDGE-6: 10000pt;
+
+//= Opacity =//
+
+$_DEFAULT_OPACITY-1: 0;
+$_DEFAULT_OPACITY-2: 20%;
+$_DEFAULT_OPACITY-3: 40%;
+$_DEFAULT_OPACITY-4: 60%;
+$_DEFAULT_OPACITY-5: 80%;
+$_DEFAULT_OPACITY-6: 100%;
