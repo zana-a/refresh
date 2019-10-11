@@ -12,7 +12,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.2
 
-- Add reset
+- ~~Add reset~~
 
 ### v0.0.3
 
