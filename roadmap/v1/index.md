@@ -8,7 +8,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.1
 
-- Add variables
+- ~~Add variables~~
 
 ### v0.0.2
 
