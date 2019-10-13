@@ -16,8 +16,8 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.3
 
-- Add atoms/appearance
-- Add atoms/background
+- ~~add atoms/appearance~~
+- ~~add atoms/background~~
 - Add atoms/border
 
 ### v0.0.4
