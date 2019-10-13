@@ -1,5 +1,5 @@
 /*!
- * lemonade-css (0.0.1) | MIT
+ * lemonade-css (0.0.2) | MIT
  * repo: https://github.com/zana-a/lemonade.git
  */ /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 html {
@@ -118,6 +118,123 @@ progress {
 }
 summary {
   display: list-item;
+}
+.ap-auto {
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
+  appearance: auto !important;
+}
+.ap-none {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+.ap-inherit {
+  -webkit-appearance: inherit !important;
+  -moz-appearance: inherit !important;
+  appearance: inherit !important;
+}
+.ap-initial {
+  -webkit-appearance: initial !important;
+  -moz-appearance: initial !important;
+  appearance: initial !important;
+}
+.ap-revert {
+  -webkit-appearance: revert !important;
+  -moz-appearance: revert !important;
+  appearance: revert !important;
+}
+.ap-unset {
+  -webkit-appearance: unset !important;
+  -moz-appearance: unset !important;
+  appearance: unset !important;
+}
+.bg-blue {
+  background-color: #007aff !important;
+}
+.bg-green {
+  background-color: #34c759 !important;
+}
+.bg-indigo {
+  background-color: #5856d6 !important;
+}
+.bg-orange {
+  background-color: #ff9500 !important;
+}
+.bg-pink {
+  background-color: #ff2d55 !important;
+}
+.bg-purple {
+  background-color: #af52de !important;
+}
+.bg-red {
+  background-color: #ff3b30 !important;
+}
+.bg-teal {
+  background-color: #5ac8fa !important;
+}
+.bg-yellow {
+  background-color: #fc0 !important;
+}
+.bg-dark-blue {
+  background-color: #0a84ff !important;
+}
+.bg-dark-green {
+  background-color: #30d158 !important;
+}
+.bg-dark-indigo {
+  background-color: #5e5ce6 !important;
+}
+.bg-dark-orange {
+  background-color: #ff9f0a !important;
+}
+.bg-dark-pink {
+  background-color: #ff375f !important;
+}
+.bg-dark-purple {
+  background-color: #bf5af2 !important;
+}
+.bg-dark-red {
+  background-color: #ff453a !important;
+}
+.bg-dark-teal {
+  background-color: #64d2ff !important;
+}
+.bg-dark-yellow {
+  background-color: #ffd60a !important;
+}
+.bg-gray {
+  background-color: #8e8e93 !important;
+}
+.bg-gray-1 {
+  background-color: #aeaeb2 !important;
+}
+.bg-gray-2 {
+  background-color: #c7c7cc !important;
+}
+.bg-gray-3 {
+  background-color: #d1d1cc !important;
+}
+.bg-gray-4 {
+  background-color: #e5e5ea !important;
+}
+.bg-gray-5 {
+  background-color: #f2f2f7 !important;
+}
+.bg-gray-6 {
+  background-color: #636366 !important;
+}
+.bg-gray-7 {
+  background-color: #48484a !important;
+}
+.bg-gray-8 {
+  background-color: #3a3a3c !important;
+}
+.bg-gray-9 {
+  background-color: #2c2c2e !important;
+}
+.bg-gray-10 {
+  background-color: #1c1c28 !important;
 }
 
 /*# sourceMappingURL=lemonade.css.map */
