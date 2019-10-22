@@ -236,5 +236,98 @@ summary {
 .bg-gray-10 {
   background-color: #1c1c28 !important;
 }
+.b {
+  border: 1px solid #8e8e93;
+}
+.bc-blue {
+  border-color: #007aff !important;
+}
+.bc-green {
+  border-color: #34c759 !important;
+}
+.bc-indigo {
+  border-color: #5856d6 !important;
+}
+.bc-orange {
+  border-color: #ff9500 !important;
+}
+.bc-pink {
+  border-color: #ff2d55 !important;
+}
+.bc-purple {
+  border-color: #af52de !important;
+}
+.bc-red {
+  border-color: #ff3b30 !important;
+}
+.bc-teal {
+  border-color: #5ac8fa !important;
+}
+.bc-yellow {
+  border-color: #fc0 !important;
+}
+.bc-gray {
+  border-color: #8e8e93 !important;
+}
+.bc-gray-1 {
+  border-color: #aeaeb2 !important;
+}
+.bc-gray-2 {
+  border-color: #c7c7cc !important;
+}
+.bc-gray-3 {
+  border-color: #d1d1cc !important;
+}
+.bc-gray-4 {
+  border-color: #e5e5ea !important;
+}
+.bc-gray-5 {
+  border-color: #f2f2f7 !important;
+}
+.bc-gray-6 {
+  border-color: #636366 !important;
+}
+.bc-gray-7 {
+  border-color: #48484a !important;
+}
+.bc-gray-8 {
+  border-color: #3a3a3c !important;
+}
+.bc-gray-9 {
+  border-color: #2c2c2e !important;
+}
+.bc-gray-10 {
+  border-color: #1c1c28 !important;
+}
+.bs-none {
+  border-style: none !important;
+}
+.bs-hidden {
+  border-style: hidden !important;
+}
+.bs-dotted {
+  border-style: dotted !important;
+}
+.bs-dashed {
+  border-style: dashed !important;
+}
+.bs-solid {
+  border-style: solid !important;
+}
+.bs-double {
+  border-style: double !important;
+}
+.bs-groove {
+  border-style: groove !important;
+}
+.bs-ridge {
+  border-style: ridge !important;
+}
+.bs-inset {
+  border-style: inset !important;
+}
+.bs-outset {
+  border-style: outset !important;
+}
 
 /*# sourceMappingURL=lemonade.css.map */
