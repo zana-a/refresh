@@ -36,7 +36,6 @@ $_DARK_GRAY-5: rgb(44, 44, 46);
 $_DARK_GRAY-6: rgb(28, 28, 40);
 
 //= Font Faces =//
-
 $_DEFAULT_SANS-SERIF: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $_DEFAULT_SERIF: "Times New Roman", Times, serif;
@@ -44,7 +43,6 @@ $_DEFAULT_MONOSPACE: "Courier New", Courier, "Lucida Sans Typewriter",
   "Lucida Typewriter", monospace;
 
 //= Font Size =//
-
 $_DEFAULT_FONT-SIZE-1: 0;
 $_DEFAULT_FONT-SIZE-2: 34pt;
 $_DEFAULT_FONT-SIZE-3: 28pt;
@@ -56,7 +54,6 @@ $_DEFAULT_FONT-SIZE-8: 12pt;
 $_DEFAULT_FONT-SIZE-9: 11pt;
 
 //= Font Weight =//
-
 $_DEFAULT_FONT-WEIGHT-1: 100;
 $_DEFAULT_FONT-WEIGHT-2: 200;
 $_DEFAULT_FONT-WEIGHT-3: 300;
@@ -65,16 +62,13 @@ $_DEFAULT_FONT-WEIGHT-5: 500;
 $_DEFAULT_FONT-WEIGHT-6: 600;
 
 //= Border Width =//
-
-$_DEFAULT_BORDER-WIDTH-1: 0;
-$_DEFAULT_BORDER-WIDTH-2: 1px;
-$_DEFAULT_BORDER-WIDTH-3: 2px;
-$_DEFAULT_BORDER-WIDTH-4: 4px;
-$_DEFAULT_BORDER-WIDTH-5: 6px;
-$_DEFAULT_BORDER-WIDTH-2: 12px;
+$_DEFAULT_BORDER-WIDTH-1: 2px;
+$_DEFAULT_BORDER-WIDTH-2: 4px;
+$_DEFAULT_BORDER-WIDTH-3: 6px;
+$_DEFAULT_BORDER-WIDTH-4: 8px;
+$_DEFAULT_BORDER-WIDTH-5: 12px;
 
 //= Edges =//
-
 $_DEFAULT_EDGE-1: 0;
 $_DEFAULT_EDGE-3: 4pt;
 $_DEFAULT_EDGE-4: 6pt;
@@ -83,7 +77,6 @@ $_DEFAULT_EDGE-5: 12pt;
 $_DEFAULT_EDGE-6: 10000pt;
 
 //= Opacity =//
-
 $_DEFAULT_OPACITY-1: 0;
 $_DEFAULT_OPACITY-2: 20%;
 $_DEFAULT_OPACITY-3: 40%;

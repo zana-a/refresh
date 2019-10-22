@@ -239,95 +239,110 @@ summary {
 .b {
   border: 1px solid #8e8e93;
 }
-.bc-blue {
+.b.bc-blue {
   border-color: #007aff !important;
 }
-.bc-green {
+.b.bc-green {
   border-color: #34c759 !important;
 }
-.bc-indigo {
+.b.bc-indigo {
   border-color: #5856d6 !important;
 }
-.bc-orange {
+.b.bc-orange {
   border-color: #ff9500 !important;
 }
-.bc-pink {
+.b.bc-pink {
   border-color: #ff2d55 !important;
 }
-.bc-purple {
+.b.bc-purple {
   border-color: #af52de !important;
 }
-.bc-red {
+.b.bc-red {
   border-color: #ff3b30 !important;
 }
-.bc-teal {
+.b.bc-teal {
   border-color: #5ac8fa !important;
 }
-.bc-yellow {
+.b.bc-yellow {
   border-color: #fc0 !important;
 }
-.bc-gray {
+.b.bc-gray {
   border-color: #8e8e93 !important;
 }
-.bc-gray-1 {
+.b.bc-gray-1 {
   border-color: #aeaeb2 !important;
 }
-.bc-gray-2 {
+.b.bc-gray-2 {
   border-color: #c7c7cc !important;
 }
-.bc-gray-3 {
+.b.bc-gray-3 {
   border-color: #d1d1cc !important;
 }
-.bc-gray-4 {
+.b.bc-gray-4 {
   border-color: #e5e5ea !important;
 }
-.bc-gray-5 {
+.b.bc-gray-5 {
   border-color: #f2f2f7 !important;
 }
-.bc-gray-6 {
+.b.bc-gray-6 {
   border-color: #636366 !important;
 }
-.bc-gray-7 {
+.b.bc-gray-7 {
   border-color: #48484a !important;
 }
-.bc-gray-8 {
+.b.bc-gray-8 {
   border-color: #3a3a3c !important;
 }
-.bc-gray-9 {
+.b.bc-gray-9 {
   border-color: #2c2c2e !important;
 }
-.bc-gray-10 {
+.b.bc-gray-10 {
   border-color: #1c1c28 !important;
 }
-.bs-none {
+.b.bs-none {
   border-style: none !important;
 }
-.bs-hidden {
+.b.bs-hidden {
   border-style: hidden !important;
 }
-.bs-dotted {
+.b.bs-dotted {
   border-style: dotted !important;
 }
-.bs-dashed {
+.b.bs-dashed {
   border-style: dashed !important;
 }
-.bs-solid {
+.b.bs-solid {
   border-style: solid !important;
 }
-.bs-double {
+.b.bs-double {
   border-style: double !important;
 }
-.bs-groove {
+.b.bs-groove {
   border-style: groove !important;
 }
-.bs-ridge {
+.b.bs-ridge {
   border-style: ridge !important;
 }
-.bs-inset {
+.b.bs-inset {
   border-style: inset !important;
 }
-.bs-outset {
+.b.bs-outset {
   border-style: outset !important;
+}
+.b.bw-1 {
+  border-width: 2px !important;
+}
+.b.bw-2 {
+  border-width: 4px !important;
+}
+.b.bw-3 {
+  border-width: 6px !important;
+}
+.b.bw-4 {
+  border-width: 8px !important;
+}
+.b.bw-5 {
+  border-width: 12px !important;
 }
 
 /*# sourceMappingURL=lemonade.css.map */

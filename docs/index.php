@@ -71,6 +71,7 @@ $border_map = [
   "inset",
   "outset",
 ];
+
 ?>
 
 <!doctype html>
@@ -82,16 +83,45 @@ $border_map = [
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="./assets/css/lemonade.css">
+        <style>
+            div {
+                padding: 16px;
+            }
+        </style>
     </head>
     <body>
-        <?php
+        <div style="width: 1200px; margin: 0 auto;">
+            <?php
             foreach($color_array as $item => $value) {
                 echo "<div class='b bc-$item'>border $item</div>" . '</br>';
             }
 
             foreach($border_map as $value) {
-                echo "<div class='b bs-$value'>border $value</div>" . '</br>';
+                if ($value == 'double') {
+
+                } else {
+                    echo "<div class='b bs-$value'>border $value</div>" . '</br>';
+                }
+
+                switch ($value) {
+                    case 'groove':
+                    case 'double':
+                    case 'ridge':
+                    case 'inset':
+                    case 'outset':
+                        echo "<div class='b bs-$value bw-2'>border $value (bw-2)</div>" . '</br>';
+                        break;
+
+                    default:
+                        echo "<div class='b bs-$value'>border $value</div>" . '</br>';
+                        break;
+                }
             }
-        ?>
+
+            for($i = 1; $i <= 5; $i++) {
+                echo "<div class='b bw-$i'>border $i</div>" . '</br>';
+            }
+            ?>
+        </div>
     </body>
 </html>
