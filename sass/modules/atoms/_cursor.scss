@@ -1,0 +1,20 @@
+/** Cursor */
+
+$__cursor-map: (
+  "help": "help",
+  "wait": "wait",
+  "clipboard": "clipboard",
+  "crosshair": "crosshair",
+  "notAllowed": "not-allowed",
+  "zoomIn": "zoom-in",
+  "grab": "grab",
+);
+
+/**
+ * Sets the cursor.
+ */
+@each $__cursor, $__cursor-value in $__cursor-map {
+  &.cur-#{$__cursor} {
+    cursor: $__cursor-value !important;
+  }
+}

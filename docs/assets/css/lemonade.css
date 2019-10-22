@@ -362,5 +362,26 @@ summary {
 .b.be-none {
   border-radius: 0 !important;
 }
+.cur-help {
+  cursor: help !important;
+}
+.cur-wait {
+  cursor: wait !important;
+}
+.cur-clipboard {
+  cursor: clipboard !important;
+}
+.cur-crosshair {
+  cursor: crosshair !important;
+}
+.cur-notAllowed {
+  cursor: not-allowed !important;
+}
+.cur-zoomIn {
+  cursor: zoom-in !important;
+}
+.cur-grab {
+  cursor: grab !important;
+}
 
 /*# sourceMappingURL=lemonade.css.map */

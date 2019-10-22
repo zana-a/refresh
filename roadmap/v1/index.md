@@ -22,11 +22,11 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.4
 
-- Add atoms/cursor
+- ~~Add atoms/cursor~~
 - Add atoms/display
 - Add atoms/flexbox
 
-### v0.0.5
+### v0.0.5c
 
 - Add atoms/float
 - Add atoms/font
