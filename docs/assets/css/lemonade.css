@@ -344,5 +344,23 @@ summary {
 .b.bw-5 {
   border-width: 12px !important;
 }
+.b.be-sm {
+  border-radius: 4px !important;
+}
+.b.be-md {
+  border-radius: 6px !important;
+}
+.b.be-lg {
+  border-radius: 8px !important;
+}
+.b.be-xl {
+  border-radius: 12px !important;
+}
+.b.be-full {
+  border-radius: 10000pt !important;
+}
+.b.be-none {
+  border-radius: 0 !important;
+}
 
 /*# sourceMappingURL=lemonade.css.map */

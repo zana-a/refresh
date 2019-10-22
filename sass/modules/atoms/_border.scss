@@ -1,36 +1,63 @@
 @import "../abstracts/variables";
 
 $__border-color-map: (
-        "blue": $_DEFAULT_BLUE,
-        "green": $_DEFAULT_GREEN,
-        "indigo": $_DEFAULT_INDIGO,
-        "orange": $_DEFAULT_ORANGE,
-        "pink": $_DEFAULT_PINK,
-        "purple": $_DEFAULT_PURPLE,
-        "red": $_DEFAULT_RED,
-        "teal": $_DEFAULT_TEAL,
-        "yellow": $_DEFAULT_YELLOW,
-        "gray": $_DEFAULT_GRAY-1,
-        "gray-1": $_DEFAULT_GRAY-2,
-        "gray-2": $_DEFAULT_GRAY-3,
-        "gray-3": $_DEFAULT_GRAY-4,
-        "gray-4": $_DEFAULT_GRAY-5,
-        "gray-5": $_DEFAULT_GRAY-6,
-        "gray-6": $_DARK_GRAY-2,
-        "gray-7": $_DARK_GRAY-3,
-        "gray-8": $_DARK_GRAY-4,
-        "gray-9": $_DARK_GRAY-5,
-        "gray-10": $_DARK_GRAY-6
+  "blue": $_DEFAULT_BLUE,
+  "green": $_DEFAULT_GREEN,
+  "indigo": $_DEFAULT_INDIGO,
+  "orange": $_DEFAULT_ORANGE,
+  "pink": $_DEFAULT_PINK,
+  "purple": $_DEFAULT_PURPLE,
+  "red": $_DEFAULT_RED,
+  "teal": $_DEFAULT_TEAL,
+  "yellow": $_DEFAULT_YELLOW,
+  "gray": $_DEFAULT_GRAY-1,
+  "gray-1": $_DEFAULT_GRAY-2,
+  "gray-2": $_DEFAULT_GRAY-3,
+  "gray-3": $_DEFAULT_GRAY-4,
+  "gray-4": $_DEFAULT_GRAY-5,
+  "gray-5": $_DEFAULT_GRAY-6,
+  "gray-6": $_DARK_GRAY-2,
+  "gray-7": $_DARK_GRAY-3,
+  "gray-8": $_DARK_GRAY-4,
+  "gray-9": $_DARK_GRAY-5,
+  "gray-10": $_DARK_GRAY-6
 );
 
-$__border-style-map: ("none", "hidden", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset");
+$__border-style-map: (
+  "none",
+  "hidden",
+  "dotted",
+  "dashed",
+  "solid",
+  "double",
+  "groove",
+  "ridge",
+  "inset",
+  "outset"
+);
 
 $__border-width-map: (
-        "1": $_DEFAULT_BORDER-WIDTH-1,
-        "2": $_DEFAULT_BORDER-WIDTH-2,
-        "3": $_DEFAULT_BORDER-WIDTH-3,
-        "4": $_DEFAULT_BORDER-WIDTH-4,
-        "5": $_DEFAULT_BORDER-WIDTH-5
+  "1": $_DEFAULT_BORDER-WIDTH-1,
+  "2": $_DEFAULT_BORDER-WIDTH-2,
+  "3": $_DEFAULT_BORDER-WIDTH-3,
+  "4": $_DEFAULT_BORDER-WIDTH-4,
+  "5": $_DEFAULT_BORDER-WIDTH-5
+);
+
+$__border-radius-map: (
+  "sm": $_DEFAULT_EDGE-2,
+  "md": $_DEFAULT_EDGE-3,
+  "lg": $_DEFAULT_EDGE-4,
+  "xl": $_DEFAULT_EDGE-5,
+  "full": $_DEFAULT_EDGE-6,
+  "none": $_DEFAULT_EDGE-1
+);
+
+$__border-position-map: (
+  "top",
+  "right",
+  "bottom",
+  "left"
 );
 
 /**
@@ -69,8 +96,12 @@ $__border-width-map: (
     }
   }
 
-  // TODO
-  // - Border Radius
-  // - Border On (Directional Initialization)
-  // - Border Off (Reverse Directional Initialization)
+  /**
+   * Border Radius (Edge)
+   */
+  @each $__border-radius, $__border-radius-value in $__border-radius-map {
+    &.be-#{$__border-radius} {
+      border-radius: $__border-radius-value !important;
+    }
+  }
 }
