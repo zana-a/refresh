@@ -24,9 +24,9 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 - ~~Add atoms/cursor~~
 - ~~Add atoms/display~~
-- Add atoms/flexbox
+- ~~Add atoms/flexbox~~
 
-### v0.0.5c
+### v0.0.5
 
 - Add atoms/float
 - Add atoms/font

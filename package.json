@@ -1,6 +1,6 @@
 {
   "name": "lemonade-css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "scripts": {
     "src:build": "./node_modules/.bin/gulp build",

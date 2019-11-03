@@ -1,0 +1,29 @@
+/** Flexbox */
+
+/**
+ * Flex item can shrink but not grow. Takes account of the initial size
+ */
+.flex {
+  flex: 0 0 auto !important;
+}
+
+/**
+ * Flex item can shrink and grow. Does not take account of the initial size
+ */
+.flex-1 {
+  flex: 1 1 0% !important;
+}
+
+/**
+ * Flex item can shrink and grow. Takes account of the initial size
+ */
+.flex-auto {
+  flex: 1 1 auto !important;
+}
+
+/**
+ * Flex item does not shrink or grow
+ */
+.flex-none {
+  flex: none !important;
+}
