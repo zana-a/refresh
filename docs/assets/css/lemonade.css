@@ -1,5 +1,5 @@
 /*!
- * lemonade-css (0.0.3) | MIT
+ * lemonade-css (0.0.4) | MIT
  * repo: https://github.com/zana-a/lemonade.git
  */ /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 html {
@@ -424,6 +424,20 @@ summary {
 }
 .flex-none {
   flex: none !important;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.float-none {
+  float: none;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*# sourceMappingURL=lemonade.css.map */

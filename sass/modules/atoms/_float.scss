@@ -1,0 +1,28 @@
+/** Float */
+
+/**
+ * Floats item to left
+ */
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/**
+ * Resets the float value
+ */
+.float-none {
+  float: none;
+}
+
+/**
+ * Forces a contianer to self-clear its children
+ */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -28,7 +28,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.5
 
-- Add atoms/float
+- ~~Add atoms/float~~
 - Add atoms/font
 - Add atoms/letter
 
