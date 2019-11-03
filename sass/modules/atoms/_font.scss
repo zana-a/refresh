@@ -1,0 +1,16 @@
+/** Font */
+
+@import "../abstracts/variables";
+
+.font-default,
+.font-sans-serif {
+  font-family: $_DEFAULT_SANS-SERIF;
+}
+
+.font-serif {
+  font-family: $_DEFAULT_SERIF;
+}
+
+.font-monospace {
+  font-family: $_DEFAULT_MONOSPACE;
+}

@@ -439,5 +439,17 @@ summary {
   display: table;
   clear: both;
 }
+.font-default,
+.font-sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.font-serif {
+  font-family: "Times New Roman", Times, serif;
+}
+.font-monospace {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
+}
 
 /*# sourceMappingURL=lemonade.css.map */
