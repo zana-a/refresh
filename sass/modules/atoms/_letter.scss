@@ -14,6 +14,6 @@ $__tracking-map: (
  */
 @each $__tracking, $__tracking-value in $__tracking-map {
   &.tracking-#{$__tracking} {
-    letter-spacing: $__tracking-value !important;
+    letter-spacing: $__tracking-value;
   }
 }

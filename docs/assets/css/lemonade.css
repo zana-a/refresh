@@ -452,22 +452,73 @@ summary {
     "Lucida Typewriter", monospace;
 }
 .tracking-tighter {
-  letter-spacing: -0.05em !important;
+  letter-spacing: -0.05em;
 }
 .tracking-tight {
-  letter-spacing: -0.025em !important;
+  letter-spacing: -0.025em;
 }
 .tracking-normal {
-  letter-spacing: 0 !important;
+  letter-spacing: 0;
 }
 .tracking-wide {
-  letter-spacing: 0.025em !important;
+  letter-spacing: 0.025em;
 }
 .tracking-wider {
-  letter-spacing: 0.05em !important;
+  letter-spacing: 0.05em;
 }
 .tracking-widest {
-  letter-spacing: 0.1em !important;
+  letter-spacing: 0.1em;
+}
+.list-inside {
+  list-style-position: inside;
+}
+.list-outside {
+  list-style-position: outside;
+}
+.list-style-disc {
+  list-style-type: disc;
+}
+.list-style-circle {
+  list-style-type: circle;
+}
+.list-style-square {
+  list-style-type: square;
+}
+.list-style-decimal {
+  list-style-type: decimal;
+}
+.list-style-decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+.list-style-lower-roman {
+  list-style-type: lower-roman;
+}
+.list-style-upper-roman {
+  list-style-type: upper-roman;
+}
+.list-style-lower-greek {
+  list-style-type: lower-greek;
+}
+.list-style-lower-latin {
+  list-style-type: lower-latin;
+}
+.list-style-upper-latin {
+  list-style-type: upper-latin;
+}
+.list-style-armenian {
+  list-style-type: armenian;
+}
+.list-style-georgian {
+  list-style-type: georgian;
+}
+.list-style-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.list-style-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.list-style-none {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=lemonade.css.map */
