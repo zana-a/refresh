@@ -520,5 +520,83 @@ summary {
 .list-style-none {
   list-style-type: none;
 }
+.list-style-disc {
+  list-style-type: disc;
+}
+.list-style-circle {
+  list-style-type: circle;
+}
+.list-style-square {
+  list-style-type: square;
+}
+.list-style-decimal {
+  list-style-type: decimal;
+}
+.list-style-decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+.list-style-lower-roman {
+  list-style-type: lower-roman;
+}
+.list-style-upper-roman {
+  list-style-type: upper-roman;
+}
+.list-style-lower-greek {
+  list-style-type: lower-greek;
+}
+.list-style-lower-latin {
+  list-style-type: lower-latin;
+}
+.list-style-upper-latin {
+  list-style-type: upper-latin;
+}
+.list-style-armenian {
+  list-style-type: armenian;
+}
+.list-style-georgian {
+  list-style-type: georgian;
+}
+.list-style-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.list-style-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.list-style-none {
+  list-style-type: none;
+}
+.opac-0 {
+  opacity: 0;
+}
+.opac-1 {
+  opacity: 10%;
+}
+.opac-2 {
+  opacity: 20%;
+}
+.opac-3 {
+  opacity: 30%;
+}
+.opac-4 {
+  opacity: 40%;
+}
+.opac-5 {
+  opacity: 50%;
+}
+.opac-6 {
+  opacity: 60%;
+}
+.opac-7 {
+  opacity: 70%;
+}
+.opac-8 {
+  opacity: 80%;
+}
+.opac-9 {
+  opacity: 90%;
+}
+.opac-10 {
+  opacity: 100%;
+}
 
 /*# sourceMappingURL=lemonade.css.map */

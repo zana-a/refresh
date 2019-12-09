@@ -36,7 +36,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 - Add atoms/list
 - Add atoms/object
-- Add atoms/opacity
+- ~~Add atoms/opacity~~
 
 ### v0.0.7
 

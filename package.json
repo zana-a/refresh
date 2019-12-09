@@ -3,9 +3,9 @@
   "version": "0.0.4",
   "description": "",
   "scripts": {
-    "src:build": "./node_modules/.bin/gulp build",
-    "src:serve": "./node_modules/.bin/gulp",
-    "start": "npm run src:serve"
+    "src:build": "gulp build",
+    "src:serve": "gulp",
+    "start": "concurrently \"npm run src:serve\" \"http-server ./docs\" "
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "http-server": "^0.12.0",
     "node-sass": "^4.12.0",
+    "nodemon": "^2.0.1",
     "normalize.css": "^8.0.1",
     "prettier": "^1.18.2"
   },
