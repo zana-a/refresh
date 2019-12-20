@@ -1,39 +1,36 @@
 /** Overflow */
 
 $__overflow-map: (
-    "hidden",
-    "visible",
-    "scroll",
-    "x-auto", 	
-    "y-auto", 	
-    "x-hidden",
-    "y-hidden",
-    "x-visible", 
-    "y-visible",
-    "x-scroll",
-    "y-scroll",
+  "hidden",
+  "visible",
+  "scroll",
+  "x-auto",
+  "y-auto",
+  "x-hidden",
+  "y-hidden",
+  "x-visible",
+  "y-visible",
+  "x-scroll",
+  "y-scroll"
 );
 
 // scrolling
-$__scrolling-map: (
-    "touch",
-    "auto",
-);
+$__scrolling-map: ("touch", "auto");
 
 /**
  * Overflow
  */
- @each $__overflow in $__overflow-map {
-    .overflow-#{$__overflow} {
-        overflow: $__overflow;
-    }
+@each $__overflow in $__overflow-map {
+  .overflow-#{$__overflow} {
+    overflow: $__overflow;
+  }
 }
 
 /**
  * Scrolling
  */
- @each $__scrolling in $__scrolling-map {
-    .scrolling-#{$__scrolling} {
-        -webkit-overflow-scrolling: $__scrolling;
-    }
+@each $__scrolling in $__scrolling-map {
+  .scrolling-#{$__scrolling} {
+    -webkit-overflow-scrolling: $__scrolling;
+  }
 }

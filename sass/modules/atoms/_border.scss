@@ -55,12 +55,7 @@ $__border-radius-map: (
   "none": $_DEFAULT_EDGE-1
 );
 
-$__border-position-map: (
-  "top",
-  "right",
-  "bottom",
-  "left"
-);
+$__border-position-map: ("top", "right", "bottom", "left");
 
 /**
  * Border

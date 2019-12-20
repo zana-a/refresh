@@ -5,6 +5,7 @@
   "scripts": {
     "src:build": "gulp build",
     "src:serve": "gulp",
+    "src:format": "prettier sass/**/*.scss --write",
     "start": "concurrently \"npm run src:serve\" \"http-server ./docs\" "
   },
   "repository": {

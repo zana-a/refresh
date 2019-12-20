@@ -1,5 +1,5 @@
 /*!
- * lemonade-css (0.0.6) | MIT
+ * lemonade-css (0.0.7) | MIT
  * repo: https://github.com/zana-a/lemonade.git
  */ /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 html {
@@ -650,6 +650,27 @@ summary {
 }
 .scrolling-auto {
   -webkit-overflow-scrolling: auto;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+.pointer-events-auto {
+  pointer-events: auto;
+}
+.pos-static {
+  position: static;
+}
+.pos-fixed {
+  position: fixed;
+}
+.pos-absolute {
+  position: absolute;
+}
+.pos-relative {
+  position: relative;
+}
+.pos-sticky {
+  position: sticky;
 }
 
 /*# sourceMappingURL=lemonade.css.map */

@@ -46,7 +46,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.8
 
-- Add atoms/position
+- ~~Add atoms/position~~
 - Add atoms/resize
 - Add atoms/select
 - Add atoms/shadow

@@ -31,7 +31,7 @@ $__background-map: (
   "gray-7": $_DARK_GRAY-3,
   "gray-8": $_DARK_GRAY-4,
   "gray-9": $_DARK_GRAY-5,
-  "gray-10": $_DARK_GRAY-6,
+  "gray-10": $_DARK_GRAY-6
 );
 
 @each $__background, $__background-value in $__background-map {

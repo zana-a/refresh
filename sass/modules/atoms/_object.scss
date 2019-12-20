@@ -1,39 +1,33 @@
 /** Object */
 
-$__object-fit-map: (
-    "contain",
-    "cover",
-    "fill",
-    "scale-down",
-    "none",
-);
+$__object-fit-map: ("contain", "cover", "fill", "scale-down", "none");
 
 $__object-pos-map: (
-    "bottom",
-    "center",
-    "left",
-    "left-bottom",
-    "left-top",
-    "right",
-    "right-bottom",
-    "right-top",
-    "top",
+  "bottom",
+  "center",
+  "left",
+  "left-bottom",
+  "left-top",
+  "right",
+  "right-bottom",
+  "right-top",
+  "top"
 );
 
 /**
  * Object Fit
  */
 @each $__object-fit in $__object-fit-map {
-    .object-#{$__object-fit} {
-        object-fit: $__object-fit;
-    }
+  .object-#{$__object-fit} {
+    object-fit: $__object-fit;
+  }
 }
 
 /**
  * Object Position
  */
 @each $__object-pos in $__object-pos-map {
-    .object-#{$__object-pos} {
-        object-position: $__object-pos;
-    }
+  .object-#{$__object-pos} {
+    object-position: $__object-pos;
+  }
 }
