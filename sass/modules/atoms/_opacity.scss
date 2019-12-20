@@ -1,15 +1,5 @@
 /** Opacity */
 
-
-/**
- * Set the list styles
- */
-@each $__list-style in $__list-style-map {
-  &.list-style-#{$__list-style} {
-    list-style-type: $__list-style;
-  }
-}
-
 @for $__opacity from 0 through 10 {
   .#{opac}-#{$__opacity} {
     opacity: ($__opacity * 10) + unquote("%");
