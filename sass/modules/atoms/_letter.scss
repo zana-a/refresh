@@ -13,7 +13,7 @@ $__tracking-map: (
  * Sets the tracking space.
  */
 @each $__tracking, $__tracking-value in $__tracking-map {
-  &.tracking-#{$__tracking} {
+  .tracking-#{$__tracking} {
     letter-spacing: $__tracking-value;
   }
 }

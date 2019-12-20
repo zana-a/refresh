@@ -13,8 +13,8 @@ const packageData = JSON.parse(fs.readFileSync("./package.json"));
 
 const autoprefixerOptions = {
   browsers: [
-    "last 2 version",
-    "safari 5",
+    "last 4 version",
+    "safari 4",
     "ie 8",
     "ie 9",
     "opera 12.1",
@@ -69,14 +69,14 @@ gulp.task("sass:dev", async () => {
 
 gulp.task("sass:docs", async () => {
   return gulp
-      .src(metaData.locations.src)
-      .pipe(gap.prependText(metaData.fileHeader))
-      .pipe(sourcemaps.init())
-      .pipe(sass().on("error", sass.logError))
-      .pipe(autoprefixer({ autoprefixerOptions }))
-      .pipe(cleanCSS(cleanCSSOptions))
-      .pipe(prettier())
-      .pipe(gulp.dest(metaData.locations.docs));
+    .src(metaData.locations.src)
+    .pipe(gap.prependText(metaData.fileHeader))
+    .pipe(sourcemaps.init())
+    .pipe(sass().on("error", sass.logError))
+    .pipe(autoprefixer({ autoprefixerOptions }))
+    .pipe(cleanCSS(cleanCSSOptions))
+    .pipe(prettier())
+    .pipe(gulp.dest(metaData.locations.docs));
 });
 
 gulp.task("watch", async () => {
@@ -85,15 +85,15 @@ gulp.task("watch", async () => {
     gulp.parallel(["sass:dev", "sass:prod"])
   );
 
-  watcher.on("change", function(path, stats) {
+  watcher.on("change", function (path, stats) {
     console.log(color("\n" + path + " was changed" + "\n", "GREEN"));
   });
 
-  watcher.on("add", function(path, stats) {
+  watcher.on("add", function (path, stats) {
     console.log(color("\n" + path + " was changed" + "\n", "BLUE"));
   });
 
-  watcher.on("unlink", function(path, stats) {
+  watcher.on("unlink", function (path, stats) {
     console.log(color("\n" + path + " was changed" + "\n", "RED"));
   });
 });

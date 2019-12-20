@@ -17,7 +17,7 @@ $__display-map: (
  * Sets the display options.
  */
 @each $__display in $__display-map {
-  &.d-#{$__display} {
+  .d-#{$__display} {
     display: $__display !important;
   }
 }

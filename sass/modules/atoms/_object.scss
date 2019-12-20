@@ -24,7 +24,7 @@ $__object-pos-map: (
  * Object Fit
  */
 @each $__object-fit in $__object-fit-map {
-    &.object-#{$__object-fit} {
+    .object-#{$__object-fit} {
         object-fit: $__object-fit;
     }
 }
@@ -33,7 +33,7 @@ $__object-pos-map: (
  * Object Position
  */
 @each $__object-pos in $__object-pos-map {
-    &.object-#{$__object-pos} {
+    .object-#{$__object-pos} {
         object-position: $__object-pos;
     }
 }

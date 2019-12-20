@@ -14,7 +14,7 @@ $__cursor-map: (
  * Sets the cursor.
  */
 @each $__cursor, $__cursor-value in $__cursor-map {
-  &.cur-#{$__cursor} {
+  .cur-#{$__cursor} {
     cursor: $__cursor-value !important;
   }
 }

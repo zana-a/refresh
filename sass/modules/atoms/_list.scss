@@ -37,7 +37,7 @@ $__list-style-map: (
  * Set the list styles
  */
 @each $__list-style in $__list-style-map {
-  &.list-style-#{$__list-style} {
+  .list-style-#{$__list-style} {
     list-style-type: $__list-style;
   }
 }

@@ -74,7 +74,7 @@ $__border-position-map: (
   * Overrides the default gray color of the initialized border.
   */
   @each $__border-color, $__border-color-value in $__border-color-map {
-    &.bc-#{$__border-color} {
+    .bc-#{$__border-color} {
       border-color: $__border-color-value !important;
     }
   }
@@ -84,7 +84,7 @@ $__border-position-map: (
    * Overrides the default border style.
    */
   @each $__border-style in $__border-style-map {
-    &.bs-#{$__border-style} {
+    .bs-#{$__border-style} {
       border-style: $__border-style !important;
     }
   }
@@ -93,7 +93,7 @@ $__border-position-map: (
    * Border Width (Weight)
    */
   @each $__border-width, $border-width-value in $__border-width-map {
-    &.bw-#{$__border-width} {
+    .bw-#{$__border-width} {
       border-width: $border-width-value !important;
     }
   }
@@ -102,7 +102,7 @@ $__border-position-map: (
    * Border Radius (Edge)
    */
   @each $__border-radius, $__border-radius-value in $__border-radius-map {
-    &.be-#{$__border-radius} {
+    .be-#{$__border-radius} {
       border-radius: $__border-radius-value !important;
     }
   }
