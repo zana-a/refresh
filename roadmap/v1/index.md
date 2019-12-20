@@ -42,7 +42,7 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 - ~~Add atoms/outline~~
 - ~~Add atoms/overflow~~
-- Add atoms/pointer-events
+- ~~Add atoms/pointer-events~~
 
 ### v0.0.8
 
