@@ -40,8 +40,8 @@ This project is based on the MIT license and does not issue a warranty. Please u
 
 ### v0.0.7
 
-- Add atoms/outline
-- Add atoms/overflow
+- ~~Add atoms/outline~~
+- ~~Add atoms/overflow~~
 - Add atoms/pointer-events
 
 ### v0.0.8
