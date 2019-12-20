@@ -1,5 +1,5 @@
 /*!
- * lemonade-css (0.0.4) | MIT
+ * lemonade-css (0.0.6) | MIT
  * repo: https://github.com/zana-a/lemonade.git
  */ /*! modern-normalize | MIT License | https://github.com/sindresorhus/modern-normalize */
 html {
@@ -576,51 +576,6 @@ summary {
   -o-object-position: top;
   object-position: top;
 }
-.list-style-disc {
-  list-style-type: disc;
-}
-.list-style-circle {
-  list-style-type: circle;
-}
-.list-style-square {
-  list-style-type: square;
-}
-.list-style-decimal {
-  list-style-type: decimal;
-}
-.list-style-decimal-leading-zero {
-  list-style-type: decimal-leading-zero;
-}
-.list-style-lower-roman {
-  list-style-type: lower-roman;
-}
-.list-style-upper-roman {
-  list-style-type: upper-roman;
-}
-.list-style-lower-greek {
-  list-style-type: lower-greek;
-}
-.list-style-lower-latin {
-  list-style-type: lower-latin;
-}
-.list-style-upper-latin {
-  list-style-type: upper-latin;
-}
-.list-style-armenian {
-  list-style-type: armenian;
-}
-.list-style-georgian {
-  list-style-type: georgian;
-}
-.list-style-lower-alpha {
-  list-style-type: lower-alpha;
-}
-.list-style-upper-alpha {
-  list-style-type: upper-alpha;
-}
-.list-style-none {
-  list-style-type: none;
-}
 .opac-0 {
   opacity: 0;
 }
@@ -653,6 +608,9 @@ summary {
 }
 .opac-10 {
   opacity: 100%;
+}
+.outline-none {
+  outline-style: none;
 }
 
 /*# sourceMappingURL=lemonade.css.map */
