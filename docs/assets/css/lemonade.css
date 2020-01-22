@@ -414,15 +414,19 @@ summary {
   display: contents !important;
 }
 .flex {
+  -webkit-box-flex: 0 !important;
   flex: 0 0 auto !important;
 }
 .flex-1 {
+  -webkit-box-flex: 1 !important;
   flex: 1 1 0% !important;
 }
 .flex-auto {
+  -webkit-box-flex: 1 !important;
   flex: 1 1 auto !important;
 }
 .flex-none {
+  -webkit-box-flex: 0 !important;
   flex: none !important;
 }
 .float-left {
@@ -671,6 +675,18 @@ summary {
 }
 .pos-sticky {
   position: sticky;
+}
+.resize {
+  resize: both;
+}
+.resize-x {
+  resize: horizontal;
+}
+.resize-y {
+  resize: vertical;
+}
+.resize-none {
+  resize: none;
 }
 
 /*# sourceMappingURL=lemonade.css.map */

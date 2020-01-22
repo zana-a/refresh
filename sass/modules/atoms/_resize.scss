@@ -1,0 +1,33 @@
+/**
+ * Resize
+ * ------
+ * Utility for controlling how an element can be resized.
+ */
+
+/**
+ * Resizable on both X and Y axis.
+ */
+.resize {
+  resize: both;
+}
+
+/**
+ * Resizable on only X axis.
+ */
+.resize-x {
+  resize: horizontal;
+}
+
+/**
+ * Resizable on only Y axis.
+ */
+.resize-y {
+  resize: vertical;
+}
+
+/**
+ * Disables resizable option.
+ */
+.resize-none {
+  resize: none;
+}
