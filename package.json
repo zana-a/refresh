@@ -3,8 +3,8 @@
   "version": "0.0.7",
   "description": "",
   "scripts": {
-    "src:build": "gulp build",
-    "src:serve": "gulp",
+    "src:build": "",
+    "src:serve": "node-sass --watch --recursive --output dist --source-map true --source-map-contents sass --output-style compressed",
     "src:format": "prettier sass/**/*.scss --write",
     "start": "concurrently \"npm run src:serve\" \"http-server ./docs\" "
   },
@@ -22,16 +22,6 @@
   "devDependencies": {
     "clean-css": "^4.2.1",
     "concurrently": "^4.1.2",
-    "gulp": "^4.0.2",
-    "gulp-append-prepend": "^1.0.8",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-cli": "^2.2.0",
-    "gulp-color": "0.0.2",
-    "gulp-prettier": "^2.1.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
     "http-server": "^0.12.0",
     "node-sass": "^4.12.0",
     "nodemon": "^2.0.1",
