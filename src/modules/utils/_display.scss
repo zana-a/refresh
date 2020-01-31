@@ -1,0 +1,23 @@
+/** Display */
+
+$__display-map: (
+        "block",
+        "inline-block",
+        "inline",
+        "flex",
+        "inline-flex",
+        "table",
+        "table-row",
+        "table-cell",
+        "none",
+        "contents"
+);
+
+/**
+ * Sets the display options.
+ */
+@each $__display in $__display-map {
+  .d-#{$__display} {
+    display: unquote($__display) !important;
+  }
+}

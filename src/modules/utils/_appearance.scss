@@ -6,6 +6,6 @@ $__appearance-map: ("auto", "none", "inherit", "initial", "revert", "unset");
 // Simple loop for looping through the map above.
 @each $__appearance in $__appearance-map {
   .ap-#{$__appearance} {
-    appearance: $__appearance !important;
+    appearance: unquote($__appearance) !important;
   }
 }

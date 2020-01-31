@@ -1,0 +1,41 @@
+/** Background */
+
+@import "../abstracts/variables";
+
+$__background-map: (
+        "blue": $_DEFAULT_BLUE,
+        "green": $_DEFAULT_GREEN,
+        "indigo": $_DEFAULT_INDIGO,
+        "orange": $_DEFAULT_ORANGE,
+        "pink": $_DEFAULT_PINK,
+        "purple": $_DEFAULT_PURPLE,
+        "red": $_DEFAULT_RED,
+        "teal": $_DEFAULT_TEAL,
+        "yellow": $_DEFAULT_YELLOW,
+        "blue-dark": $_DARK_BLUE,
+        "green-dark": $_DARK_GREEN,
+        "indigo-dark": $_DARK_INDIGO,
+        "orange-dark": $_DARK_ORANGE,
+        "pink-dark": $_DARK_PINK,
+        "purple-dark": $_DARK_PURPLE,
+        "red-dark": $_DARK_RED,
+        "teal-dark": $_DARK_TEAL,
+        "yellow-dark": $_DARK_YELLOW,
+        "gray": $_DEFAULT_GRAY-1,
+        "gray-1": $_DEFAULT_GRAY-6,
+        "gray-2": $_DEFAULT_GRAY-5,
+        "gray-3": $_DEFAULT_GRAY-4,
+        "gray-4": $_DEFAULT_GRAY-3,
+        "gray-5": $_DEFAULT_GRAY-2,
+        "gray-6": $_DARK_GRAY-2,
+        "gray-7": $_DARK_GRAY-3,
+        "gray-8": $_DARK_GRAY-4,
+        "gray-9": $_DARK_GRAY-5,
+        "gray-10": $_DARK_GRAY-6
+);
+
+@each $__background, $__background-value in $__background-map {
+  .bg-#{$__background} {
+    background-color: unquote($__background-value) !important;
+  }
+}

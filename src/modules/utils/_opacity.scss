@@ -1,4 +1,7 @@
-/** Opacity */
+/**
+ * Opacity
+ * -------
+ */
 
 @for $__opacity from 0 through 10 {
   .#{opac}-#{$__opacity} {

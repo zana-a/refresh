@@ -1,9 +1,0 @@
-/** Position */
-
-$__position-map: ("static", "fixed", "absolute", "relative", "sticky");
-
-@each $__position in $__position-map {
-  .pos-#{$__position} {
-    position: $__position;
-  }
-}

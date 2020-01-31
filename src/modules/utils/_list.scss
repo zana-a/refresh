@@ -1,0 +1,45 @@
+/**
+ * List
+ * ----
+ */
+
+$__list-style-map: (
+        "disc",
+        "circle",
+        "square",
+        "decimal",
+        "decimal-leading-zero",
+        "lower-roman",
+        "upper-roman",
+        "lower-greek",
+        "lower-latin",
+        "upper-latin",
+        "armenian",
+        "georgian",
+        "lower-alpha",
+        "upper-alpha",
+        "none"
+);
+
+/**
+ * List bullets are within itself
+ */
+.list-inside {
+  list-style-position: inside;
+}
+
+/**
+ * List bullets are outside of itself
+ */
+.list-outside {
+  list-style-position: outside;
+}
+
+/**
+ * Set the list styles
+ */
+@each $__list-style in $__list-style-map {
+  .list-style-#{$__list-style} {
+    list-style-type: unquote($__list-style);
+  }
+}
